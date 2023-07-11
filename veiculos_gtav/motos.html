@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainstyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/logo.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
+
+            <h1 style="text-align: center;">Motos - GTA V</h1>
+            
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                    <h2>Índice</h2>
+                    <button id="indice_button" onclick="highlightDiv()">mostrar</button>
+                </div>
+                <div class="indice-conteudo">
+                    <ol>
+                        <li><a href="#v1"><span>1.</span> Dinka Akuma</a></li>
+                        <li><a href="#v2"><span>2.</span> Dinka Double T</a></li>
+                        <li><a href="#v3"><span>3.</span> Liberty City Cycles Hexer</a></li>
+                        <li><a href="#v4"><span>4.</span> Maibatsu Sanchez</a></li>
+                        <li><a href="#v5"><span>5.</span> Nagasaki Carbon RS</a></li>       
+                        <li><a href="#v6"><span>6.</span> Pegassi Bati 800</a></li>
+                        <li><a href="#v7"><span>7.</span> Pegassi Ruffian</a></li>
+                        <li><a href="#v8"><span>8.</span> Principe Faggio</a></li>
+                        <li><a href="#v9"><span>9.</span> Principe Nemesis</a></li>
+                        <li><a href="#v10"><span>10.</span> Shitzu PCJ 600</a></li>
+                        <li><a href="#v11"><span>11.</span> Shitzu Vader</a></li>
+                        <li><a href="#v12"><span>12.</span> Western Bagger</a></li>
+                        <li><a href="#v13"><span>13.</span> Western Daemon</a></li>
+                        <li><a href="#v14"><span>14.</span> Police Bike</a></li>
+                        <li><a href="#v15"><span>15.</span> Western Sovereign</a></li>
+                        <li><a href="#v16"><span>16.</span> Dinka Thrust</a></li>
+                        <li><a href="#v17"><span>17.</span> Liberty City Cycles Innovation</a></li>
+                        <li><a href="#v18"><span>18.</span> Shitzu Hakuchou</a></li>
+                        <li><a href="#v19"><span>19.</span> Dinka Enduro</a></li>
+                        <li><a href="#v20"><span>20.</span> Principe Lectro</a></li>
+                        <li><a href="#v21"><span>21.</span> Dinka Vindicator</a></li>
+                        <li><a href="#v22"><span>22.</span> Nagasaki BF400</a></li>
+                        <li><a href="#v23"><span>23.</span> Western Cliffhanger</a></li>
+                        <li><a href="#v24"><span>24.</span> Western Gargoyle</a></li>
+                        <li><a href="#v25"><span>25.</span> Pegassi Faggio Sport</a></li>
+                        <li><a href="#v26"><span>26.</span> Nagasaki Shotaro</a></li>
+                        <li><a href="#v27"><span>27.</span> Nagasaki Chimera</a></li>
+                        <li><a href="#v28"><span>28.</span> Shitzu Hakuchou Drag</a></li>
+                        <li><a href="#v29"><span>29.</span> LCC Sanctus</a></li>
+                        <li><a href="#v30"><span>30.</span> Nagasaki Street Blazer</a></li>
+                        <li><a href="#v31"><span>31.</span> Western Rat Bike</a></li>
+                        <li><a href="#v32"><span>32.</span> Western Daemon</a></li>
+                        <li><a href="#v33"><span>33.</span> Pegassi Faggio Mod</a></li>
+                        <li><a href="#v34"><span>34.</span> Western Zombie Bobber</a></li>
+                        <li><a href="#v35"><span>35.</span> Western Zombie Chopper</a></li>
+                        <li><a href="#v36"><span>36.</span> Western Wolfsbane</a></li>
+                        <li><a href="#v37"><span>37.</span> BF Raptor</a></li>
+                        <li><a href="#v38"><span>38.</span> Maibatsu Manchez</a></li>
+                        <li><a href="#v39"><span>39.</span> Shitzu Defiler</a></li>
+                        <li><a href="#v40"><span>40.</span> Western Nightblade</a></li>
+                        <li><a href="#v41"><span>41.</span> Pegassi Vortex</a></li>
+                        <li><a href="#v42"><span>42.</span> Pegassi Esskey</a></li>
+                        <li><a href="#v43"><span>43.</span> LCC Avarus</a></li>
+                        <li><a href="#v44"><span>44.</span> Pegassi FCR 1000</a></li>
+                        <li><a href="#v45"><span>45.</span> Pegassi FCR 1000 Custom</a></li>
+                        <li><a href="#v46"><span>46.</span> Nagasaki Blazer Aqua</a></li>
+                        <li><a href="#v47"><span>47.</span> Principe Diabolus</a></li>
+                        <li><a href="#v48"><span>48.</span> Principe Diabolus Custom</a></li>
+                        <li><a href="#v49"><span>49.</span> Pegassi Oppressor</a></li>
+                        <li><a href="#v50"><span>50.</span> Pegassi Oppressor Mk II</a></li>
+                        <li><a href="#v51"><span>51.</span> Western Apocalypse Deathbike</a></li>
+                        <li><a href="#v52"><span>52.</span> Western Future Shock Deathbike</a></li>
+                        <li><a href="#v53"><span>53.</span> Western Nightmare Deathbike</a></li>
+                        <li><a href="#v54"><span>54.</span> Western Rampant Rocket</a></li>
+                        <li><a href="#v55"><span>55.</span> Nagasaki Stryder</a></li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="veiculos-container">
+                   
+                <div class="vehicle" id="v1">
+                    <img src="./assets/images/motos/img0.png" alt="Vehicle Name">
+                    <h2>Dinka Akuma</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v2">
+                    <img src="./assets/images/motos/img1.png" alt="Vehicle Name">
+                    <h2>Dinka Double T</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v3">
+                    <img src="./assets/images/motos/img2.png" alt="Vehicle Name">
+                    <h2>Liberty City Cycles Hexer</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v4">
+                    <img src="./assets/images/motos/img3.png" alt="Vehicle Name">
+                    <h2>Maibatsu Sanchez</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v5">
+                    <img src="./assets/images/motos/img4.png" alt="Vehicle Name">
+                    <h2>Nagasaki Carbon RS</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v6">
+                    <img src="./assets/images/motos/img5.png" alt="Vehicle Name">
+                    <h2>Pegassi Bati 800</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v7">
+                    <img src="./assets/images/motos/img6.png" alt="Vehicle Name">
+                    <h2>Pegassi Ruffian</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v8">
+                    <img src="./assets/images/motos/img7.png" alt="Vehicle Name">
+                    <h2>Principe Faggio</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v9">
+                    <img src="./assets/images/motos/img8.png" alt="Vehicle Name">
+                    <h2>Principe Nemesis</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v10">
+                    <img src="./assets/images/motos/img9.png" alt="Vehicle Name">
+                    <h2>Shitzu PCJ 600</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v11">
+                    <img src="./assets/images/motos/img10.png" alt="Vehicle Name">
+                    <h2>Shitzu Vader</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v12">
+                    <img src="./assets/images/motos/img11.png" alt="Vehicle Name">
+                    <h2>Western Bagger</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v13">
+                    <img src="./assets/images/motos/img12.png" alt="Vehicle Name">
+                    <h2>Western Daemon</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v14">
+                    <img src="./assets/images/motos/img13.png" alt="Vehicle Name">
+                    <h2>Police Bike</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v15">
+                    <img src="./assets/images/motos/img14.png" alt="Vehicle Name">
+                    <h2>Western Sovereign</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v16">
+                    <img src="./assets/images/motos/img15.png" alt="Vehicle Name">
+                    <h2>Dinka Thrust</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v17">
+                    <img src="./assets/images/motos/img16.png" alt="Vehicle Name">
+                    <h2>Liberty City Cycles Innovation</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v18">
+                    <img src="./assets/images/motos/img17.png" alt="Vehicle Name">
+                    <h2>Shitzu Hakuchou</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v19">
+                    <img src="./assets/images/motos/img18.png" alt="Vehicle Name">
+                    <h2>Dinka Enduro</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v20">
+                    <img src="./assets/images/motos/img19.png" alt="Vehicle Name">
+                    <h2>Principe Lectro</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v21">
+                    <img src="./assets/images/motos/img20.png" alt="Vehicle Name">
+                    <h2>Dinka Vindicator</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v22">
+                    <img src="./assets/images/motos/img21.png" alt="Vehicle Name">
+                    <h2>Nagasaki BF400</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v23">
+                    <img src="./assets/images/motos/img22.png" alt="Vehicle Name">
+                    <h2>Western Cliffhanger</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v24">
+                    <img src="./assets/images/motos/img23.png" alt="Vehicle Name">
+                    <h2>Western Gargoyle</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v25">
+                    <img src="./assets/images/motos/img24.png" alt="Vehicle Name">
+                    <h2>Pegassi Faggio Sport</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v26">
+                    <img src="./assets/images/motos/img25.png" alt="Vehicle Name">
+                    <h2>Nagasaki Shotaro</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v27">
+                    <img src="./assets/images/motos/img26.png" alt="Vehicle Name">
+                    <h2>Nagasaki Chimera</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v28">
+                    <img src="./assets/images/motos/img27.png" alt="Vehicle Name">
+                    <h2>Shitzu Hakuchou Drag</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v29">
+                    <img src="./assets/images/motos/img28.png" alt="Vehicle Name">
+                    <h2>LCC Sanctus</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v30">
+                    <img src="./assets/images/motos/img29.png" alt="Vehicle Name">
+                    <h2>Nagasaki Street Blazer</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v31">
+                    <img src="./assets/images/motos/img30.png" alt="Vehicle Name">
+                    <h2>Western Rat Bike</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v32">
+                    <img src="./assets/images/motos/img31.png" alt="Vehicle Name">
+                    <h2>Western Daemon</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v33">
+                    <img src="./assets/images/motos/img32.png" alt="Vehicle Name">
+                    <h2>Pegassi Faggio Mod</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v34">
+                    <img src="./assets/images/motos/img33.png" alt="Vehicle Name">
+                    <h2>Western Zombie Bobber</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v35">
+                    <img src="./assets/images/motos/img34.png" alt="Vehicle Name">
+                    <h2>Western Zombie Chopper</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v36">
+                    <img src="./assets/images/motos/img35.png" alt="Vehicle Name">
+                    <h2>Western Wolfsbane</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v37">
+                    <img src="./assets/images/motos/img36.png" alt="Vehicle Name">
+                    <h2>BF Raptor</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v38">
+                    <img src="./assets/images/motos/img37.png" alt="Vehicle Name">
+                    <h2>Maibatsu Manchez</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v39">
+                    <img src="./assets/images/motos/img38.png" alt="Vehicle Name">
+                    <h2>Shitzu Defiler</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v40">
+                    <img src="./assets/images/motos/img39.png" alt="Vehicle Name">
+                    <h2>Western Nightblade</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v41">
+                    <img src="./assets/images/motos/img40.png" alt="Vehicle Name">
+                    <h2>Pegassi Vortex</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v42">
+                    <img src="./assets/images/motos/img41.png" alt="Vehicle Name">
+                    <h2>Pegassi Esskey</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v43">
+                    <img src="./assets/images/motos/img42.png" alt="Vehicle Name">
+                    <h2>LCC Avarus</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v44">
+                    <img src="./assets/images/motos/img43.png" alt="Vehicle Name">
+                    <h2>Pegassi FCR 1000</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 76%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 64%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v45">
+                    <img src="./assets/images/motos/img44.png" alt="Vehicle Name">
+                    <h2>Pegassi FCR 1000 Custom</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 42%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 78%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v46">
+                    <img src="./assets/images/motos/img45.png" alt="Vehicle Name">
+                    <h2>Nagasaki Blazer Aqua</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v47">
+                    <img src="./assets/images/motos/img46.png" alt="Vehicle Name">
+                    <h2>Principe Diabolus</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v48">
+                    <img src="./assets/images/motos/img47.png" alt="Vehicle Name">
+                    <h2>Principe Diabolus Custom</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v49">
+                    <img src="./assets/images/motos/img48.png" alt="Vehicle Name">
+                    <h2>Pegassi Oppressor</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v50">
+                    <img src="./assets/images/motos/img49.png" alt="Vehicle Name">
+                    <h2>Pegassi Oppressor Mk II</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v51">
+                    <img src="./assets/images/motos/img50.png" alt="Vehicle Name">
+                    <h2>Western Apocalypse Deathbike</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v52">
+                    <img src="./assets/images/motos/img51.png" alt="Vehicle Name">
+                    <h2>Western Future Shock Deathbike</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v53">
+                    <img src="./assets/images/motos/img52.png" alt="Vehicle Name">
+                    <h2>Western Nightmare Deathbike</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v54">
+                    <img src="./assets/images/motos/img53.png" alt="Vehicle Name">
+                    <h2>Western Rampant Rocket</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v55">
+                    <img src="./assets/images/motos/img54.png" alt="Vehicle Name">
+                    <h2>Nagasaki Stryder</h2>
+                    <h3>Moto</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

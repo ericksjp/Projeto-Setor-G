@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainstyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/logo.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+            <h1 style="text-align: center;">Offroad - GTA V</h1>
+            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
+
+            
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                    <h2>Índice</h2>
+                    <button id="indice_button" onclick="highlightDiv()">mostrar</button>
+                </div>
+                <div class="indice-conteudo">
+                    <ol>
+                        <li><a href="#v1"><span>1.</span> BF Dune Buggy</a></li>
+                        <li><a href="#v2"><span>2.</span> BF Injection</a></li>
+                        <li><a href="#v3"><span>3.</span> BF Space Docker</a></li>
+                        <li><a href="#v4"><span>4.</span> Bravado Duneloader</a></li>
+                        <li><a href="#v5"><span>5.</span> Canis Bodhi</a></li>
+                        <li><a href="#v6"><span>6.</span> Declasse Rancher XL</a></li>
+                        <li><a href="#v7"><span>7.</span> Karin Rebel</a></li>
+                        <li><a href="#v8"><span>8.</span> Nagasaki Blazer</a></li>
+                        <li><a href="#v9"><span>9.</span> Nagasaki Blazer Lifeguard</a></li>
+                        <li><a href="#v10"><span>10.</span> Nagasaki Hot Rod Blazer</a></li>
+                        <li><a href="#v11"><span>11.</span> Vapid Sadler</a></li>
+                        <li><a href="#v12"><span>12.</span> Vapid Sandking</a></li>
+                        <li><a href="#v13"><span>13.</span> BF Bifta</a></li>
+                        <li><a href="#v14"><span>14.</span> Canis Kalahari</a></li>
+                        <li><a href="#v15"><span>15.</span> Benefactor Dubsta 6x6</a></li>
+                        <li><a href="#v16"><span>16.</span> Karin Technical</a></li>
+                        <li><a href="#v17"><span>17.</span> HVY Insurgent</a></li>
+                        <li><a href="#v18"><span>18.</span> Vapid Guardian</a></li>
+                        <li><a href="#v19"><span>19.</span> Vapid The Liberator</a></li>
+                        <li><a href="#v20"><span>20.</span> Cheval Marshall</a></li>
+                        <li><a href="#v21"><span>21.</span> Coil Brawler</a></li>
+                        <li><a href="#v22"><span>22.</span> Vapid Desert Raid</a></li>
+                        <li><a href="#v23"><span>23.</span> Vapid Trophy Truck</a></li>
+                        <li><a href="#v24"><span>24.</span> Vapid Contender</a></li>
+                        <li><a href="#v25"><span>25.</span> BF Ramp Buggy</a></li>
+                        <li><a href="#v26"><span>26.</span> Nagasaki Blazer Aqua</a></li>
+                        <li><a href="#v27"><span>27.</span> HVY Nightshark</a></li>
+                        <li><a href="#v28"><span>28.</span> Karin Technical Custom</a></li>
+                        <li><a href="#v29"><span>29.</span> HVY Insurgent Pick-Up Custom</a></li>
+                        <li><a href="#v30"><span>30.</span> Dune FAV</a></li>
+                        <li><a href="#v31"><span>31.</span> Canis Kamacho</a></li>
+                        <li><a href="#v32"><span>32.</span> Vapid Caracara</a></li>
+                        <li><a href="#v33"><span>33.</span> Canis Freecrawler</a></li>
+                        <li><a href="#v34"><span>34.</span> HVY Menacer</a></li>
+                        <li><a href="#v35"><span>35.</span> Benefactor Apocalypse Bruiser</a></li>
+                        <li><a href="#v36"><span>36.</span> Benefactor Future Shock Bruiser</a></li>
+                        <li><a href="#v37"><span>37.</span> Benefactor Nightmare Bruiser</a></li>
+                        <li><a href="#v38"><span>38.</span> Declasse Apocalypse Brutus</a></li>
+                        <li><a href="#v39"><span>39.</span> Declasse Future Shock Brutus</a></li>
+                        <li><a href="#v40"><span>40.</span> Declasse Nightmare Brutus</a></li>
+                        <li><a href="#v41"><span>41.</span> Bravado Apocalypse Sasquatch</a></li>
+                        <li><a href="#v42"><span>42.</span> Bravado Future Shock Sasquatch</a></li>
+                        <li><a href="#v43"><span>43.</span> Bravado Nightmare Sasquatch</a></li>
+                        <li><a href="#v44"><span>44.</span> Vapid Caracara 4x4</a></li>
+                        <li><a href="#v45"><span>45.</span> Annis Hellion</a></li>
+                        <li><a href="#v46"><span>46.</span> Karin Everon</a></li>
+                        <li><a href="#v47"><span>47.</span> Maxwell Vagrant</a></li>
+                        <li><a href="#v48"><span>48.</span> Rune Zhaba</a></li>
+                        <li><a href="#v49"><span>49.</span> Nagasaki Outlaw</a></li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="veiculos-container">
+                   
+                <div class="vehicle" id="v1">
+                    <img src="./assets/images/off_roads/img0.png" alt="Vehicle Name">
+                    <h2>BF Dune Buggy</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v2">
+                    <img src="./assets/images/off_roads/img1.png" alt="Vehicle Name">
+                    <h2>BF Injection</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v3">
+                    <img src="./assets/images/off_roads/img2.png" alt="Vehicle Name">
+                    <h2>BF Space Docker</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v4">
+                    <img src="./assets/images/off_roads/img3.png" alt="Vehicle Name">
+                    <h2>Bravado Duneloader</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v5">
+                    <img src="./assets/images/off_roads/img4.png" alt="Vehicle Name">
+                    <h2>Canis Bodhi</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v6">
+                    <img src="./assets/images/off_roads/img5.png" alt="Vehicle Name">
+                    <h2>Declasse Rancher XL</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v7">
+                    <img src="./assets/images/off_roads/img6.png" alt="Vehicle Name">
+                    <h2>Karin Rebel</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v8">
+                    <img src="./assets/images/off_roads/img7.png" alt="Vehicle Name">
+                    <h2>Nagasaki Blazer</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v9">
+                    <img src="./assets/images/off_roads/img8.png" alt="Vehicle Name">
+                    <h2>Nagasaki Blazer Lifeguard</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v10">
+                    <img src="./assets/images/off_roads/img9.png" alt="Vehicle Name">
+                    <h2>Nagasaki Hot Rod Blazer</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v11">
+                    <img src="./assets/images/off_roads/img10.png" alt="Vehicle Name">
+                    <h2>Vapid Sadler</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v12">
+                    <img src="./assets/images/off_roads/img11.png" alt="Vehicle Name">
+                    <h2>Vapid Sandking</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v13">
+                    <img src="./assets/images/off_roads/img12.png" alt="Vehicle Name">
+                    <h2>BF Bifta</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v14">
+                    <img src="./assets/images/off_roads/img13.png" alt="Vehicle Name">
+                    <h2>Canis Kalahari</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v15">
+                    <img src="./assets/images/off_roads/img14.png" alt="Vehicle Name">
+                    <h2>Benefactor Dubsta 6x6</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v16">
+                    <img src="./assets/images/off_roads/img15.png" alt="Vehicle Name">
+                    <h2>Karin Technical</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v17">
+                    <img src="./assets/images/off_roads/img16.png" alt="Vehicle Name">
+                    <h2>HVY Insurgent</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v18">
+                    <img src="./assets/images/off_roads/img17.png" alt="Vehicle Name">
+                    <h2>Vapid Guardian</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v19">
+                    <img src="./assets/images/off_roads/img18.png" alt="Vehicle Name">
+                    <h2>Vapid The Liberator</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v20">
+                    <img src="./assets/images/off_roads/img19.png" alt="Vehicle Name">
+                    <h2>Cheval Marshall</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v21">
+                    <img src="./assets/images/off_roads/img20.png" alt="Vehicle Name">
+                    <h2>Coil Brawler</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v22">
+                    <img src="./assets/images/off_roads/img21.png" alt="Vehicle Name">
+                    <h2>Vapid Desert Raid</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v23">
+                    <img src="./assets/images/off_roads/img22.png" alt="Vehicle Name">
+                    <h2>Vapid Trophy Truck</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v24">
+                    <img src="./assets/images/off_roads/img23.png" alt="Vehicle Name">
+                    <h2>Vapid Contender</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v25">
+                    <img src="./assets/images/off_roads/img24.png" alt="Vehicle Name">
+                    <h2>BF Ramp Buggy</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 33%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v26">
+                    <img src="./assets/images/off_roads/img25.png" alt="Vehicle Name">
+                    <h2>Nagasaki Blazer Aqua</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 67%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 33%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 68%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v27">
+                    <img src="./assets/images/off_roads/img26.png" alt="Vehicle Name">
+                    <h2>HVY Nightshark</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v28">
+                    <img src="./assets/images/off_roads/img27.png" alt="Vehicle Name">
+                    <h2>Karin Technical Custom</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v29">
+                    <img src="./assets/images/off_roads/img28.png" alt="Vehicle Name">
+                    <h2>HVY Insurgent Pick-Up Custom</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v30">
+                    <img src="./assets/images/off_roads/img29.png" alt="Vehicle Name">
+                    <h2>Dune FAV</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v31">
+                    <img src="./assets/images/off_roads/img30.png" alt="Vehicle Name">
+                    <h2>Canis Kamacho</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v32">
+                    <img src="./assets/images/off_roads/img31.png" alt="Vehicle Name">
+                    <h2>Vapid Caracara</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v33">
+                    <img src="./assets/images/off_roads/img32.png" alt="Vehicle Name">
+                    <h2>Canis Freecrawler</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 62%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v34">
+                    <img src="./assets/images/off_roads/img33.png" alt="Vehicle Name">
+                    <h2>HVY Menacer</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v35">
+                    <img src="./assets/images/off_roads/img34.png" alt="Vehicle Name">
+                    <h2>Benefactor Apocalypse Bruiser</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v36">
+                    <img src="./assets/images/off_roads/img35.png" alt="Vehicle Name">
+                    <h2>Benefactor Future Shock Bruiser</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v37">
+                    <img src="./assets/images/off_roads/img36.png" alt="Vehicle Name">
+                    <h2>Benefactor Nightmare Bruiser</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v38">
+                    <img src="./assets/images/off_roads/img37.png" alt="Vehicle Name">
+                    <h2>Declasse Apocalypse Brutus</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v39">
+                    <img src="./assets/images/off_roads/img38.png" alt="Vehicle Name">
+                    <h2>Declasse Future Shock Brutus</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v40">
+                    <img src="./assets/images/off_roads/img39.png" alt="Vehicle Name">
+                    <h2>Declasse Nightmare Brutus</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v41">
+                    <img src="./assets/images/off_roads/img40.png" alt="Vehicle Name">
+                    <h2>Bravado Apocalypse Sasquatch</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v42">
+                    <img src="./assets/images/off_roads/img41.png" alt="Vehicle Name">
+                    <h2>Bravado Future Shock Sasquatch</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v43">
+                    <img src="./assets/images/off_roads/img42.png" alt="Vehicle Name">
+                    <h2>Bravado Nightmare Sasquatch</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v44">
+                    <img src="./assets/images/off_roads/img43.png" alt="Vehicle Name">
+                    <h2>Vapid Caracara 4x4</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v45">
+                    <img src="./assets/images/off_roads/img44.png" alt="Vehicle Name">
+                    <h2>Annis Hellion</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v46">
+                    <img src="./assets/images/off_roads/img45.png" alt="Vehicle Name">
+                    <h2>Karin Everon</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v47">
+                    <img src="./assets/images/off_roads/img46.png" alt="Vehicle Name">
+                    <h2>Maxwell Vagrant</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v48">
+                    <img src="./assets/images/off_roads/img47.png" alt="Vehicle Name">
+                    <h2>Rune Zhaba</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v49">
+                    <img src="./assets/images/off_roads/img48.png" alt="Vehicle Name">
+                    <h2>Nagasaki Outlaw</h2>
+                    <h3>Off-Road</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

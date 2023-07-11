@@ -1,0 +1,536 @@
+
+            <div class="super">
+                <div class="introducao">
+                    <h3>Especializados</h3>
+                    <p>por fazer</p>
+                </div>
+    
+                <div class="vehicle">
+                    <img src="./images/utilitys/img0.png" alt="Vehicle Name">
+                    <h2>Brute Utility Truck</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img1.png" alt="Vehicle Name">
+                    <h2>HVY Airtug</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img2.png" alt="Vehicle Name">
+                    <h2>HVY Cutter</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img3.png" alt="Vehicle Name">
+                    <h2>HVY Dock Handler</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 5%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img4.png" alt="Vehicle Name">
+                    <h2>HVY Dozer</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 5%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img5.png" alt="Vehicle Name">
+                    <h2>HVY Dump</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img6.png" alt="Vehicle Name">
+                    <h2>HVY Docktug</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img7.png" alt="Vehicle Name">
+                    <h2>HVY Forklift</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img8.png" alt="Vehicle Name">
+                    <h2>HVY Ripley</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 5%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img9.png" alt="Vehicle Name">
+                    <h2>HVY Mixer</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img10.png" alt="Vehicle Name">
+                    <h2>Jacksheepe Mower</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img11.png" alt="Vehicle Name">
+                    <h2>Nagasaki Caddy</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 5%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img12.png" alt="Vehicle Name">
+                    <h2>Stanley Fieldmaster</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img13.png" alt="Vehicle Name">
+                    <h2>Stanley Tractor</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img14.png" alt="Vehicle Name">
+                    <h2>Vapid Scrap Truck</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img15.png" alt="Vehicle Name">
+                    <h2>Vapid Towtruck Large</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img16.png" alt="Vehicle Name">
+                    <h2>Vapid Towtruck Large Small</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img17.png" alt="Vehicle Name">
+                    <h2>Vapid Utility Truck</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img18.png" alt="Vehicle Name">
+                    <h2>Jobuilt Phantom Wedge</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 28%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 59%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img19.png" alt="Vehicle Name">
+                    <h2>Nagasaki Bunker Caddy</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img20.png" alt="Vehicle Name">
+                    <h2>Jobuilt Hauler Custom</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/utilitys/img21.png" alt="Vehicle Name">
+                    <h2>Jobuilt Phantom Custom</h2>
+                    <h3>Especializado</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>

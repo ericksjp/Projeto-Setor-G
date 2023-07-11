@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Weapon Stats</title>
+    <link rel="stylesheet" href="armas.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <ul class="lista">
+                        <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                            <ul class="submenu">
+                                <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                                <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                                <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                                <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                                <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                                <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                                <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                                <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                              </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div id="myelement" class="sticky-element">
+                    <button onclick="scrollToTop()">Começo</button>
+                </div>
+
+                <div class="logo">
+                    <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+                </div>
+
+                <h1>Armas do Grand Theft Auto V</h1>
+                <!-- <h3>Conteúdo </h3> -->
+                <p> Grand Theft Auto V contém 61 armas diferentes.</p>
+
+                <ul>
+                    <li>21 foram introduzidas em DLCs do Grand Theft Auto Online.</li>
+                    <li>4 foram introduzidas nas versões de Xbox One, PlayStation 4 e PC.</li>
+                </ul>
+
+                <p> Ao contrário de outros jogos onde uma única arma de cada tipo pode ser carregada de uma vez, os
+                    jogadores são
+                    capazes de carregar todas as armas ao mesmo tempo, selecionando armas brancas e armas de fogo à sua
+                    disposição.
+                    As armas de fogo agora apresentam uma grande variedade de acessórios para personalização, o que
+                    aumenta o
+                    desempenho geral delas (ou seja, miras para melhor zoom e precisão). Mesmo se não houver munição
+                    para uma arma
+                    de fogo, elas ainda são mantidas para mais tarde quando o jogador recuperar a munição, o que
+                    restaura o pente de
+                    cada arma e o resto para a classe em geral (digamos, se o jogador gastar toda a munição em uma única
+                    arma como a
+                    Pistola, outras armas ainda terão seus próprios cartuchos carregados no pente da arma, então o
+                    jogador pode
+                    trocá-los como último recurso).
+                </p>
+
+
+                <div class="laranja">
+                    <div class="indice-header" id="trofeu1">
+                        <h2>Índice</h2>
+                        <button id="indice_button" onclick="highlightDiv()">ocultar</button>
+                    </div>
+                    <div class="indice-conteudo">
+                        <ol>
+                            <li><a href="#rifles_assalto"><span>1.1</span> Rifles de Assalto</a></li>
+                            <li><a href="#rifles_precisao"><span>1.2</span> Rifles de Precisão</a></li>
+                            <li><a href="#Metralhadoras_Submetralhadoras"><span>1.3</span> Metralhadoras e
+                                    Sub-Metralhadoras</a></li>
+                            <li><a href="#escopetas"><span>1.4</span> Escopetas</a></li>
+                            <li><a href="#armas_pesadas"><span>1.5</span> Armas Pesadas</a></li>
+                            <li><a href="#Pistolas"><span>1.6</span> Pistolas</a></li>
+                            <li><a href="#corpo_a_corpo"><span>1.7</span> Corpo a Corpo</a></li>
+                            <li><a href="#arremessaveis"><span>1.8</span> Arremesáveis</a></li>
+                            <li><a href="#especiais"><span>1.9</span> Especiais</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h2 id="rifles_assalto" class="gunheader">Rifles de Assalto</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_ADVANCEDRIFLE.png" alt="Advanced Rifle - img">
+                        <h2>Advanced Rifle</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 34%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_ASSAULTRIFLE_MK2.png" alt="Assault Rifle Mk II - img">
+                        <h2>Assault Rifle Mk II</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 33%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BULLPUPRIFLE_MK2.webp" alt="Bullpup Rifle Mk II - img">
+                        <h2>Bullpup Rifle Mk II</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 34%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 72%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BULLPUPRIFLE.webp" alt="Bullpup Rifle - img">
+                        <h2>Bullpup Rifle</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 32%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 72%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_CARBINERIFLE_MK2.webp" alt="Carbine Rifle Mk II - img">
+                        <h2>Carbine Rifle Mk II</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 36%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_CARBINERIFLE.webp" alt="Carbine Rifle - img">
+                        <h2>Carbine Rifle</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 32%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_COMPACTRIFLE.png" alt="Compact Rifle - img">
+                        <h2>Compact Rifle</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 36%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SPECIALCARBINE_MK2.webp"
+                            alt="Special Carbine Mk II - img">
+                        <h2>Special Carbine Mk II</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 36%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SPECIALCARBINE.webp" alt="Special Carbine - img">
+                        <h2>Special Carbine</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 34%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_ASSAULTRIFLE.webp" alt="Assault Rifle - img">
+                        <h2>Assault Rifle</h2>
+                        <h3>Assault Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="rifles_precisao" class="gunheader">Rifles de Precisão</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HEAVYSNIPER_MK2.png" alt="Heavy Sniper Mk II - img">
+                        <h2>Heavy Sniper Mk II</h2>
+                        <h3>Sniper Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 90%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HEAVYSNIPER.webp" alt="Heavy Sniper - img">
+                        <h2>Heavy Sniper</h2>
+                        <h3>Sniper Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 98%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 90%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MARKSMANRIFLE_MK2.webp" alt="Marksman Rifle Mk II - img">
+                        <h2>Marksman Rifle Mk II</h2>
+                        <h3>Sniper Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 75%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 80%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MARKSMANRIFLE.webp" alt="Marksman Rifle - img">
+                        <h2>Marksman Rifle</h2>
+                        <h3>Sniper Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 80%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SNIPERRIFLE.webp" alt="Sniper Rifle - img">
+                        <h2>Sniper Rifle</h2>
+                        <h3>Sniper Rifle</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 96%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="Metralhadoras_Submetralhadoras" class="gunheader">Metralhadoras e Submetralhadoras</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_COMBATMG_MK2.png" alt="Combat MG Mk II - img">
+                        <h2>Combat MG Mk II</h2>
+                        <h3>Light-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 57%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_COMBATMG.webp" alt="Combat MG - img">
+                        <h2>Combat MG</h2>
+                        <h3>Light-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_GUSENBERG.webp" alt="Gusenberg Sweeper - img">
+                        <h2>Gusenberg Sweeper</h2>
+                        <h3>Light-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 34%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 38%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 56%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MG.webp" alt="MG - img">
+                        <h2>MG</h2>
+                        <h3>Light-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_RAYCARBINE.webp" alt="Unholy Hellbringer - img">
+                        <h2>Unholy Hellbringer</h2>
+                        <h3>Light-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics//WEAPON_ASSAULTSMG.webp" alt="Assault SMG - img">
+                        <h2>Assault SMG</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 23%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_COMBATPDW.webp" alt="Combat PDW - img">
+                        <h2>Combat PDW</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 38%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MARKSMANPISTOL.png" alt="Marksman Pistol - img">
+                        <h2>Marksman Pistol</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 80%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MICROSMG.webp" alt="Micro SMG - img">
+                        <h2>Micro SMG</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 21%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MINISMG.png" alt="Mini SMG - img">
+                        <h2>Mini SMG</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 22%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 84%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 33%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SMG_MK2.png" alt="SMG Mk II - img">
+                        <h2>SMG Mk II</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 26%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SMG.webp" alt="SMG - img">
+                        <h2>SMG</h2>
+                        <h3>Sub-Machine Gun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 22%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="escopetas" class="gunheader">Escopetas</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_ASSAULTSHOTGUN.webp" alt="Assault Shotgun - img">
+                        <h2>Assault Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 17%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BULLPUPSHOTGUN.png" alt="Bullpup Shotgun - img">
+                        <h2>Bullpup Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 67%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_DBSHOTGUN.png" alt="Double Barrel Shotgun - img">
+                        <h2>Double Barrel Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 98%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HEAVYSHOTGUN.webp" alt="Heavy Shotgun - img">
+                        <h2>Heavy Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 85%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MUSKET.webp" alt="Musket - img">
+                        <h2>Musket</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 97%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PUMPSHOTGUN_MK2.webp" alt="Pump Shotgun Mk II - img">
+                        <h2>Pump Shotgun Mk II</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PUMPSHOTGUN.webp" alt="Pump Shotgun - img">
+                        <h2>Pump Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 67%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SAWNOFFSHOTGUN.png" alt="Sawed-Off Shotgun - img">
+                        <h2>Sawed-Off Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 96%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_AUTOSHOTGUN.png" alt="Sweeper Shotgun - img">
+                        <h2>Sweeper Shotgun</h2>
+                        <h3>Shotgun</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 22%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="armas_pesadas" class="gunheader">Armas Pesadas</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_COMPACTLAUNCHER.png" alt="Compact Grenade Launcher - img">
+                        <h2>Compact Grenade Launcher</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_FIREWORK.webp" alt="Firework Launcher - img">
+                        <h2>Firework Launcher</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 45%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 5%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 12%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_GRENADELAUNCHER.webp" alt="Grenade Launcher - img">
+                        <h2>Grenade Launcher</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HOMINGLAUNCHER.webp" alt="Homing Launcher - img">
+                        <h2>Homing Launcher</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 5%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MINIGUN.webp" alt="Minigun - img">
+                        <h2>Minigun</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_RAILGUN.webp" alt="Railgun - img">
+                        <h2>Railgun</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 90%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_RPG.webp" alt="RPG - img">
+                        <h2>RPG</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 5%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_RAYMINIGUN.webp" alt="Widowmaker - img">
+                        <h2>Widowmaker</h2>
+                        <h3>Heavy Weapon</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="Pistolas" class="gunheader">Pistolas</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_APPISTOL.png" alt="AP Pistol - img">
+                        <h2>AP Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 26%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 80%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_COMBATPISTOL.png" alt="Combat Pistol - img"
+                            style="display: flex; width: 70%; margin: 0 auto;">
+                        <h2>Combat Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 27%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_DOUBLEACTION.png" alt="Double-Action Revolver - img">
+                        <h2>Double-Action Revolver</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_FLAREGUN.png" alt="Flare Gun - img"
+                            style="display: flex; width: 70%; margin: 0 auto;">
+                        <h2>Flare Gun</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HEAVYPISTOL.png" alt="Heavy Pistol - img"
+                            style="display: flex; width: 80%; margin: 0 auto;">
+                        <h2>Heavy Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_REVOLVER_MK2.webp" alt="Heavy Revolver Mk II - img">
+                        <h2>Heavy Revolver Mk II</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 75%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_REVOLVER.png" alt="Heavy Revolver - img">
+                        <h2>Heavy Revolver</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 65%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MACHINEPISTOL.webp" alt="Machine Pistol - img">
+                        <h2>Machine Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 28%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 70%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PISTOL50.png" alt="Pistol .50 - img"
+                            style="display: flex; width: 75%; margin: 0 auto;">
+                        <h2>Pistol .50</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 51%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 55%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PISTOL_MK2.png" alt="Pistol Mk II - img"
+                            style="display: flex; width: 75%; margin: 0 auto;">
+                        <h2>Pistol Mk II</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 38%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PISTOL.webp" alt="Pistol - img"
+                            style="display: flex; width: 75%; margin: 0 auto;">
+                        <h2>Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 26%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SNSPISTOL_MK2.png" alt="SNS Pistol Mk II - img"
+                            style="display: flex; width: 60%; margin: 0 auto;">
+                        <h2>SNS Pistol Mk II</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 32%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SNSPISTOL.png" alt="SNS Pistol"
+                            style="display: flex; width: 69%; margin: 0 auto;">
+                        <h2>SNS Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_RAYPISTOL.webp" alt="Up-n-Atomizer - img">
+                        <h2>Up-n-Atomizer</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_VINTAGEPISTOL.png" alt="Vintage Pistol - img">
+                        <h2>Vintage Pistol</h2>
+                        <h3>Pistol</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="corpo_a_corpo" class="gunheader">Corpo a Corpo</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_DAGGER.webp" alt="Antique Cavalry Dagger - img">
+                        <h2>Antique Cavalry Dagger</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BAT.webp" alt="Baseball Bat - img">
+                        <h2>Baseball Bat</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BATTLEAXE.png" alt="Battle Axe - img">
+                        <h2>Battle Axe</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BOTTLE.webp" alt="Bottle - img">
+                        <h2>Bottle</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_CROWBAR.png" alt="Crowbar - img">
+                        <h2>Crowbar</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_FLASHLIGHT.png" alt="Flashlight - img">
+                        <h2>Flashlight</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_GOLFCLUB.png" alt="Golf Club - img">
+                        <h2>Golf Club</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HAMMER.png" alt="Hammer - img">
+                        <h2>Hammer</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_HATCHET.webp" alt="Hatchet - img">
+                        <h2>Hatchet</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_KNIFE.png" alt="Knife - img">
+                        <h2>Knife</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_KNUCKLE.png" alt="Knuckle Duster - img"
+                            style="display: flex; width: 60%; margin: 0 auto;">
+                        <h2>Knuckle Duster</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 5%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MACHETE.webp" alt="Machete - img">
+                        <h2>Machete</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_NIGHTSTICK.png" alt="Nightstick - img">
+                        <h2>Nightstick</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_WRENCH.png" alt="Pipe Wrench - img">
+                        <h2>Pipe Wrench</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_POOLCUE.png" alt="Pool Cue - img">
+                        <h2>Pool Cue</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_STONE_HATCHET.png" alt="Stone Hatchet - img">
+                        <h2>Stone Hatchet</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SWITCHBLADE.png" alt="Switchblade - img">
+                        <h2>Switchblade</h2>
+                        <h3>Melee</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="arremessaveis" class="gunheader">Arremesáveis</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BALL.png" alt="Ball - img"
+                            style="display: flex; width: 50%; margin: 0 auto;">
+                        <h2>Ball</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_BZGAS.webp" alt="BZ Gas - img">
+                        <h2>BZ Gas</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_FLARE.png" alt="Flare - img">
+                        <h2>Flare</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_GRENADE.png" alt="Grenade - img"
+                            style="display: flex; width: 33%; margin: 0 auto;">
+                        <h2>Grenade</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_MOLOTOV.png" alt="Molotov - img">
+                        <h2>Molotov</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 50%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 8%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PIPEBOMB.png" alt="Pipe Bomb - img">
+                        <h2>Pipe Bomb</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 85%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PROXMINE.png" alt="Proximity Mine - img">
+                        <h2>Proximity Mine</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 90%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SNOWBALL.png" alt="Snowball - img"
+                            style="display: flex; width: 50%; margin: 0 auto;">
+                        <h2>Snowball</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_STICKYBOMB.png" alt="Sticky Bomb - img">
+                        <h2>Sticky Bomb</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 95%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_SMOKEGRENADE.png" alt="Tear Gas - img"
+                            style="display: flex; width: 30%; margin: 0 auto;">
+                        <h2>Tear Gas</h2>
+                        <h3>Throwable</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="especiais" class="gunheader">Especiais</h2>
+                <div class="weapons-container">
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_FIREEXTINGUISHER.png" alt="Fire Extinguisher - img">
+                        <h2>Fire Extinguisher</h2>
+                        <h3>Other</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 100%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_PETROLCAN.png" alt="Jerry Can - img">
+                        <h2>Jerry Can</h2>
+                        <h3>Other</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 0%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 30%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weapon">
+                        <img src="./assets/wepons-pics/WEAPON_STUNGUN.png" alt="Stun Gun - img">
+                        <h2>Stun Gun</h2>
+                        <h3>Other</h3>
+                        <div class="weapon-stats">
+                            <p>Damage:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%;"></div>
+                            </div>
+                            <p>Fire Rate:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%;"></div>
+                            </div>
+                            <p>Accuracy:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 40%;"></div>
+                            </div>
+                            <p>Range:</p>
+                            <div class="bar">
+                                <div class="fill" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <ul id="criadores" class="criadores">
+                    <h2>Colaboradores</h2>
+                    <li>Erick Ribeiro</li>
+                    <hr>
+                    <li>Whendersson</li>
+                    <hr>
+                    <li>Gerlândio</li>
+                    <hr>
+                    <li>José Magno</li>
+                    <hr>
+                    <li>João Italo</li>
+                    <hr>
+                </ul>
+            </footer>
+        </div>
+
+        <body>
+
+</html>

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto+Condensed&family=Rubik&display=swap');
+/* body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 200vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+} */
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/apps.65175.66515090704019777.c95568d5-8811-4e30-a0f2-3ac354b35880.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+.options {
+    --game-header-height: 60px;
+    --header-height: var(--game-header-height);
+    align-items: center;
+    /* -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px); */
+    background: rgba(0,0,0,.8);
+    border-bottom: 1px solid #161616;
+    height: var(--game-header-height);
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: transform .3s;
+    width: 100vw;
+    z-index: 99;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 300px;
+    top: 20px;
+    margin-right: 40px;
+}
+
+.header-link:hover{
+    text-decoration: underline;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.gta-5{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 30px;
+    left: 5%;
+    top: 15%;
+}
+
+.franklin-pic{
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    left: -10px;
+    bottom: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.gta5-logo{
+    height: 30%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta-5:hover{
+    background-color: #DAA520;
+}
+
+.gta-5:hover > .gta5-logo{
+    transform: translateX(107%) scale(2);
+  }
+
+  .gta-4{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 30px;
+    top: 58%;
+    left: 5%
+}
+
+.niko-pic{
+    height: 99%;
+    position: absolute;
+    top: 3px;
+    left: -56px;
+    bottom: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.gta-4-logo{
+    height: 40%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta-4:hover{
+    background-color: #DAA520;
+}
+
+.gta-4:hover > .gta-4-logo{
+    transform: translateX(82%) scale(1.5);
+  }
+
+
+.gta-sanandreas{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 20px;
+    left: 5%;
+    top: 15%;
+}
+
+.cjp{
+    height: 97%;
+    position: absolute;
+    top: 9px;
+    left: -30px;
+    bottom: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.gta-sanandreas-logo{
+    height: 40%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta-sanandreas:hover{
+    background-color: #DAA520;
+}
+
+.gta-sanandreas:hover > .gta-sanandreas-logo{
+    transform: translateX(110%) scale(1.7);
+  }
+
+  .gta-vice_city{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 30px;
+    top: 58%;
+    left: 5%
+}
+
+.gta-vice_city-png{
+    height: 99%;
+    position: absolute;
+    top: 2.5px;
+    left: -25px;
+    bottom: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.gta-vice_city-logo{
+    height: 40%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta-vice_city:hover{
+    background-color: #DAA520;
+}
+
+.gta-vice_city:hover > .gta-vice_city-logo{
+    transform: translateX(140%) scale(1.9);
+  }
+
+  .gta3{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 30px;
+    left: 500px;
+    left: 5%;
+    top: 15%;
+}
+
+.gta3-png{
+    height: 99%;
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    bottom: 0;
+    right: 0;
+    margin: auto; 
+}
+
+.gta3-logo{
+    height: 30%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta3:hover{
+    background-color: #DAA520;
+}
+
+.gta3:hover > .gta3-logo{
+    transform: translateX(100%) scale(1.8);
+  }
+
+  .gta2{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 30px;
+    left: 500px;
+    top: 58%;
+    left: 5%
+}
+
+.gta2-png{
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    bottom: 0;
+    border-radius: 10px;
+    margin: auto; 
+}
+
+.gta2-logo{
+    height: 30%;
+    z-index: 2;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta2:hover{
+    background-color: #DAA520;
+}
+
+.gta2:hover > .gta2-logo{
+    transform: translate(180%, -80%) scale(2);
+  }
+
+
+  .gta1{
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: relative;
+    width: 11%;
+    height: 40%;
+    border-radius: 30px;
+    left: 500px;
+    left: 5%;
+    top: 15%;
+}
+
+.gta1-png{
+    height: 70%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    margin: auto; 
+}
+
+.gta1-logo{
+    height: 26%;
+    z-index: 1;
+    position: absolute;
+    top: -78px;
+    left: -14px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.gta1:hover{
+    background-color: #DAA520;
+}
+
+.gta1:hover > .gta1-logo{
+    transform: translate(80%, 270%) scale(1.5);
+  }

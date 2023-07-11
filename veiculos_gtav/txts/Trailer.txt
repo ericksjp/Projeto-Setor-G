@@ -1,0 +1,271 @@
+
+            <div class="super">
+                <div class="introducao">
+                    <h3>Trailers</h3>
+                    <p>por fazer</p>
+                </div>
+    
+                <div class="vehicle">
+                    <img src="./images/trailers/img0.png" alt="Vehicle Name">
+                    <h2>Army Tanker</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img1.png" alt="Vehicle Name">
+                    <h2>Army Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img2.png" alt="Vehicle Name">
+                    <h2>Bale Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 12%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img3.png" alt="Vehicle Name">
+                    <h2>Boat Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 32%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img4.png" alt="Vehicle Name">
+                    <h2>Car Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img5.png" alt="Vehicle Name">
+                    <h2>Dock Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img6.png" alt="Vehicle Name">
+                    <h2>Grain Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 18%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 11%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img7.png" alt="Vehicle Name">
+                    <h2>Log Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img8.png" alt="Vehicle Name">
+                    <h2>Prop Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 32%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img9.png" alt="Vehicle Name">
+                    <h2>Rake Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle">
+                    <img src="./images/trailers/img10.png" alt="Vehicle Name">
+                    <h2>Small Trailer</h2>
+                    <h3>Trailer</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+        

@@ -1,0 +1,295 @@
+
+        <div class="super">
+            <div class="introducao">
+                <h3>Barcos</h3>
+                <p>nome</p>
+            </div>
+        
+            <div class="vehicle">
+                <img src="./images/barcos/img0.png" alt="Vehicle Name">
+                <h2>Dinka Marquis</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 75%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 35%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 85%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img1.png" alt="Vehicle Name">
+                <h2>Kraken</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 45%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 50%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img2.png" alt="Vehicle Name">
+                <h2>Nagasaki Dinghy</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 75%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 95%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 35%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img3.png" alt="Vehicle Name">
+                <h2>Police Predator</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 75%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 80%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 45%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img4.png" alt="Vehicle Name">
+                <h2>Shitzu Jetmax</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 85%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img5.png" alt="Vehicle Name">
+                <h2>Shitzu Squalo</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img6.png" alt="Vehicle Name">
+                <h2>Shitzu Suntrap</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img7.png" alt="Vehicle Name">
+                <h2>Shitzu Tropic</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img8.png" alt="Vehicle Name">
+                <h2>Speedophile Seashark</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 80%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 75%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 5%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img9.png" alt="Vehicle Name">
+                <h2>Submersible</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 45%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 50%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img10.png" alt="Vehicle Name">
+                <h2>Pegassi Speeder</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 10%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 95%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 35%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vehicle">
+                <img src="./images/barcos/img11.png" alt="Vehicle Name">
+                <h2>Lampadati Toro</h2>
+                <h3>Barco</h3>
+                <div class="vehicle-stats">
+                    <p>Speed:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <p>Acceleration:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                    <p>Handling:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 35%;"></div>
+                    </div>
+                    <p>Braking:</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            

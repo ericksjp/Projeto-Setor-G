@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+        };
+        
+    </script>
+    <script>
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      </script>
+    <link rel="stylesheet" href="./los_santos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+              </div>
+            
+            <div class="logo">
+                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+
+            <a href="./mapashp.html" id="video_tutorial">Página anterior</a>
+
+            <h1>Los Santos (GTA V)</h1>
+            
+            <figure id="lafigure">
+                <img src="./assets/Ls-dn.webp" alt="">
+                <figcaption><span>Ciclo dia/noite da cidade de Los Santos.</span></figcaption>
+            </figure>
+
+            <p><b>Los Santos</b> é uma cidade localizada no sul do estado de San Andreas no condado de mesmo nome, nos
+                Estados
+                Unidos, é a cidade mais populosa e a maior cidade em território de todo o estado, sua
+                população em&nbsp;2013 é de aproximadamente 10.000.000
+                Milhões de pessoas.
+            </p>
+            <p>A cidade de Los Santos reaparece em <i>Grand Theft Auto </i>, muito maior e muito mais
+                detalhada do que na sua aparição anterior, no caso <i>GTA San Andreas</i>. Sua reprodução em
+                <i>GTA V</i> ficou muito mais fiel a cidade da vida real no qual foi inspirada, que é a região
+                metropolitana de Los Angeles, no estado da Califórnia. Seu fuso horário é o UTC -8, assim como
+                na cidade de Los Angeles.
+            </p>
+            <p>Assim como Los Angeles, Los Santos é uma grande metrópole ensolarada, sua cultura é constituída a
+                partir não só dos estados-unidenses, mas de vários outros povos diferentes, como os Mexicanos,
+                Asiáticos, Sul-americanos, e outras civilizações europeias diferentes, cerca de 30% da sua
+                população é de origem espanhola.
+            </p>
+            
+
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                  <h2>Índice</h2>
+                  <button id="indice_button" onclick="highlightDiv()">ocultar</button>
+                </div>
+                <div class="indice-conteudo">
+                  <ol>
+                    <li><a href="#Geografia"><span>1.</span> Geografia</a></li>
+                    <li><a href="#Transporte"><span>2.</span> Transporte</a></li>
+                    <li><a href="#clima"><span>3.</span> Clima</a></li>
+                    <li><a href="#Pontos_Turísticos"><span>4.</span> Pontos Turísticos</a>
+                        <ol>
+                            <li><a href="#Arranha-céus_e_edificios_corporativos"><span>4.1</span> Arranha-céus e edifícios corporativos</a></li>
+                            <li><a href="#Edifícios_Residenciais"><span>4.2</span> Edifícios Residenciais</a></li>
+                            <li><a href="#Recreação_e_esportes"><span>4.3</span> Recreação e esportes</a>
+                                <ol>
+                                    <li><a href="#TimesEsportivos"><span>4.3.1</span> Times Esportivos</a></li>
+                                    <li><a href="#Locais_de_Entretenimento"><span>4.3.2</span> Locais de Entretenimento</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a href="#Infraestrutura"><span>5.</span> Infraestrutura</a>
+                        <ol>
+                            <li><a href="#Porto e Aeroporto"><span>5.1</span> Porto e Aeroporto</a></li>
+                            <li><a href="#Estradas_Importantes"><span>5.2</span> Estradas Importantes</a></li>
+                            <li><a href="#Arte_e_Cultura"><span>5.3</span> Arte e Cultura</a></li>
+                            <li><a href="#Governo"><span>5.4</span> Governo</a></li>
+                            <li><a href="#Marcos_emblemáticos"><span>5.5</span> Marcos emblemáticos</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#Educação"><span>6.</span> Educação</a></li>
+                    <li><a href="#Saúde"><span>7.</span> Saúde</a></li>    
+                    <li><a href="#Segurança"><span>8.</span> Segurança</a>
+                        <ol>
+                            <li><a href="#NOOSEE"><span>8.1</span> NOOSEE</a></li>
+                            <li><a href="#Justiça_Criminal"><span>8.2</span> Justiça Criminal</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#Crime"><span>9.</span> Crime</a>   
+                    <li><a href="#Galeria"><span>10.</span> Galeria</a>   
+                    <li><a href="#criadores"><span>11.</span> Colaboradores</a>   
+                  </ol>
+                </div>
+            </div>
+
+            <h2 id="Geografia">Geografia</h2>
+            <p>Los Santos é dividida em 36 bairros e distritos diferentes, antigamente alguns distritos eram
+                outras cidades, mas a medida que a cidade foi se expandindo estas comunidades foram incorporadas
+                ao condado:
+            </p>
+
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/PillboxHill-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Centro de Los Santos</b></p>
+                    <p>O Centro de Los Santos é o centro financeiro e também sua área mais desenvolvida, aqui se
+                        encontram os mais altos arranha céus da cidade, sendo o maior o Maze Bank Tower, seguido
+                        pelos prédios do FIB e da IAA, pelo edifício da Union Depository, e do Mile High Club,
+                        um prédio ainda em construção.</p>
+                    <p>Este distrito é composto por Pillbox Hill, Mission Row, Textile City e pela Legion
+                        Square.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/SouthLSnextgen.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>South Los Santos</b></p>
+                    <p>Uma área economicamente deprimida, predominantemente afro-americana da cidade,
+                        caracterizada por gangues de rua e conjuntos habitacionais de baixa renda. A zona sul de
+                        Los Santos é dividido nos bairros de Strawberry, Rancho, Chamberlain Hills e Banning, e
+                        também contém a cidade incorporada de Davis.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/EastLSnextgen.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>East Los Santos</b></p>
+                    <p>Um grande distrito com uma alta concentração de moradores latinos e uma forte presença de
+                        gangues, em particular o Los Santos Vagos e Marabunta Grande. Embora o distrito seja
+                        basicamente industrial, tem experimentado a gentrificação nos últimos anos. A zona leste
+                        de Los Santos é dividido pelos bairros La Mesa, Cypress Flats, El Burro Heights e
+                        Murrieta Heights.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Portola_Drive.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Rockford Hills</b></p>
+                    <p>Rockford Hills é uma área de alto padrão, é predominantemente uma área de shoppings onde
+                        vendem-se objetos de alto valor além contar com vários apartamentos de classe
+                        média-alta.</p>
+                    <p>Este distrito um dia já foi uma cidade independente, mas foi incorporada a Los Santos
+                        mais tarde, sue bairro adjacente é Burton. Rockford Hills significa em português:
+                        Colinas de Rockford.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/DowntownVinewood-AerialView-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Vinewood</b></p>
+                    <p>Vinewood é o distrito mais icônico de Los Santos, com seus edifícios art-decó dos anos 40
+                        de alto padrão que conseguiram trazer os moradores mais abastados da cidade e da região,
+                        seu charme é único e sua vista é deslumbrante. A indústria cinematográfica funciona a
+                        todo vapor por aqui.</p>
+                    <p>Este distrito é composto pelos bairros de Alta, Hawick, Vinewood Hills, West Vinewood,
+                        East Vinewood e Mirror Park.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Vinewood-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Vinewood Hills</b></p>
+                    <p>Vinewood Hills fica localizado nas montanhas ao norte de Vinewood, aqui se localiza um
+                        dos principais cartões postais da cidade, o Letreiro de Vinewood, além de várias mansões
+                        onde abrigam as estrelas do cinema Vinewoodiano. Vinewood Hills significa Colinas de
+                        Vinewood em português.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Richman-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Richman</b></p>
+                    <p>Richman é um distrito extremamente rico, mansões gigantes são encontradas aqui, além de
+                        um notável clube de golfe, o Los Santos Golf Club, que conta com áreas de recreações
+                        exclusivas. Richman significa literalmente "Homem Rico" em português.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Morningwood-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Morningwood</b></p>
+                    <p>Morningwood é um dos distritos mais tranquilos de se viver, uma mistura de bairros
+                        residencias com comerciais, este distrito conta com seus maravilhosos teatros
+                        históricos.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/LittleSeoul-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Little Seul</b></p>
+                    <p>Localizado na parte central de Los Santos é uma área residencial de classe média que
+                        abriga diversos povos asiáticos, com predominância para os sul-coreanos. Seu nome
+                        significa literalmente "Pequena Seoul" (Seoul é a capital da Coréia do Sul).</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Delperro.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Del Perro</b></p>
+                    <p>Del Perro é uma comunidade a beira-mar, e conhecida pelas suas belas praias e pelo seu
+                        famoso "Del Perro Pier", um pier com um parque de diversões que atrai muitos visitantes.
+                        Del Perro significa literalmente "Do Cachorro" em espanhol.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Vespucci_Canals.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Vespucci</b></p>
+                    <p>Vespucci é um distrito a beira-mar de predominância residencial, muito conhecida pelos
+                        seus canais, pelas sua praia, e pela mundialmente famosa calçada de Vespucci Beach.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/MBA.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>La Puerta</b></p>
+                    <p>Uma comunidade que tem fortes raízes na indústria da pesca, La Puerta é totalmente
+                        industrial e abriga outro cartão postal da cidade, o estádio Maze Bank Arena.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/LSIA-GTAV.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Aeroporto Internacional de Los Santos</b></p>
+                    <p>Este é um dos aeroportos mais movimentados do planeta e um dos maiores do mundo, próximo
+                        a ele se localizam vários hotéis, terminais de ônibus e estações de metrô para acomodar
+                        e transportar milhares de passageiros por dia.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Terminal-GTAV-nextgen.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Porto de Los Santos</b></p>
+                    <p>O Porto de Los Santos é um dos maiores e mais movimentados portos da América.</p>
+                    <p>Este distrito é dividido em vários bairros industriais entre eles: Elysian Island, onde
+                        fica o Pier 400, o Naval Port, o Terminal e o bairro de Banning.</p>
+                </div>
+            </div>
+            <div class="bairros1">
+                <div class="img">
+                    <img src="./assets/Pacific_Bluffs.webp" alt="">
+                </div>
+                <div class="text">
+                    <p style="margin: 0px; text-align:center;"><b>Pacific Bluffs</b></p>
+                    <p>Lar do famoso museu, o Kortz Center, o Pacific Bluffs é praticamente a entrada da cidade,
+                        além de ser um distrito bem afastado do centro da cidade, aqui se localizam diversos
+                        casarões que descansam sobre a vista do mar.</p>
+                </div>
+            </div>
+
+            <h2 id="Transporte">Transporte</span></h2>
+            <p>Los Santos oferece uma vasta gama de serviços de transporte público, auto-estradas que cruzam a
+                cidade inteira e várias outras rodovias menores, com várias saídas e rampas de acesso ao redor
+                da cidade. A cidade também tem seu próprio sistema de trens elétricos (<small>Metrô</small>)
+                chamado de Los Santos Transit. Os ônibus também podem ser vistos sendo gerados no tráfego em toda a
+                cidade.
+                Como a maioria das cidades, o tráfego de Los Santos é monitorado e controlado pelo&nbsp;Sistema
+                de Controle de Tráfego de Los Santos que permite a cidade controlar semáforos e manipular
+                condições e o fluxo de veículos nas ruas e estradas.
+            </p>
+            <p>Aeroporto Internacional de Los Santos (LSX) está localizado na parte sudeste de Los Santos e
+                é o único e maior aeroporto da cidade.
+            </p>
+            <h2 id="clima">Clima</h2>
+            <p>De modo geral o clima de Los Santos é mediterrâneo e ensolarado, mas mesmo assim é possível
+                presencial dias de chuva na cidade e nas regiões próximas.
+                Devido a sua extensa área, Los Santos está fortemente poluída, com uma poluição atmosférica
+                (''smog'') comum durante a tarde e nas primeiras horas da manhã devido ao alto tráfego de
+                carros.&nbsp;À noite, o céu geralmente adquire uma cor laranjada escura devido as luzes e a
+                densidade urbana, especialmente quando está nublado ou chovendo. De acordo com um anúncio de
+                rádio, Los Santos foi nomeado "a cidade mais poluída do mundo", em 2013, à frente de Pequim,
+                capital da China.
+            </p>
+            <p>A partir de dezembro do Ano 2013, entre os dias 24/26 a Rockstar adicionou neve para&nbsp;<i>Grand Theft
+                    Auto
+                    Online.</i> A neve cobriu toda a cidade e era visível de&nbsp Blaine County.&nbsp;Durante este
+                tempo, os dias eram mais curtos e as noites eram mais escuras, replicando um inverno da vida
+                real.&nbsp;A partir de dezembro 24-26 de 2014, reapareceu a neve através de um&nbsp;DLC.&nbsp;A
+                neve também estava presente a partir de 31 de dezembro de 2014 a 2 de Janeiro de 2015. o mesmo
+                aconteceu em 2016/2017.
+            </p>
+            <h2 id="Pontos_Turísticos">Pontos Turísticos</h2>
+            <h3 id="Arranha-céus_e_edifícios_corporativos">Arranha-céus e edifícios corporativos</h3>
+            <p>Los Santos não é tão conhecida como Liberty City por sua paisagem urbana, mas muitas empresas
+                importantes, bem como agências governamentais, como a FIB e IAA, estão sediadas aqui. A maior
+                parte dos arranha-céus da cidade está localizada no Centro de Los Santos, e os outros estão
+                espalhados pelos distritos próximos de Little Seoul e Rockford Hills.
+            </p>
+            <ul>
+                <li>3 Alta Street Tower (edifício com lojas de departamentos)</li>
+                <li>707 Vespucci (edifício com os escritórios da Gruppe 6 e da GoPostal)</li>
+                <li>Arcadius Business Center (edifício com escritórios para Organizações)</li>
+                <li>Badger Building (edifício com escritórios da Badger... paródia da operadora de celulares
+                    T-Mobile)</li>
+                <li>FIB Headquarters (sede regional da FIB... paródia do FBI)</li>
+                <li>IAA Headquarters (sede regional da IAA... paródia da CIA)</li>
+                <li>Little Seoul Tower (edifício com escritórios das empresas BAWSAQ, Schlongberg Sachs, Total
+                    Bankers e International Online Unlimited)</li>
+                <li>Lombank West (edifício de escritórios do banco Lobank... paródia dos bancos Citibank e HSBC)
+                </li>
+                <li>Lombank Tower (edifício de escritórios do banco Lobank)</li>
+                <li>Maze Bank Tower (sede do banco Maze Bank... paródia do U.S Bank [tradução livre: Banco dos
+                    Estados Unidos])</li>
+                <li>Mile High Club (edifício ainda em construção)</li>
+                <li>Penris Building (edifício de escritórios da ONG Penris... paródia da Orbis)</li>
+                <li>Richards Majestic Tower&nbsp;(sede dos estúdios de cinema Richards Majestic ... paródia da
+                    MGM)</li>
+                <li>Schlongberg Sachs Center (sede da empresa financeira Schlongberg Sachs... paródia da Goldman
+                    Sachs)</li>
+                <li>Union Depository Tower (sede regional da Union Depository... paródia da Federal Reserve, o
+                    Banco Central dos EUA)</li>
+                <li>Weazel Plaza (sede da Rede Weazel de Televisão... paródia da FOX)</li>
+                <li>Wiwang Tower (sede da empresa fictícia Wiwang)</li>
+            </ul>
+            <h3 id="Edifícios_Residenciais">Edifícios Residenciais</span></h3>
+            <p>Além das casas, há também grandes prédios de apartamentos para as pessoas morarem. Esses
+                edifícios são tipicamente de alta qualidade e chegam a milhares de dólares em preço, exceto os
+                projetos habitacionais de baixa renda da zona sul de Los Santos.
+            </p>
+            <ul>
+                <li>Dream Tower</li>
+                <li>Eclipse Towers</li>
+                <li>Kayton Towers</li>
+                <li>Rancho Projects</li>
+                <li>Tinsel Towers</li>
+            </ul>
+            <h3 id="Recreação_e_esportes">Recreação e esportes</h3>
+            <p>Los Santos não é apenas famosa por sua cultura cinematográfica, mas também por seus esportes. Há
+                muitas equipes esportivas famosas em Los Santos que têm fãs discutindo sobre elas no Lifeinvader.
+            </p>
+            <h4 id="Times_Esportivos">Times Esportivos</h4>
+            <ul>
+                <li>Boars Baseball Club (time de beisebol, não joga nas grandes ligas)</li>
+                <li>LS Squeezers (time de beisebol)</li>
+                <li>LS Pounders (time de futebol americano; paródia do Los Angeles Rams)</li>
+                <li>Los Santos Corkers Baseball Team (time de beisebol; paródia do Los Angeles Dodgers)</li>
+                <li>Feud Baseball Team (time de beisebol; não joga nas grande ligas)</li>
+                <li>Los Santos Kings (time de hóquei no gelo; paródia do Los Angeles Kings)</li>
+                <li>LS Benders (time de futebol de campo; paródia do Los Angeles Galaxy)</li>
+                <li>U.C.L.S. Bookworms (time universitário da cidade)</li>
+                <li>Los Santos Panic Basketball Team (time de basquete; paródia do Los Angeles Lakers)</li>
+                <li>San Andreas Magnetics (time de futebol americano; paródia do Los Angeles Chargers)</li>
+                <li>LS Jardineros (time de futebol de campo)</li>
+                <li>Los Santos Shrimps (time de basquete; paródia do Los Angeles Clippers)</li>
+            </ul>
+            <h4 id="Locais_de_Entretenimento">Locais de Entretenimento</h4>
+            <ul>
+                <li>Del Perro Plaza (um shopping center)</li>
+                <li>Los Santos Golf Club (clube para a prática de golfe da cidade)</li>
+                <li>Maze Bank Arena (estádio poli-esportivo da cidade)</li>
+                <li>Pleasure Pier (um Parque de Diversões)</li>
+                <li>Puerto Del Sol Yacht Club (clube de iatismo da cidade)</li>
+                <li>Rockford Plaza (um shopping center)</li>
+                <li>Vinewood Bowl (anfiteatro da cidade... também um local aonde acontecem shows de artistas musicais)
+                </li>
+                <li>Vinewood Racetrack (hipódromo da cidade)</li>
+            </ul>
+            <h2 id="Infraestrutura">Infraestrutura</h2>
+            <h3 id="Porto_e_Aeroporto">Porto e Aeroporto</h3>
+            <p>Los Santos tem um dos aeroportos mais movimentados do mundo, juntamente com um dos portos mais
+                movimentados do mundo. No LSX, as pessoas estão viajando de e para Los Santos todos os dias,
+                embora não haja infraestrutura suficiente para suportar toda essa atividade. O porto é usado
+                principalmente para mercadorias chinesas e cargas suspeitas.
+            </p>
+            <ul>
+                <li>Aeroporto Internacional de Los Santos</li>
+                <li>Porto de Los Santos</li>
+            </ul>
+            <h3 id="Estradas_Importantes/Ruas">Estradas Importantes/Ruas</h3>
+            <p>Los Santos também é conhecida por seu congestionamento de tráfego pesado e um grande sistema de
+                auto-estradas, interestaduais e rodovias que percorrem toda a cidade. Viajantes podem ser vistos
+                aqui dia e noite.
+            </p>
+            <ul>
+                <li>La Puerta Freeway</li>
+                <li>Elysian Fields Freeway</li>
+                <li>Los Santos Freeway</li>
+                <li>Del Perro Freeway</li>
+                <li>Olympic Freeway</li>
+                <li>Palomino Freeway</li>
+                <li>Senora Freeway</li>
+                <li>Great Ocean Highway</li>
+                <li>Bay City Avenue</li>
+                <li>Carson Avenue</li>
+                <li>Dorset Drive</li>
+                <li>Eclipse Boulevard</li>
+                <li>Elgin Avenue</li>
+                <li>Hawick Avenue</li>
+                <li>Innocence Boulevard</li>
+                <li>Marlowe Drive</li>
+                <li>North Rockford Drive</li>
+                <li>Palomino Avenue</li>
+                <li>Popular Street</li>
+                <li>Portola Drive</li>
+                <li>San Andreas Avenue</li>
+                <li>Strawberry Avenue</li>
+                <li>Vespucci Boulevard</li>
+                <li>Vinewood Boulevard</li>
+                <li>West Eclipse Boulevard</li>
+            </ul>
+            <h3 id="Arte_e_Cultura">Arte e Cultura</span></h3>
+            <p>Antes da era da Internet, as pessoas iam aos vários cinemas de Los Santos para ver filmes. Estes
+                cinemas têm sido usados desde o século 20 e são o que fizeram a indústria cinematográfica de
+                Vinewood famosa. Há também museus de arte e galerias localizadas em toda a LS.
+            </p>
+            <ul>
+                <li>Betsy O'Neal Pavilion (Centro de Artes Cênicas)</li>
+                <li>Doppler Cinema (Cinema)</li>
+                <li>Kortz Center (Museu de Arte e Entretenimento)</li>
+                <li>Oriental Theather (Cinema)</li>
+                <li>Galeria de Arte Moderna San Andreas</li>
+                <li>Sisyphus Theater (Teatro)</li>
+                <li>Ten Cent Theather (Cinema)</li>
+                <li>Tivoli Cinema (Cinema)</li>
+                <li>Valdez Theather (Teatro)</li>
+                <li>Whirligig Theather(Cinema)</li>
+                <li>Weazel Morningwood (Cinema)</li>
+            </ul>
+            <h3 id="Governo">Governo</span></h3>
+            <p>Cada uma das cidades incorporadas dentro da área metropolitana de Los Santos tem uma prefeitura
+                representativa, enquanto o centro do governo da cidade está localizado no bairro de Alta:
+            </p>
+            <ul>
+                <li>Prefeitura de Los Santos
+                    <ul>
+                        <li>Prefeitura de Davis</li>
+                        <li>Prefeitura de Del Perro</li>
+                        <li>Prefeitura de Rockford Hills&nbsp;</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="Marcos_emblemáticos">Marcos
+                    emblemáticos</span></h3>
+            <p>Há também muitas armadilhas para turistas em Los Santos. Esses marcos são o que dão a cidade uma
+                imagem glamurosa.
+            </p>
+            <ul>
+                <li>Rancho Towers (Watts Towers)</li>
+                <li>Sightings Bar &amp; Restaurant (Theme Building)</li>
+                <li>Tequi-la-la (Whisky a Go Go)</li>
+                <li>Vinewood Boulevard (Hollywood Boulevard)</li>
+                <li>Letreiro de Vinewood (Letreiro de Hollywood)</li>
+            </ul>
+            <h2 id="Educação">Educação</span>
+            </h2>
+            <p>Los Santos é o lar de algumas escolas e outras instituições educacionais. A mais
+                famosa&nbsp;delas é a Universidade de San Andreas, em Los Santos, onde os alunos mais
+                privilegiados participam de boas carreiras. As únicas instituições de ensino básico/fundamental
+                encontrada no jogo GTA V é a Los Santos Elementary (tradução livre: Fundamental de Los Santos ou
+                Básico de Los Santos), onde as crianças conhecem as habilidades básicas de aprendizado
+                necessárias para o sucesso. Sue Murry costumava ensinar aqui. Na cidade incorporada de Davis, há
+                o&nbsp;único colégio de ensino secundário/médio encontrado no jogo: Davis High School (tradução
+                livre: Colégio de Davis ou Colégio de Ensino Médio/Secundário de Davis).
+            </p>
+            <ul>
+                <li>Davis High School (Compton High School)</li>
+                <li>Los Santos Elementary</li>
+                <li>Universidade de San Andreas, Los Santos (Universidade da Califórnia, Los Angeles)</li>
+            </ul>
+            <h2 id="Saúde">Saúde</span></h2>
+            <p>Los Santos possui uma grande variedade de hospitais e centros médicos. Há muito hospitais
+                sofisticados, como o Mount Zonah Medical Center, enquanto há muitos mais baratos, como o St.
+                Fiacre Hospital.
+            </p>
+            <ul>
+                <li>Central Los Santos Medical Center (Los Angeles County General)</li>
+                <li>Eclipse Medical Tower (Sunset Medical Tower)</li>
+                <li>Mount Zonah Medical Center (Cedars-Sinai Medical Center)</li>
+                <li>Pillbox Hill Medical Center (California Hospital Medical Center)</li>
+                <li>St. Fiacre Hospital</li>
+            </ul>
+            <h2 id="Segurança">Segurança</span></h2>
+            <p>O Departamento de Polícia de Los Santos (LSPD) é a agência policial que serve a cidade de Los
+                Santos. Eles são baseados na vida real no Departamento de Polícia de Los Angeles. Seu lema é
+                "Obedecer e Sobreviver", que estar inscrito em seus carros-patrulha e também reflete sobre sua
+                natureza corrupta. Ao contrário do LCPD (Departamento de Polícia de Liberty City), eles usam
+                Vapid Police Cruisers e também usam o Vapid Interceptor, ao contrário do Police Patrol, mas
+                ainda usam o Police Maverick como seu esquadrão principal e unidades de helicóptero,
+                respectivamente. O LSPD é acusado de corrupção e racismo, bem como sua versão na vida real.
+            </p>
+            <h3 id="NOOSEE">NOOSEE</span></h3>
+            <p>O Escritório Nacional de Execução de Segurança também está presente na cidade de Los Santos, uma
+                vez que uma de suas filiais está localizada na área do Aeroporto Internacional de Los Santos,
+                enquanto sua sede principal está localizada nas Terras Altas de Palomino, a nordeste da cidade.
+                Quando há atividade criminosa perigosa, NOOSE é implantado na cena.
+            </p>
+            <h3 id="Justiça_Criminal">Justiça
+                    Criminal</span></h3>
+            <p>Embora não seja visto no jogo, Los Santos opera um sistema de justiça criminal. Em um segmento de
+                rádio da Weazel News, um tribunal conhecido como o Tribunal Superior de Los Santos é mencionado.
+            </p>
+            <h2 id="Crime">Crime</span></h2>
+            <p>Los Santos também é a fortaleza do submundo criminoso. Alguns dos bairros de Los Santos sofrem
+                com altas taxas de criminalidade, especificamente na parte sul da cidade. Desde a década de
+                1990, Los Santos é afetada principalmente por tráfico de drogas entre muitas gangues da cidade.
+                Essas drogas incluem crack, metanfetamina e maconha, bem como uma nova droga chamada "Toilet
+                Cleaner". Apesar de todo o crime em Los Santos, a cidade ainda permanece mais segura do que
+                Liberty City.
+            </p>
+            <p>Além do contrabando de drogas, a cidade sofre com violência, assassinatos e brigas de gangues na
+                parte sul da cidade (principalmente Chamberlain Hills, Davis e Strawberry). A maioria desses
+                crimes é causada pelas duas gangues de rua afro-americanas, The Families e os Ballas. Eles
+                também estão envolvidos no tráfico de armas, trazendo armas ilegais, como rifles de assalto e
+                SMGs.
+            </p>
+            <p>Além de pequenas gangues de rua, também há grupos influentes e organizados do crime na cidade. O
+                Marabunta Grande, um poderoso sindicato do crime salvadorenho, está expandindo suas operações
+                para Los Santos. Eles têm rivalidades ferozes com outras gangues em toda San Andreas que estão
+                envolvidas no comércio de narcóticos.
+            </p>
+            <p>Não só existe alta atividade criminosa, mas também existe uma corrupção generalizada entre os
+                funcionários municipais e até mesmo a polícia. O LSPD é conhecido por sua brutalidade policial;
+                houve até um caso em que eles atiraram e mataram um cachorro. De acordo com algumas fontes, os
+                oficiais LSPD também são conhecidos por contratar prostitutas, o que pode explicar a alta
+                presença de prostituição, mesmo nas partes mais abastadas da cidade.
+            </p>
+            <h2 id="galeria">Galeria</h2>
+            <figure class="mapafig">
+                <img src="./assets/gta5mapa.jpg" alt="">
+                <figcaption>Mapa dos Distritos de Los Santos</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

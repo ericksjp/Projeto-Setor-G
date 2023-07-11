@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./veiculohp.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="wrapper" id="trofeu1">
+            <header>
+                <nav>
+                    <ul class="lista">
+                        <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                          <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div id="myelement" class="sticky-element">
+                    <button onclick="scrollToTop()">Começo</button>
+                </div>
+
+                <div class="logo">
+                    <a href="../Html/a3.html"><img src="./assets/logo.png" alt=""></a>
+                </div>
+                <h1 style="text-align: center;">Veículos do GTA V</h1>
+                <p  style="text-align: center;">Veículos Pessoais são essenciais para se deslocar pelo sul de San Andreas e Blaine County. Por mais
+                    que algumas missões forneçam um veículo para dar conta do recado, ninguém quer precisar chamar um
+                    táxi na hora de fazer uma fuga rápida.
+                <p>
+                <div class="laranja">
+                    <div class="indice-header" id="trofeu1">
+                        <h2>Índice</h2>
+                        <button id="indice_button" onclick="highlightDiv()">mostrar</button>
+                    </div>
+                    <div class="indice-conteudo">
+                        <ol>
+                            <li><a href="#avioes"><span>1.</span> Aviões</a></li>
+                            <li><a href="#barcos"><span>2.</span> Barcos</a></li>
+                            <li><a href="#bicicletas"><span>3.</span> Bicicletas</a></li>
+                            <li><a href="#caminhoes"><span>4.</span> Caminhões</a></li>
+                            <li><a href="#caminhonetes"><span>5.</span> Caminhonetes</a></li>
+                            <li><a href="#compactos"><span>6.</span> Compactos</a></li>
+                            <li><a href="#coupes"><span>7.</span> Coupés</a></li>
+                            <li><a href="#deservico"><span>8.</span> De serviço</a></li>
+                            <li><a href="#emergencia"><span>9.</span> Emergência</a></li>
+                            <li><a href="#especializados"><span>10.</span> Especializados</a></li>
+                            <li><a href="#esportivos"><span>11.</span> Esportivos</a></li>
+                            <li><a href="#esportivosclassicos"><span>12.</span> Esportivos Clássicos</a></li>
+                            <li><a href="#militarares"><span>13.</span> Militares</a></li>
+                            <li><a href="#motos"><span>14.</span> Motos</a></li>
+                            <li><a href="#offroads"><span>15.</span> Off-Roads</a></li>
+                            <li><a href="#potentes"><span>16.</span> Potentes</a></li>
+                            <li><a href="#sedans"><span>17.</span> Sedans</a></li>
+                            <li><a href="#stationwagons"><span>18.</span> Station Wagons</a></li>
+                            <li><a href="#supers"><span>19.</span> Supers</a></li>
+                            <!-- <li><a href="#trailers"><span>20.</span> Trailers</a></li> -->
+                            <li><a href="#vans"><span>20.</span> Vans</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="carros">
+                    
+                    <a href="./avioes.html" id="avioes">
+                        <figure>
+                          <img src="./assets/wnt/luxor.jpg" alt="">
+                          <figcaption>Aviões</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./barcos.html" id="barcos">
+                        <figure>
+                          <img src="./assets/wnt/dinghy2.jpg" alt="">
+                          <figcaption>Barcos</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./bicicletas.html" id="bicicletas">
+                        <figure>
+                          <img src="./assets/wnt/bmx.jpg" alt="">
+                          <figcaption>Bicicletas</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./caminhoes.html" id="caminhoes">
+                        <figure>
+                          <img src="./assets/wnt/pounder.jpg" alt="">
+                          <figcaption>Caminhões</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./caminhonetes.html" id="caminhonetes">
+                        <figure>
+                          <img src="./assets/wnt/baller.jpg" alt="">
+                          <figcaption>Caminhonetes</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./compactos.html" id="compactos">
+                        <figure>
+                          <img src="./assets/wnt/issi.jpg" alt="">
+                          <figcaption>Compactos</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./coupes.html" id="coupes">
+                        <figure>
+                          <img src="./assets/wnt/zion.jpg" alt="">
+                          <figcaption>Coupes</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./deservico.html" id="deservico">
+                        <figure>
+                          <img src="./assets/wnt/bus.jpg" alt="">
+                          <figcaption>De Serviço</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./emergencia.html" id="emergencia">
+                        <figure>
+                          <img src="./assets/wnt/ambulance.jpg" alt="">
+                          <figcaption>Emergência</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./especializados.html" id="especializados">
+                        <figure>
+                          <img src="./assets/wnt/airtug.jpg" alt="">
+                          <figcaption>Especializados</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./esportivos.html" id="esportivos">
+                        <figure>
+                          <img src="./assets/wnt/banshee.jpg" alt="">
+                          <figcaption>Esportivos</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./esportivosclassicos.html" id="esportivosclassicos">
+                        <figure>
+                          <img src="./assets/wnt/jb-700.jpg" alt="">
+                          <figcaption>Esportivos Clássicos</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./militar.html" id="militares">
+                        <figure>
+                          <img src="./assets/wnt/rhino-tank.jpg" alt="">
+                          <figcaption>Militares</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./motos.html" id="motos">
+                        <figure>
+                          <img src="./assets/wnt/akuma.jpg" alt="">
+                          <figcaption>Motos</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./offroads.html" id="offroads">
+                        <figure>
+                          <img src="./assets/wnt/injection.jpg" alt="">
+                          <figcaption>Off-Roads</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./potentes.html" id="potentes">
+                        <figure>
+                          <img src="./assets/wnt/buccaneer.jpg" alt="">
+                          <figcaption>Potentes</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./sedans.html" id="sedans">
+                        <figure>
+                          <img src="./assets/wnt/asea.jpg" alt="">
+                          <figcaption>Sedans</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./stationwagons.html" id="stationwagons">
+                        <figure>
+                          <img src="./assets/wnt/ingot.jpg" alt="">
+                          <figcaption>Station Wagons</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <a href="./supers.html" id="supers">
+                        <figure>
+                          <img src="./assets/wnt/adder.jpg" alt="">
+                          <figcaption>Supers</figcaption>
+                        </figure>
+                      </a>
+                    
+                      <!-- <a href="./trailers.html" id="trailers">
+                        <figure>
+                          <img src="./assets/wnt/adder.jpg" alt="">
+                          <figcaption>Trailers</figcaption>
+                        </figure>
+                      </a> -->
+                    
+                      <a href="./vans.html" id="vans">
+                        <figure>
+                          <img src="./assets/wnt/bison.jpg" alt="">
+                          <figcaption>Vans</figcaption>
+                        </figure>
+                      </a>
+
+                </div>
+            </main>
+            <footer>
+              <ul id="criadores" class="criadores">
+                  <h2>Colaboradores</h2>
+                  <li>Erick Ribeiro</li>
+                  <hr>
+                  <li>Whendersson</li>
+                  <hr>
+                  <li>Gerlândio</li>
+                  <hr>
+                  <li>José Magno</li>
+                  <hr>
+                  <li>João Italo</li>
+                  <hr>
+              </ul>
+          </footer>
+        </div>
+    </body>
+
+</html>

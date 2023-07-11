@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainstyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
+
+            <h1 style="text-align: center;">Aviões - GTA V</h1>            
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                    <h2>Índice</h2>
+                    <button id="indice_button" onclick="highlightDiv()">mostrar</button>
+                </div>
+                <div class="indice-conteudo">
+                    <ol>
+                        <li><a href="#v1"><span>1.</span> Atomic Blimp</a></li>
+                        <li><a href="#v2"><span>2.</span> Buckingham Luxor</a></li>
+                        <li><a href="#v3"><span>3.</span> Buckingham Shamal</a></li>
+                        <li><a href="#v4"><span>4.</span> Cargo Plane</a></li>
+                        <li><a href="#v5"><span>5.</span> Jet</a></li>
+                        <li><a href="#v6"><span>6.</span> JoBuilt Mammatus</a></li>
+                        <li><a href="#v7"><span>7.</span> JoBuilt P-996 LAZER</a></li>
+                        <li><a href="#v8"><span>8.</span> Titan</a></li>
+                        <li><a href="#v9"><span>9.</span> Western Cuban 800</a></li>
+                        <li><a href="#v10"><span>10.</span> Western Duster</a></li>
+                        <li><a href="#v11"><span>11.</span> Western Mallard</a></li>
+                        <li><a href="#v12"><span>12.</span> Mammoth Dodo</a></li>
+                        <li><a href="#v13"><span>13.</span> Buckingham Vestra</a></li>
+                        <li><a href="#v14"><span>14.</span> Buckingham Miljet</a></li>
+                        <li><a href="#v15"><span>15.</span> Western Besra</a></li>
+                        <li><a href="#v16"><span>16.</span> JoBuilt Velum</a></li>
+                        <li><a href="#v17"><span>17.</span> Mammoth Hydra</a></li>
+                        <li><a href="#v18"><span>18.</span> Buckingham Luxor Deluxe</a></li>
+                        <li><a href="#v19"><span>19.</span> Buckingham Nimbus</a></li>
+                        <li><a href="#v20"><span>20.</span> Buckingham Alpha-Z1</a></li>
+                        <li><a href="#v21"><span>21.</span> Buckingham Pyro</a></li>
+                        <li><a href="#v22"><span>22.</span> Buckingham Howard NX-25</a></li>
+                        <li><a href="#v23"><span>23.</span> LF-22 Starling</a></li>
+                        <li><a href="#v24"><span>24.</span> Mammoth Tula</a></li>
+                        <li><a href="#v25"><span>25.</span> Mammoth Mogul</a></li>
+                        <li><a href="#v26"><span>26.</span> P-45 Nokota</a></li>
+                        <li><a href="#v27"><span>27.</span> RM-10 Bombushka</a></li>
+                        <li><a href="#v28"><span>28.</span> V-65 Molotok</a></li>
+                        <li><a href="#v29"><span>29.</span> Western Company Rogue</a></li>
+                        <li><a href="#v30"><span>30.</span> Western Company Seabreeze</a></li>
+                        <li><a href="#v31"><span>31.</span> Nagasaki Ultralight</a></li>
+                        <li><a href="#v32"><span>32.</span> B-11 Strikeforce</a></li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="veiculos-container">
+                <div class="vehicle" id="v1">
+                    <img src="./assets/images/avioes/img0.png" alt="Vehicle Name">
+                    <h2>Atomic Blimp</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v2">
+                    <img src="./assets/images/avioes/img1.png" alt="Vehicle Name">
+                    <h2>Buckingham Luxor</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 81%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v3">
+                    <img src="./assets/images/avioes/img2.png" alt="Vehicle Name">
+                    <h2>Buckingham Shamal</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v4">
+                    <img src="./assets/images/avioes/img3.png" alt="Vehicle Name">
+                    <h2>Cargo Plane</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v5">
+                    <img src="./assets/images/avioes/img4.png" alt="Vehicle Name">
+                    <h2>Jet</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v6">
+                    <img src="./assets/images/avioes/img5.png" alt="Vehicle Name">
+                    <h2>JoBuilt Mammatus</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v7">
+                    <img src="./assets/images/avioes/img6.png" alt="Vehicle Name">
+                    <h2>JoBuilt P-996 LAZER</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v8">
+                    <img src="./assets/images/avioes/img7.png" alt="Vehicle Name">
+                    <h2>Titan</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v9">
+                    <img src="./assets/images/avioes/img8.png" alt="Vehicle Name">
+                    <h2>Western Cuban 800</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v10">
+                    <img src="./assets/images/avioes/img9.png" alt="Vehicle Name">
+                    <h2>Western Duster</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v11">
+                    <img src="./assets/images/avioes/img10.png" alt="Vehicle Name">
+                    <h2>Western Mallard</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v12">
+                    <img src="./assets/images/avioes/img11.png" alt="Vehicle Name">
+                    <h2>Mammoth Dodo</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v13">
+                    <img src="./assets/images/avioes/img12.png" alt="Vehicle Name">
+                    <h2>Buckingham Vestra</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v14">
+                    <img src="./assets/images/avioes/img13.png" alt="Vehicle Name">
+                    <h2>Buckingham Miljet</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 5%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v15">
+                    <img src="./assets/images/avioes/img14.png" alt="Vehicle Name">
+                    <h2>Western Besra</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v16">
+                    <img src="./assets/images/avioes/img15.png" alt="Vehicle Name">
+                    <h2>JoBuilt Velum</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v17">
+                    <img src="./assets/images/avioes/img16.png" alt="Vehicle Name">
+                    <h2>Mammoth Hydra</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v18">
+                    <img src="./assets/images/avioes/img17.png" alt="Vehicle Name">
+                    <h2>Buckingham Luxor Deluxe</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v19">
+                    <img src="./assets/images/avioes/img18.png" alt="Vehicle Name">
+                    <h2>Buckingham Nimbus</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v20">
+                    <img src="./assets/images/avioes/img19.png" alt="Vehicle Name">
+                    <h2>Buckingham Alpha-Z1</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 58%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v21">
+                    <img src="./assets/images/avioes/img20.png" alt="Vehicle Name">
+                    <h2>Buckingham Pyro</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v22">
+                    <img src="./assets/images/avioes/img21.png" alt="Vehicle Name">
+                    <h2>Buckingham Howard NX-25</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 58%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v23">
+                    <img src="./assets/images/avioes/img22.png" alt="Vehicle Name">
+                    <h2>LF-22 Starling</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 88%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v24">
+                    <img src="./assets/images/avioes/img23.png" alt="Vehicle Name">
+                    <h2>Mammoth Tula</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 77%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v25">
+                    <img src="./assets/images/avioes/img24.png" alt="Vehicle Name">
+                    <h2>Mammoth Mogul</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 86%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v26">
+                    <img src="./assets/images/avioes/img25.png" alt="Vehicle Name">
+                    <h2>P-45 Nokota</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v27">
+                    <img src="./assets/images/avioes/img26.png" alt="Vehicle Name">
+                    <h2>RM-10 Bombushka</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 87%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v28">
+                    <img src="./assets/images/avioes/img27.png" alt="Vehicle Name">
+                    <h2>V-65 Molotok</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v29">
+                    <img src="./assets/images/avioes/img28.png" alt="Vehicle Name">
+                    <h2>Western Company Rogue</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v30">
+                    <img src="./assets/images/avioes/img29.png" alt="Vehicle Name">
+                    <h2>Western Company Seabreeze</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v31">
+                    <img src="./assets/images/avioes/img30.png" alt="Vehicle Name">
+                    <h2>Nagasaki Ultralight</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicle" id="v32">
+                    <img src="./assets/images/avioes/img31.png" alt="Vehicle Name">
+                    <h2>B-11 Strikeforce</h2>
+                    <h3>Aviões</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

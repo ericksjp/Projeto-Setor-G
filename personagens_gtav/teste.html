@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+      <header>
+          <nav>
+              <ul class="lista">
+                  <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                    <ul class="submenu">
+                        <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                        <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                        <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                        <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                        <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                        <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                        <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                        <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                      </ul>
+                  </li>
+                  <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                    <ul class="submenu">
+                      <li><a>Sobre</a></li>
+                      <li><a>Veiculos</a></li>
+                      <li><a>Personagens</a></li>
+                      <li><a>Rádios</a></li>
+                      <li><a>Mapas</a></li>
+                      <li><a>Codigos</a></li>
+                      <li><a>Conquistas</a></li>
+                    </ul>
+                  </li>
+                  <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                    <ul class="submenu">
+                      <li><a>Sobre</a></li>
+                      <li><a>Veiculos</a></li>
+                      <li><a>Personagens</a></li>
+                      <li><a>Rádios</a></li>
+                      <li><a>Mapas</a></li>
+                      <li><a>Codigos</a></li>
+                      <li><a>Conquistas</a></li>
+                    </ul>
+                  </li>
+                  <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                      <ul class="submenu">
+                          <li><a>Sobre</a></li>
+                          <li><a>Veiculos</a></li>
+                          <li><a>Personagens</a></li>
+                          <li><a>Rádios</a></li>
+                          <li><a>Mapas</a></li>
+                          <li><a>Codigos</a></li>
+                          <li><a>Conquistas</a></li>
+                      </ul>
+                  </li>
+                  <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                      <ul class="submenu">
+                          <li><a>Sobre</a></li>
+                          <li><a>Veiculos</a></li>
+                          <li><a>Personagens</a></li>
+                          <li><a>Rádios</a></li>
+                          <li><a>Mapas</a></li>
+                          <li><a>Codigos</a></li>
+                          <li><a>Conquistas</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+
+            <h1 style="text-align: center; color:white">Personagens do GTA V</h1>
+            <p style="margin: 15px; color:white;">A verdade é que Grand Theft Auto 5 dispensa apresentações. É um jogo gigantesco que, como uma das peças de mídia de entretenimento mais lucrativas da história, teve um impacto sísmico na indústria de videogames e na mídia em geral. Com a popularidade cada vez maior de sua contraparte multiplayer, GTA Online, e sua existência planejada em pelo menos três gerações de console diferentes (por enquanto), está claro que o jogo não vai a lugar nenhum.</p>
+            <p  style="margin: 15px; color:white;">Mas outra coisa que não vai a lugar nenhum é o modo single-player do jogo. Infelizmente para os fãs da saga satírica do crime, a desenvolvedora Rockstar Games nunca lançou nenhum DLC de um jogador para o jogo principal. No entanto, é uma história notável, com muitas críticas mordazes e personagens coloridos.</p>
+
+            <div class="laranja">
+                <div class="indice-header">
+                  <h2>Índice</h2>
+                  <button id="indice_button" onclick="highlightDiv()">ocultar</button>
+                </div>
+                <div class="indice-conteudo">
+                  <ol>
+                    <li><a href="#Protagonistas"><span>1.</span> Protagonistas</a></li>
+                    <li><a href="#Secundarios"><span>2.</span> Secundários</a></li>
+                    <li><a href="#Apoio"><span>3.</span> Personagens de Apoio</a></li>
+                    <li><a href="#Outros"><span>4.</span> Outros Personagens</a></li>
+                    <li><a href="#Criadores"><span>5.</span> Criadores</a></li>
+                </div>
+              </div>
+            <section class="protagonistas">
+                <div class="introducao">
+                    <h2 id="Protagonistas">Protagonistas</h2>
+                    <hr>
+                    <p>Existem três personagens principais jogáveis ​​em Grand Theft Auto V: Michael, Trevor e Franklin.</p>
+                    <ul>
+                        <li><b>Michael</b>: Um ex-assaltante de banco da Costa Leste que tem um acordo com o FBI.</li>
+                        <li><b>Trevor</b>: Um desprezível criminoso que mora em um trailer e é o melhor amigo de Michael.</li>
+                        <li><b>Franklin</b>: Um ex-gângster de rua que veio da parte sul de Los Santos.
+                        </li>
+                    </ul>
+                    <p>Em Grand Theft Auto V, a Rockstar incluiu três personagens jogáveis que podem ser alternados a qualquer momento fora da missão. Quando não estão selecionados pelo jogador, eles seguem suas vidas diárias fazendo suas próprias coisas. Algumas missões em GTA V exigirão apenas um personagem, algumas serão em dois e algumas incluirão o trio completo. Em alguns momentos, há a opção de escolha livre entre eles dentro de uma missão, mas há situações nas quais você terá que jogar obrigatoriamente com um deles. Ter vários personagens jogáveis ​​desempenha um papel importante na estrutura do game e marca um aprimoramento na jogabilidade da série.</p>
+                </div>
+                <div class="container" class="michael">
+                    <div class="div-img">
+                        <img src="./assets/Michael_de_Santa.png" alt="Foto de Michael de Santa">
+                    </div>
+                    <div class="info">
+                            <h2>Michael de Santa / Michael Townley</h2>
+                            <p>Michael de Santa, nascido Michael Townley, é um ladrão de banco semi-aposentado que é forçado a voltar à vida de crime no início do jogo. Ele pode ser o personagem introdutório, mas o júri ainda não decidiu se ele vencerá os outros dois personagens jogáveis ​​em um concurso de popularidade. Talvez ele apenas seja brando o suficiente para obter a maioria dos votos.</p>
+                            <p>Por outro lado, ele tem algum ar de mistério sobre ele, considerando que ele tem uma lápide falsa que diz que ele nasceu em 1965, enquanto todos os seus amigos e familiares se referem a ele como 45, o que faria seu ano de nascimento em 1968.</p>
+                            <ul>
+                                <li><strong>Apelido:</strong> ''M'', Mr. De Santa ou ''MT''</li>
+                                <li><strong>Idade:</strong> 45 Anos</li>
+                                <li><strong>Mora:</strong> Los Santos ; Rockford Hills</li>
+                                <li><strong>Emprego:</strong> Aposentado</li>
+                                <li><strong>Habilidade Especial:</strong> Marksman Ability (Mira Aprimorada)</li>
+                                <li><strong>Família:</strong> Amanda DS, Tracey DS e James DS</li>
+                                <li><strong>Classe Social:</strong> Alta</li>
+                                <li><strong>Veículo:</strong> Black Tailgater</li>
+                                <li><strong>Status:</strong> Vivo</li>
+                            </ul>
+                        <p class="quote"><em>"You forget a thousand things everyday... Make sure this is one of them"</em><br> - Michael</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="franklin">
+                        <div class="div-img" class="franklin-img">
+                            <img src="./assets/Franklin.png" alt="Foto de Michael de Santa">
+                        </div>
+                    <div class="info">
+                        <h2>Franklin Clinton</h2>
+                        <p>Franklin é o mais jovem dos principais protagonistas de Grand Theft Auto 5 e indiscutivelmente o mais simpático. Nascido em 1988, ele teve uma infância difícil com um pai ausente e uma mãe viciada em drogas. No início do jogo, ele está tentando ganhar a vida honestamente, mas eventualmente, ele se junta aos outros dois personagens principais e se torna um ladrão de banco também. É uma volta pessimista dos acontecimentos, mas isso é Grand Theft Auto, afinal de contas-crime faz pagamento.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> ''FC'' ou ''F''</li>
+                            <li><strong>Idade:</strong> 25 Anos</li>
+                            <li><strong>Mora:</strong> Los Santos ; Strawberry</li>
+                            <li><strong>Emprego:</strong> Empreendedor na Premium Deluxe Motorsport</li>
+                            <li><strong>Habilidade Especial:</strong> Driving Concentration (Direção Aprimorada)</li>
+                            <li><strong>Família:</strong> Mrs. Clinton (Falecida), Denise Clinton, Tavell Clinton</li>
+                            <li><strong>Classe Social:</strong> Média-Baixa</li>
+                            <li><strong>Veículo:</strong> White Buffalo</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                        </ul>
+                        <p class="quote"><em>"I don't mind dying, you feel me? But I just wanna die with something that matters..."</em><br> - Franklin</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="trevor">
+                    <div class="div-img">
+                        <img src="./assets/Trevor_Philips.png" alt="Foto de Michael de Santa">
+                    </div>
+                    <div class="info">
+                        <h2>Trevor Phillips</h2>
+                        <p>O terceiro e último personagem principal em Grand Theft Auto 5 é Trevor Philips. Resumindo, Trevor é um psicopata.</p>
+                        <p>Ele nasceu no Canadá e, embora não haja nenhuma data de nascimento canônica para ele, ele afirma que “cresceu em cinco estados, dois países, quatorze lares diferentes, oito pais, três lares de idosos, duas instituições correcionais, uma bela flor danificada de uma mãe.”</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> ''T'', Boss</li>
+                            <li><strong>Idade:</strong> 40 a 50 Anos</li>
+                            <li><strong>Mora:</strong> Sandy Shores ; Zancudo Avenue</li>
+                            <li><strong>Emprego:</strong> Dono da TP Inc. (Comerciante de Armas e Drogas)</li>
+                            <li><strong>Habilidade Especial:</strong> Rampage (Dano e Resistência Aprimorados)</li>
+                            <li><strong>Família:</strong> Mrs. Phillips, Ryan Phillips (Falecido)</li>
+                            <li><strong>Classe Social:</strong> Média</li>
+                            <li><strong>Veículo:</strong> Red Bodhi (Betty)</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                        </ul>
+                        <p class="quote"><em>"You are a waste of space on this Earth..."</em><br> - Trevor</p>
+                    </div>
+                </div>
+            </section>
+
+   
+            <section class="protagonistas">
+                <div class="introducao">
+                    <h2 id="Secundarios">Secundários</h2>
+                    <hr>
+                    <p>Em GTA 5, os três protagonistas interagem com outros personagens que, de alguma forma, interferem na história e cotidiano de Michael, Franklin e Trevor. Eles são:</p>
+                </div>
+                <div class="container" class="lester">
+                    <div class="div-img">
+                        <img src="./assets/LesterCrest.png" alt="Foto de Lester Crest">
+                    </div>
+                    <div class="info">
+                    <h2>Lester Crest</h2>
+                    <p>Um velho amigo de Michael, Lester é o cérebro por trás dos Heists que Michael, Franklin e Trevor realizam. Ele também emite missões de assassinato para Franklin. Apesar das deficiências físicas de Lester, ele compensa isso com inteligência de nível genial, experiência magistral em tecnologia e computação e um olho afiado para os detalhes, o que o torna um excelente planejador para os vários assaltos que realizou ao longo de sua vida.</p>
+                    <ul>
+                        <li><strong>Apelido:</strong> ''Lest''</li>
+                        <li><strong>Idade:</strong> 30 a 40 Anos</li>
+                        <li><strong>Mora:</strong> Los Santos ; Murrieta Heights</li>
+                        <li><strong>Emprego:</strong> Desempregado</li>
+                        <li><strong>Habilidade Especial:</strong> Genialidade (Inteligência e Oratória Aprimorados)</li>
+                        <li><strong>Família:</strong> ???</li>
+                        <li><strong>Classe Social:</strong> Média</li>
+                        <li><strong>Veículo:</strong> ???</li>
+                        <li><strong>Status:</strong> Vivo</li>
+                    </ul>
+                    <p class="quote"><em>"We are about to put the Darwinism back in Social Darwinism, and brother, it is gonna be fun."</em><br> - Lester</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="lamar">
+                    <div class="div-img">
+                        <img src="./assets/Lamar.png" alt="Foto de Lamar Davis">
+                    </div>
+                    <div class="info">
+                        <h2>Lamar Davis</h2>
+                        <p>Lamar Davis é o amigo louco de Franklin, membro orgulhoso das Famílias e colega de trabalho da Deluxe Premium Motorsport. Ele frequentemente incomoda Franklin sobre suas tentativas de deixar a vida de gangue para trás.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> ''LD''</li>
+                            <li><strong>Idade:</strong> 20 a 30 Anos</li>
+                            <li><strong>Mora:</strong> Los Santos ; Strawberry</li>
+                            <li><strong>Emprego:</strong> Empreendedor na Premium Deluxe Motorsport</li>
+                            <li><strong>Habilidade Especial:</strong> ???</li>
+                            <li><strong>Família:</strong> Chop (Pet)</li>
+                            <li><strong>Classe Social:</strong> Média-Baixa</li>
+                            <li><strong>Veículo:</strong> Blue Emperor</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                        </ul>
+                        <p class="quote"><em>"When names is on a motherfucking board, I wanna see my name at the top of that motherfucker and next to it, it needs to say 'Winner'."</em><br> - Lamar</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="dave">
+                    <div class="div-img">
+                        <img src="./assets/DaveNorton.png" alt="Foto de Dave Norton">
+                    </div>
+                    <div class="info">
+                        <h2>Dave Norton</h2>
+                        <p>Dave Norton é um agente da FIB, que estabeleceu Michael em Los Santos após a "morte" em North Yankton. Ele é um agente corrupto, mas prefere resolver os problemas de forma amigável.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> ''Davey''</li>
+                            <li><strong>Idade:</strong> 40 a 50 Anos</li>
+                            <li><strong>Mora:</strong> Los Santos</li>
+                            <li><strong>Emprego:</strong> FIB Agent</li>
+                            <li><strong>Habilidade Especial:</strong> ???</li>
+                            <li><strong>Família:</strong> ???</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Blue Oracle</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                        </ul>
+                        <p class="quote"><em>"Corrupt? Only a little. Definitely below average."</em><br> - Dave</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="steve">
+                    <div class="div-img">
+                        <img src="./assets/AgentSteve.png" alt="Foto de Steve Haines">
+                    </div>
+                    <div class="info">
+                        <h2>Steve Haines</h2>
+                        <p>Steve Haines é um agente altamente condecorado do FIB, mas também altamente corrupto. Ele usa sua posição como superior de Dave Norton para coagir Michael, Franklin e Trevor a executar tarefas ilegais em benefício próprio, minando rivais como a IAA para garantir mais financiamento do governo. Haines tem um comportamento egocêntrico e arrogante, e muitas vezes trata seus subordinados com desrespeito e indiferença. Ele se envolve em um jogo perigoso com os três protagonistas, colocando-os em situações cada vez mais arriscadas em troca de dinheiro e poder. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> N/A</li>
+                            <li><strong>Idade:</strong> Não especificado</li>
+                            <li><strong>Mora:</strong> Não especificado</li>
+                            <li><strong>Emprego:</strong> Agente do FIB (Federal Investigation Bureau)</li>
+                            <li><strong>Habilidade Especial:</strong> N/A</li>
+                            <li><strong>Família:</strong> N/A</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Vários de sua preferência, incluindo um Obey Tailgater preto</li>
+                            <li><strong>Status:</strong> Morto (possível)</li>
+                            <li><strong>Vantagem Extra:</strong> Conhecimento em táticas de investigação e manipulação de pessoas</li>
+                        </ul>
+                        <p class="quote"><em>"Se você quer meu conselho, dê um tiro na cabeça dele. Não, eu não posso dizer isso. Isso seria ilegal. Apenas leve-o para um passeio e desapareça com ele."</em><br>- Steve Haines</p>
+                    </div>
+                </div>
+ 
+                <hr>
+
+   
+                <div class="container" class="devin">
+                    <div class="div-img">
+                        <img src="./assets/DevinWeston.png" alt="Foto de Devin Weston">
+                    </div>
+                    <div class="info">
+                        <h2>Devin Weston</h2>
+                        <p>Devin Weston é um personagem de Grand Theft Auto V. Ele é um bilionário corrupto e influente, dono de vários negócios em San Andreas. Devin tem um exército privado na forma da firma de consultoria de segurança Merryweather e culpa Michael, um antigo amigo, por interferir em seus negócios. Weston é consideravelmente pomposo, egoísta, narcisista, arrogante, carismático, temperamental e exagerado. Ele gosta de lembrar constantemente aos protagonistas que é muito mais rico do que eles e que sua riqueza o permite fazer o que quiser. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> N/A</li>
+                            <li><strong>Idade:</strong> Entre 40 e 50 anos</li>
+                            <li><strong>Mora:</strong> San Andreas</li>
+                            <li><strong>Emprego:</strong> Dono de Vários Negócios em San Andreas</li>
+                            <li><strong>Habilidade Especial:</strong> N/A</li>
+                            <li><strong>Família:</strong> N/A</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Vários de Sua Preferência</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> Possui um exército privado na forma da firma de consultoria de segurança Merryweather</li>
+                        </ul>
+                        <p class="quote"><em>"I'm rich, I'm miserable...but hey, here's the thing, it's all good, it's all good, because I'm about to make my dream a reality, and it's a big one, it's a (expletive) revolution, a rich man's revolution, and I'm about to control the whole (expletive) thing."</em><br>- Devin Weston</p>
+                    </div>
+                </div>
+ 
+                <hr>
+
+                <div class="container" class="amanda">
+                    <div class="info">
+                        <h2>Amanda De Santa</h2>
+                        <p>A esposa de Michael e mãe de Jimmy e Tracey, Amanda trabalhava como stripper e possivelmente prostituta quando conheceu Michael.</p>
+                        <p>A relação entre Amanda e Michael tornou-se muito amarga na última década e eles mal se toleram. Michael passa o tempo bebendo, lamentando e perdendo a paciência com ela. Ela gasta seu dinheiro livremente em roupas caras, joias e cirurgia plástica, enquanto o agride verbalmente.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> "Mandy" ou "Mrs. De Santa"</li>
+                            <li><strong>Idade:</strong> 43 Anos</li>
+                            <li><strong>Mora:</strong> Los Santos; Rockford Hills</li>
+                            <li><strong>Emprego:</strong> Dona de Casa</li>
+                            <li><strong>Habilidade Especial:</strong> N/A</li>
+                            <li><strong>Família:</strong> Michael DS, Tracey DS e James DS</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Red Sentinel</li>
+                            <li><strong>Status:</strong> Viva</li>
+                            <li><strong>Vantagem Extra:</strong> Protegida por Michael, Franklin e Trevor</li>
+                        </ul>
+                        <p class="quote"><em>"We're not perfect, Michael. But at least we're both trying. It'll take some time, but we'll be okay."</em><br>- Amanda</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container" class="jimmy">
+                    <div class="div-img">
+                        <img class = "jimmy-img" src="./assets/Jimmy.png" alt="Foto de Jimmy De Santa">
+                    </div>
+                    <div class="info">
+                        <h2>James De Santa</h2>
+                        <p>Jimmy De Santa é filho de Michael e Amanda. Ele é um fumante de maconha gordo e chorão de 20 anos, que é proeminentemente muito preguiçoso e viciado em videogames. Como os outros membros de sua família, ele tem um relacionamento conflituoso com seu pai.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> "Jimmy" ou "Big J"</li>
+                            <li><strong>Idade:</strong> 20 Anos</li>
+                            <li><strong>Mora:</strong> Los Santos; Rockford Hills</li>
+                            <li><strong>Emprego:</strong> ???</li>
+                            <li><strong>Habilidade Especial:</strong> ???</li>
+                            <li><strong>Família:</strong> Michael DS, Amanda DS e Tracey DS</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Yellow BeeJay XL</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> Protegido por Michael, Trevor e Franklin</li>
+                        </ul>
+                        <p class="quote"><em>"Why do I have to hold your hand through this whole mid-life crisis bullshit?"</em><br>- James</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="tracey">
+                    <div class="info">
+                        <h2>Tracey De Santa</h2>
+                        <p>Tracey De Santa é a filha malcriada e obcecada pela fama de Michael e Amanda. Ela tem aspirações de se tornar cantora e dançarina. Tracey tem um relacionamento muito ruim com seus pais, parecendo ser muito mimada, desagradável e imatura. Ela é conhecida por ser rebelde em suas ações contra seus pais, e até mesmo chegar a um teste para Fama ou Vergonha sem a aprovação deles.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> "Trace"</li>
+                            <li><strong>Idade:</strong> 22 Anos</li>
+                            <li><strong>Mora:</strong> Los Santos; Rockford Hills</li>
+                            <li><strong>Emprego:</strong> Cantora / Dançarina (Porém, Desempregada)</li>
+                            <li><strong>Habilidade Especial:</strong> ???</li>
+                            <li><strong>Família:</strong> Michael DS, Amanda DS e James DS</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Yellow Issi</li>
+                            <li><strong>Status:</strong> Viva</li>
+                            <li><strong>Vantagem Extra:</strong> Protegida por Michael, Trevor e Franklin</li>
+                        </ul>
+                        <p class="quote">"You ruined my life ..."</em><br>- Tracey</p>
+                        </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="stretch">
+                    <div class="info">
+                        <h2>Harold "Stretch" Joseph</h2>
+                        <p>Harold "Stretch" Joseph é um membro de alto escalão das Famílias, uma gangue que atua em Los Santos. Embora seja considerado um amigo por Lamar, Stretch constantemente coloca em perigo Lamar e Franklin, enviando-os em trabalhos que tendem a dar terrivelmente errado. Ele tem uma natureza traiçoeira e egoísta e tem sido conhecido por trair aqueles que estão próximos dele. Stretch e Franklin têm uma forte antipatia um pelo outro, já que Stretch o traiu no passado. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> "Stretch"</li>
+                            <li><strong>Idade:</strong> Entre 30 e 40 anos</li>
+                            <li><strong>Mora:</strong> Los Santos</li>
+                            <li><strong>Emprego:</strong> Membro de alto escalão das Famílias</li>
+                            <li><strong>Habilidade Especial:</strong> N/A</li>
+                            <li><strong>Família:</strong> N/A</li>
+                            <li><strong>Classe Social:</strong> Baixa</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"Nunca me subestime, mano!"</em><br>- Stretch</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="ronald">
+                    <div class="div-img">
+                        <img src="./assets/ron2.png" alt="Foto de Ronald Jakowski">
+                    </div>
+                    <div class="info">
+                        <h2>Ronald Jakowski</h2>
+                        <p>Conhecido como "Ron", Ronald Jakowski é um personagem de Grand Theft Auto V. Ele é um comerciante de armas e drogas que vive em Sandy Shores, em Zancudo Avenue. Ron é o CEO da TP Inc. e é conhecido por sua paranoia e crença de que está sendo constantemente vigiado. Ele é um personagem bastante peculiar e um tanto quanto inquietante. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> "Ron" ou "Ronnie"</li>
+                            <li><strong>Idade:</strong> Entre 30 e 40 anos</li>
+                            <li><strong>Mora:</strong> Sandy Shores; Zancudo Avenue</li>
+                            <li><strong>Emprego:</strong> CEO da TP Inc. (Comerciante de Armas e Drogas)</li>
+                            <li><strong>Habilidade Especial:</strong> Observador (Conhece 85% de San Andreas)</li>
+                            <li><strong>Família:</strong> Ex-Esposa (Não revelada)</li>
+                            <li><strong>Classe Social:</strong> Média</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"Be careful in what are you gonna say... They're listening!"</em><br>- Ronald</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="wade">
+                    <div class="div-img">
+                        <img src="./assets/wade.png" alt="Foto de Wade Hebert">
+                    </div>
+                    <div class="info">
+                        <h2>Wade Hebert</h2>
+                        <p>Wade Hebert é um personagem de Grand Theft Auto V. Ele é amigo e funcionário de longa data de Trevor Philips, um dos protagonistas do jogo. Wade é um homem simples, de poucas palavras e com um leve sotaque do sul dos Estados Unidos. Não se sabe muito sobre sua vida, exceto que ele mora em Blane Country e tem um relacionamento próximo com seu primo Floyd Hebert.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Entre 20 e 30 anos</li>
+                            <li><strong>Mora:</strong> San Andreas; Blane Country</li>
+                            <li><strong>Emprego:</strong> Não especificado</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Floyd Hebert (primo)</li>
+                            <li><strong>Classe Social:</strong> Média-baixa</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"Are we gonna stop for some Ice Cream? :3"</em><br>- Wade</p>
+                    </div>
+                </div>
+ 
+            </section>
+            <section class="protagonistas apoio">
+                <div class="introducao">
+                    <h2 id="Apoio">Personagens de Apoio</h2>
+                    <hr>
+                    <p>Outros personagens coadjuvantes que desempenham um papel importante na história de Grand Theft Auto V.</p>
+                </div>
+                <div class="container" class="johnny">
+                    <div class="info">
+                        <h2>Johnatan Klebitz</h2>
+                        <p>Conhecido como "Johnny" ou "Johnny K.", Johnatan Klebitz é um personagem de Grand Theft Auto V. Ele é o presidente e líder da Lost MC, uma gangue de motociclistas de Blaine County. Johnny é habilidoso na condução de motos e sua especialidade é aperfeiçoar a direção. Ele é um homem experiente e leal à sua gangue, apesar dos conflitos internos que enfrentam. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> "Johnny" ou "Johnny K."</li>
+                            <li><strong>Idade:</strong> 39 anos</li>
+                            <li><strong>Mora:</strong> Blaine Country; San Andreas</li>
+                            <li><strong>Emprego:</strong> Presidente e Líder da Lost MC</li>
+                            <li><strong>Habilidade Especial:</strong> Perícia com Motos (Direção Aprimorada)</li>
+                            <li><strong>Família:</strong> Michael Klebitz</li>
+                            <li><strong>Classe Social:</strong> Média-Baixa</li>
+                            <li><strong>Veículo:</strong> White-Blue Hexer</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"A brother might stab you in the back, a woman certainly will, but a bike will never let you down..."</em><br>- Johnny</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="wei-cheng">
+                    <div class="info">
+                        <h2>Wei Cheng</h2>
+                        <p>Wei Cheng é um personagem de Grand Theft Auto V. Ele é o líder das Tríades de Los Santos que está tentando expandir suas operações de tráfico de drogas no Condado de Blaine. Ele é um homem perigoso e impiedoso, disposto a fazer o que for necessário para alcançar seus objetivos.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Não especificado</li>
+                            <li><strong>Mora:</strong> Los Santos</li>
+                            <li><strong>Emprego:</strong> Líder das Tríades de Los Santos</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Não especificado</li>
+                            <li><strong>Classe Social:</strong> Não especificado</li>
+                            <li><strong>Veículo:</strong> Vários de sua preferência</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> Não especificado</li>
+                        </ul>
+                        <p class="quote"><em>"You think you can mess with me? I will tear you apart!"</em><br>- Wei Cheng</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="madrazo">
+                    <div class="info">
+                        <h2>Martin Madrazo</h2>
+                        <p>Martin Madrazo é um empresário mexicano e líder do Cartel de Madrazo. Embora ele insista que é um empresário legítimo, Madrazo é um traficante de drogas notório, tendo sido acusado várias vezes, embora as acusações tenham sido retiradas devido à ameaça ou silenciamento de testemunhas. Madrazo é conhecido por seu temperamento explosivo e implacáveis ​​métodos de lidar com pessoas que se opõem a ele, o que levou muitos a considerá-lo um psicopata.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Não especificado</li>
+                            <li><strong>Mora:</strong> San Andreas; México</li>
+                            <li><strong>Emprego:</strong> Empresário, líder do Cartel de Madrazo</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Patricia Madrazo (esposa)</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> Conexões com o submundo do crime e a polícia corrupta</li>
+                        </ul>
+                        <p class="quote"><em>"You better not be screwing me over!"</em><br>- Madrazo</p>
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <div class="container" class="simeon">
+                    <div class="info">
+                        <h2>Simeon Yetarian</h2>
+                        <p>Simeon Yetarian é um personagem de Grand Theft Auto V. Ele é o dono da Premium Motorsport Deluxe, uma concessionária de automóveis localizada em Los Santos. Simeon é um homem de negócios muito astuto, que adora persuadir seus clientes a comprarem carros de alto valor e baixa qualidade. Ele é conhecido por ser bastante manipulador e por usar táticas de vendas agressivas. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Entre 40 e 50 anos</li>
+                            <li><strong>Mora:</strong> Los Santos</li>
+                            <li><strong>Emprego:</strong> Dono da Premium Motorsport Deluxe</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Sacha Yetarian</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Vários de sua preferência</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"You'll tell me what you want, and I will explain very carefully to you why it cannot be..."</em><br>- Simeon</p>
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <div class="container" class="solomon">
+                    <div class="info">
+                        <h2>Solomon Richards</h2>
+                        <p>Solomon Richards é um famoso produtor de filmes de Vinewood e proprietário da Richards Majestic Productions. Ele é conhecido por produzir filmes de grande sucesso e é admirado por muitos em Los Santos, incluindo Michael De Santa, um dos protagonistas do jogo, que é um grande fã de seus trabalhos.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Entre 60 e 70 anos</li>
+                            <li><strong>Mora:</strong> Vinewood Hills</li>
+                            <li><strong>Emprego:</strong> Produtor de filmes e proprietário da Richards Majestic Productions</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Não especificado</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"I just hope you're as committed to the job as you were to that tennis coach you torched, the country club you got kicked out of, and the general air of menace and borderline psychosis that you carry around with you."</em><br>- Solomon para Michael, sobre sua ajuda na produção de "Meltdown"</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="molly">
+                    <div class="info">
+                        <h2>Molly Schultz</h2>
+                        <p>Molly Schultz é a vice-presidente sênior e conselheira geral dos negócios de Devin Weston. Ela atua como a mão direita do bilionário corrupto. Molly é uma seguidora devota de Devin e pode estar apaixonada por ele, resultando em ela seguir suas ordens sem questionar, o que Franklin a convoca. </p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Entre 25 e 35 anos</li>
+                            <li><strong>Mora:</strong> Los Santos</li>
+                            <li><strong>Emprego:</strong> Vice-presidente sênior e conselheira geral dos negócios de Devin Weston</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Não especificado</li>
+                            <li><strong>Classe Social:</strong> Alta</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Morta (assassinada por Franklin Clinton)</li>
+                            <li><strong>Vantagem Extra:</strong> Possui informações valiosas sobre os negócios de Devin Weston</li>
+                        </ul>
+                        <p class="quote"><em>"Eu sigo ordens, sem questionar. Porque é isso que os devotos fazem. Mas no seu caso, eu vou fazer uma exceção e perguntar: Quem é você, Franklin Clinton?"</em><br>- Molly Schultz</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="floyd">
+
+                    <div class="info">
+                        <h2>Floyd Hebert</h2>
+                        <p>Floyd Hebert é o primo covarde, mas trabalhador de Wade, que é arrastado para o mundo do crime. Ele mora no apartamento de sua noiva Debra na praia de Vespucci.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Entre 30 e 40 anos</li>
+                            <li><strong>Mora:</strong> San Andreas; Vespucci Beach</li>
+                            <li><strong>Emprego:</strong> Não especificado</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Wade Hebert (primo)</li>
+                            <li><strong>Classe Social:</strong> Baixa</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"Eu não quero morrer, não como isso. Não como um idiota!"</em><br>- Floyd Hebert</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="andreas">
+                    <div class="info">
+                        <h2>Andreas Sanchez</h2>
+                        <p>Andreas Sanchez é um agente do Federal Investigation Bureau (FIB), trabalhando como braço direito do agente Steve Haines. Ele é frequentemente visto ao lado de Haines em reuniões com Michael De Santa e Dave Norton, participando de diversas operações que envolvem a tríade entre governo, crime organizado e negócios sujos.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Não especificado</li>
+                            <li><strong>Mora:</strong> Não especificado</li>
+                            <li><strong>Emprego:</strong> Agente do Federal Investigation Bureau (FIB)</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Não especificado</li>
+                            <li><strong>Classe Social:</strong> Média</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                        <p class="quote"><em>"It's quite simple, either you, or Trevor, or the Chinese - or whoever else wants to kill you today - give us the key cards"</em><br>- Andreas Sanchez</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="tao">
+                    <div class="info">
+                        <h2>Tao Cheng</h2>
+                        <p>Tao Cheng é o filho do chefe da Tríade Cheng, Wei Cheng. Embora seu pai esteja profundamente envolvido em atividades criminosas, Tao não parece tão interessado nesses assuntos quanto em festejar. Ele é enviado ao condado de Blaine para negociar um contrato com a Trevor Philips Industries, uma empresa dirigida por Trevor Philips. No entanto, após a operação de Trevor ser atacada pelos Aztecas, o tradutor de Tao o convence a negociar com os irmãos O’Neil, uma família criminosa local, para a raiva de Trevor.</p>
+                        <ul>
+                            <li><strong>Apelido:</strong> Não especificado</li>
+                            <li><strong>Idade:</strong> Entre 25 e 35 anos</li>
+                            <li><strong>Mora:</strong> Desconhecido</li>
+                            <li><strong>Emprego:</strong> Filho do chefe da Tríade Cheng</li>
+                            <li><strong>Habilidade Especial:</strong> Não especificado</li>
+                            <li><strong>Família:</strong> Wei Cheng (pai)</li>
+                            <li><strong>Classe Social:</strong> Desconhecido</li>
+                            <li><strong>Veículo:</strong> Não especificado</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Vantagem Extra:</strong> N/A</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container" class="friedlander">
+                    <div class="info">
+                        <h2>Dr. Isiah Friedlander</h2>
+                        <p>Dr. Isiah Friedlander é o terapeuta de Michael De Santa em Grand Theft Auto V. Ele trabalha para o Mount Zonah Medical Center, com uma clínica na costa de Pacific Bluffs. Em seu site oficial, o Dr. Friedlander é considerado psicoterapeuta, personalidade da mídia, budista secular e entusiasta de barcos em miniatura.</p>
+                        <ul>
+                            <li><strong>Nome Completo:</strong> Isiah Friedlander</li>
+                            <li><strong>Profissão:</strong> Psicoterapeuta</li>
+                            <li><strong>Localização:</strong> Pacific Bluffs, Los Santos</li>
+                            <li><strong>Hobbies:</strong> Navegar em barcos em miniatura</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Atuação no Jogo:</strong> Terapeuta de Michael De Santa</li>
+                        </ul>
+                        <p class="quote"><em>"A vida é uma jornada e nós estamos todos em uma jornada para algum lugar. Eu sou apenas uma pequena parte da sua jornada, Michael."</em><br>- Dr. Friedlander</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="snider">
+                    <div class="info">
+                        <h2>Brad Snider</h2>
+                        <p>Brad Snider é um ex-parceiro no crime de Trevor Philips e Michael De Santa em Grand Theft Auto V. Acredita-se que ele tenha sido capturado em um assalto fracassado em North Yankton antes dos eventos do jogo. Ele aparentemente ainda mantém contato com Trevor, mas as coisas podem não ser o que parecem.</p>
+                        <ul>
+                            <li><strong>Nome Completo:</strong> Brad Snider</li>
+                            <li><strong>Profissão:</strong> Criminoso</li>
+                            <li><strong>Status:</strong> Possivelmente morto</li>
+                            <li><strong>Relacionamentos:</strong> Trevor Philips (ex-parceiro no crime), Michael De Santa (ex-parceiro no crime)</li>
+                            <li><strong>Atuação no Jogo:</strong> Personagem mencionado</li>
+                        </ul>
+                        <p class="quote"><em>"Não fale sobre mim e Trev como se fôssemos sequestradores de crianças, nós somos empresários!"</em><br>- Brad Snider</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container" class="chop">
+                    <div class="info">
+                        <h2>Chop</h2>
+                        <p>Chop é o cão Rottweiler de estimação de Franklin Clinton em Grand Theft Auto V. Embora nominalmente o cachorro de Lamar Davis, ele vive com Franklin durante a maior parte do enredo. Franklin pode se envolver em várias atividades com Chop, incluindo passear com ele e brincar de buscar com uma bola.</p>
+                        <ul>
+                            <li><strong>Nome Completo:</strong> Chop</li>
+                            <li><strong>Espécie:</strong> Cão Rottweiler</li>
+                            <li><strong>Localização:</strong> Los Santos</li>
+                            <li><strong>Dono:</strong> Franklin Clinton</li>
+                            <li><strong>Atividades:</strong> Passear, brincar de buscar bola</li>
+                            <li><strong>Status:</strong> Vivo</li>
+                            <li><strong>Atuação no Jogo:</strong> Cão de estimação de Franklin e Lamar</li>
+                        </ul>
+                        <p class="quote"><em>"Woof woof!"</em><br>- Chop</p>
+                    </div>
+                </div>
+ 
+            </section>
+
+   
+            <section class="secundarios">    
+                <div class="introducao">
+                    <h2 id="Outros">Outros Personagens</h2>
+                    <hr>
+                    <p>Outros personagens menores que podem ser encontrados ou aparecem em Grand Theft Auto V.</p>
+                </div>
+                  
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Personagem</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Agente ULP</td>
+                            <td>Agente da IAA que trabalha com Michael no assalto ao Merryweather</td>
+                        </tr>
+                        <tr>
+                            <td>Ahron Ward</td>
+                            <td>Ator que interpreta o herói de ação do filme "Meltdown"</td>
+                        </tr>
+                        <tr>
+                            <td>Al Di Napoli</td>
+                            <td>Empresário e investidor em potencial de Franklin</td>
+                        </tr>
+                        <tr>
+                            <td>Albert Stalley</td>
+                            <td>Gerente do clube de golfe em Los Santos</td>
+                        </tr>
+                        <tr>
+                            <td>Anton Beaudelaire</td>
+                            <td>Criminoso que Trevor ajuda a fugir do país</td>
+                        </tr>
+                        <tr>
+                            <td>Ashley Butler</td>
+                            <td>Ex-namorada de Johnny Klebitz e amiga de Trevor</td>
+                        </tr>
+                        <tr>
+                            <td>Casey</td>
+                            <td>Funcionário da Lifeinvader que ajuda Michael a invadir a empresa</td>
+                        </tr>
+                        <tr>
+                            <td>Tradutor de Cheng</td>
+                            <td>Homem contratado por Tao Cheng para traduzir suas negociações com as empresas</td>
+                        </tr>
+                        <tr>
+                            <td>Clay Simons</td>
+                            <td>Membro dos Lost MC e amigo de Terry e Clay</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>Amigo de Lamar e Franklin que ajuda a equipe em alguns assaltos</td>
+                        </tr>
+                        <tr>
+                            <td>Debra</td>
+                            <td>Irmã gêmea de Dexter e namorada de Floyd</td>
+                        </tr>
+                        <tr>
+                            <td>Denise Clinton</td>
+                            <td>Ex-namorada de Franklin</td>
+                        </tr>
+                        <tr>
+                            <td>Donna</td>
+                            <td>Assistente do ator Solomon Richards</td>
+                        </tr>
+                        <tr>
+                            <td>Elwood O’Neil</td>
+                            <td>Membro dos O’Neil Brothers</td>
+                        </tr>
+                        <tr>
+                            <td>Fabien LaRouche</td>
+                            <td>Instrutor de yoga e namorado de Amanda De Santa</td>
+                        </tr>
+                        <tr>
+                            <td>Ferdinand Kerimov</td>
+                            <td>Diplomata russo que é capturado por Trevor e Michael</td>
+                        </tr>
+                        <tr>
+                            <td>Giann</td>
+                            <td>Amigo de Tonya e funcionário da companhia de reboque de carros</td>
+                        </tr>
+                        <tr>
+                            <td>Javier Madrazo</td>
+                            <td>Sobrinho de Martin Madrazo que Trevor sequestra para receber dinheiro</td>
+                        </tr>
+                        <tr>
+                            <td>Jay Norris</td>
+                            <td>Cofundador da Lifeinvader. Morre após um acidente envolvendo seu novo produto de tecnologia.</td>
+                        </tr>
+                        <tr>
+                            <td>Johnny Klebitz</td>
+                            <td>Líder da gangue de motociclistas The Lost MC, em Grand Theft Auto IV: The Lost and Damned. Aparece em
+                                uma missão de Grand Theft Auto V.</td>
+                        </tr>
+                        <tr>
+                            <td>Jolene Cranley-Evans</td>
+                            <td>Esposa de Jock Cranley. Morreu em um acidente de paraquedas, mas sua morte foi considerada suspeita.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Karen Daniels</td>
+                            <td>Agente do FIB. Trabalha em conjunto com Dave Norton em vários casos, incluindo o assalto ao Union
+                                Depository.</td>
+                        </tr>
+                        <tr>
+                            <td>Kerry McIntosh</td>
+                            <td>Ator e celebridade. Aparece em uma missão de Michael como um dos alvos da Casa de Papel.</td>
+                        </tr>
+                        <tr>
+                            <td>Kyle Chavis</td>
+                            <td>Funcionário do ano da Lifeinvader. Morre em um acidente envolvendo seu novo produto de tecnologia.</td>
+                        </tr>
+                        <tr>
+                            <td>Lacey Jonas</td>
+                            <td>Uma atriz que se esconde de paparazzi em uma missão de Franklin.</td>
+                        </tr>
+                        <tr>
+                            <td>Lazlow Jones</td>
+                            <td>Apresentador de rádio e TV conhecido por suas participações em diversos jogos da série Grand Theft Auto.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lenny Avery</td>
+                            <td>Agente imobiliário rival de Michael. É assassinado por Trevor.</td>
+                        </tr>
+                        <tr>
+                            <td>Manuel</td>
+                            <td>Funcionário do reboque de Franklin. Ajuda em algumas missões de assalto.</td>
+                        </tr>
+                        <tr>
+                            <td>Mark Fostenburg</td>
+                            <td>Personalidade da mídia e investidor que aparece em uma missão de assassinato.</td>
+                        </tr>
+                        <tr>
+                            <td>Natalia Zverovna</td>
+                            <td>Stripper russa que pode ser contratada para dançar no clube de strip Tequi-La-La.</td>
+                        </tr>
+                        <tr>
+                            <td>Ortega</td>
+                            <td>Líder de uma gangue mexicana rival dos Los Santos Vagos. É assassinado por Trevor.</td>
+                        </tr>
+                        <tr>
+                            <td>Oscar Guzman</td>
+                            <td>Membro da gangue mexicana Los Santos Vagos. Aparece em algumas missões de Trevor.</td>
+                        </tr>
+                        <tr>
+                            <td>Poppy Mitchell</td>
+                            <td>Modelo e celebridade no jogo</td>
+                        </tr>
+                        <tr>
+                            <td>Rocco Pelosi</td>
+                            <td>Associado da máfia no jogo</td>
+                        </tr>
+                        <tr>
+                            <td>Tahir Javan</td>
+                            <td>Empresário do ramo imobiliário no jogo</td>
+                        </tr>
+                        <tr>
+                            <td>Tanisha Jackson</td>
+                            <td>Ex-namorada de Franklin e envolvida em gangues</td>
+                        </tr>
+                        <tr>
+                            <td>Terry Thorpe</td>
+                            <td>Membro da gangue de motociclistas "The Lost MC"</td>
+                        </tr>
+                        <tr>
+                            <td>Tom</td>
+                            <td>Policial que trabalha para o LSPD (Los Santos Police Department)</td>
+                        </tr>
+                        <tr>
+                            <td>Tyler Dixon</td>
+                            <td>Membro da gangue de motociclistas "The Lost MC"</td>
+                        </tr>
+                        <tr>
+                            <td>Ursula</td>
+                            <td>Personagem que vive nas florestas ao norte de Los Santos</td>
+                        </tr>
+                        <tr>
+                            <td>Willie</td>
+                            <td>Personagem envolvido em tráfico de drogas no jogo</td>
+                        </tr>
+                        <tr>
+                            <td>Chefe</td>
+                            <td>Líder da equipe de assalto, responsável pelo planejamento e execução das missões.</td>
+                        </tr>
+                        <tr>
+                            <td>Christian Feltz</td>
+                            <td>Motorista da equipe de assalto, especializado em fugas.</td>
+                        </tr>
+                        <tr>
+                            <td>Daryl Johns</td>
+                            <td>Hacker da equipe de assalto, responsável por invadir sistemas eletrônicos.</td>
+                        </tr>
+                        <tr>
+                            <td>Eddie Toh</td>
+                            <td>Motorista da equipe de assalto, especializado em dirigir veículos de fuga.</td>
+                        </tr>
+                        <tr>
+                            <td>Gustavo Mota</td>
+                            <td>Homem armado da equipe de assalto, especializado em combate corpo a corpo.</td>
+                        </tr>
+                        <tr>
+                            <td>Hugh Welsh</td>
+                            <td>Homem armado da equipe de assalto, especializado em atirar com rifles de precisão.</td>
+                        </tr>
+                        <tr>
+                            <td>Karim Denz</td>
+                            <td>Motorista da equipe de assalto, especializado em dirigir motos de fuga.</td>
+                        </tr>
+                        <tr>
+                            <td>Karl Abolaji</td>
+                            <td>Homem armado da equipe de assalto, especializado em combate com armas pesadas.</td>
+                        </tr>
+                        <tr>
+                            <td>Norm Richards</td>
+                            <td>Homem armado da equipe de assalto, especializado em atirar com armas automáticas.</td>
+                        </tr>
+                        <tr>
+                            <td>Paige Harris</td>
+                            <td>Hacker da equipe de assalto, responsável por desativar sistemas de segurança eletrônicos.</td>
+                        </tr>
+                        <tr>
+                            <td>Patrick McReary</td>
+                            <td>Homem armado da equipe de assalto, especializado em explosivos.</td>
+                        </tr>
+                        <tr>
+                            <td>Rickie Lukens</td>
+                            <td>Hacker da equipe de assalto, responsável por invadir sistemas eletrônicos.</td>
+                        </tr>
+                        <tr>
+                            <td>Taliana Martinez</td>
+                            <td>Motorista da equipe de assalto, especializado em pilotar aviões de fuga.</td>
+                        </tr>
+                        <tr>
+                            <td>Andy Moon</td>
+                            <td>Pedestre que pode ser encontrado perto da Dignity Village no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Andy Whitford</td>
+                            <td>Pedestre que pode ser encontrado em Del Perro Beach no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Baygor</td>
+                            <td>Pedestre que pode ser encontrado em Paleto Bay no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Bill Binder</td>
+                            <td>Pedestre que pode ser encontrado em Mirror Park no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Clinton</td>
+                            <td>Pedestre que pode ser encontrado em Little Seoul no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Griff</td>
+                            <td>Pedestre que pode ser encontrado em Vespucci Beach no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Impotent Rage</td>
+                            <td>Personagem fictício de quadrinhos que aparece como pedestre no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Jane</td>
+                            <td>Pedestre que pode ser encontrado em Vinewood Hills no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Jerome</td>
+                            <td>Pedestre que pode ser encontrado em Sandy Shores no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Jesco White</td>
+                            <td>Pedestre que pode ser encontrado em Harmony no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Jesse</td>
+                            <td>Pedestre que pode ser encontrado em Grapeseed no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Hands</td>
+                            <td>Pedestre que pode ser encontrado em Davis no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Mime</td>
+                            <td>Pedestre que pode ser encontrado em Los Santos no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Pamela Drake</td>
+                            <td>Pedestre que pode ser encontrado em Pacific Bluffs no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Zumbi</td>
+                            <td>Pedestre que pode ser encontrado em Blaine County no GTA V.</td>
+                        </tr>
+                        <tr>
+                            <td>Chastity</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Cheetah</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Fufu</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Infernus</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Juliet</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Nikki</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Peach</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                        <tr>
+                            <td>Sapphire</td>
+                            <td>Stripper do Vanilla Unicorn</td>
+                        </tr>
+                    </tbody>
+                </table>  
+            </section>     
+        </main>
+        <footer>
+            <ul class="criadores">
+                <h2 id="Criadores">Co-Fundadores</h2>
+                <li>Erick RIBEIRO</li>
+                <hr>
+                <li>Erick</li>
+                <hr>
+                <li>Erick</li>
+                <hr>
+                <li>Erick</li>
+                <hr>
+                <li>Erick</li>
+                <hr>
+            </ul>
+          </footer>
+                

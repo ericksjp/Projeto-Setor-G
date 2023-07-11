@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainstyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
+
+            <h1 style="text-align: center;">Caminhões - GTA V</h1>
+            
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                    <h2>Índice</h2>
+                    <button id="indice_button" onclick="highlightDiv()">mostrar</button>
+                </div>
+                <div class="indice-conteudo">
+                    <ol>
+                        <li><a href="#v1"><span>1.</span> Brute Stockade</a></li>
+                        <li><a href="#v2"><span>2.</span> Brute Tipper</a></li>
+                        <li><a href="#v3"><span>3.</span> HVY Mixer</a></li>
+                        <li><a href="#v4"><span>4.</span> HVY Biff</a></li>
+                        <li><a href="#v5"><span>5.</span> Jobuilt Rubble</a></li>
+                        <li><a href="#v6"><span>6.</span> Jobiult Hauler</a></li>
+                        <li><a href="#v7"><span>7.</span> Jobiult Phantom</a></li>
+                        <li><a href="#v8"><span>8.</span> Maibatsu Mule</a></li>
+                        <li><a href="#v9"><span>9.</span> MTL Flatbed</a></li>
+                        <li><a href="#v10"><span>10.</span> MTL Packer</a></li>
+                        <li><a href="#v11"><span>11.</span> MTL Pounder</a></li>
+                        <li><a href="#v12"><span>12.</span> Vapid Benson</a></li>
+                        <li><a href="#v13"><span>13.</span> MTL Pounder Custom</a></li>
+                        <li><a href="#v14"><span>14.</span> Maibatsu Mule Custom</a></li>
+                        <li><a href="#v15"><span>15.</span> Benefactor Terrorbyte</a></li>
+                        <li><a href="#v16"><span>16.</span> MTL Apocalypse Cerberus</a></li>
+                        <li><a href="#v17"><span>17.</span> MTL Future Shock Cerberus</a></li>
+                        <li><a href="#v18"><span>18.</span> MTL Nightmare Cerberus</a></li>                        
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="veiculos-container">
+
+                <div class="vehicle" id="v1">
+                    <img src="./assets/images/trucks/img0.png" alt="Vehicle Name">
+                    <h2>Brute Stockade</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v2">
+                    <img src="./assets/images/trucks/img1.png" alt="Vehicle Name">
+                    <h2>Brute Tipper</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v3">
+                    <img src="./assets/images/trucks/img2.png" alt="Vehicle Name">
+                    <h2>HVY Mixer</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v4">
+                    <img src="./assets/images/trucks/img3.png" alt="Vehicle Name">
+                    <h2>HVY Biff</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v5">
+                    <img src="./assets/images/trucks/img4.png" alt="Vehicle Name">
+                    <h2>Jobuilt Rubble</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v6">
+                    <img src="./assets/images/trucks/img5.png" alt="Vehicle Name">
+                    <h2>Jobiult Hauler</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v7">
+                    <img src="./assets/images/trucks/img6.png" alt="Vehicle Name">
+                    <h2>Jobiult Phantom</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v8">
+                    <img src="./assets/images/trucks/img7.png" alt="Vehicle Name">
+                    <h2>Maibatsu Mule</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v9">
+                    <img src="./assets/images/trucks/img8.png" alt="Vehicle Name">
+                    <h2>MTL Flatbed</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v10">
+                    <img src="./assets/images/trucks/img9.png" alt="Vehicle Name">
+                    <h2>MTL Packer</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v11">
+                    <img src="./assets/images/trucks/img10.png" alt="Vehicle Name">
+                    <h2>MTL Pounder</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v12">
+                    <img src="./assets/images/trucks/img11.png" alt="Vehicle Name">
+                    <h2>Vapid Benson</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v13">
+                    <img src="./assets/images/trucks/img12.png" alt="Vehicle Name">
+                    <h2>MTL Pounder Custom</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v14">
+                    <img src="./assets/images/trucks/img13.png" alt="Vehicle Name">
+                    <h2>Maibatsu Mule Custom</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 42%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v15">
+                    <img src="./assets/images/trucks/img14.png" alt="Vehicle Name">
+                    <h2>Benefactor Terrorbyte</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 43%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v16">
+                    <img src="./assets/images/trucks/img15.png" alt="Vehicle Name">
+                    <h2>MTL Apocalypse Cerberus</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v17">
+                    <img src="./assets/images/trucks/img16.png" alt="Vehicle Name">
+                    <h2>MTL Future Shock Cerberus</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v18">
+                    <img src="./assets/images/trucks/img17.png" alt="Vehicle Name">
+                    <h2>MTL Nightmare Cerberus</h2>
+                    <h3>Caminhão</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

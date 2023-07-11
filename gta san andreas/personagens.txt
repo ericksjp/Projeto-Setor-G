@@ -1,0 +1,189 @@
+
+        <div class="roster">
+            <img src="assets/img0.png" alt="Guppy" title="Guppy" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Guppy</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img1.png" alt="Guppy" title="Guppy" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Guppy</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img2.png" alt="Jimmy Hernandez" title="Jimmy Hernandez" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Jimmy Hernandez</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img3.png" alt="Jimmy Hernandez" title="Jimmy Hernandez" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Jimmy Hernandez</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img4.png" alt="Jizzy B." title="Jizzy B." class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Jizzy B.</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img5.png" alt="Jizzy B." title="Jizzy B." class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Jizzy B.</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img6.png" alt="Ken Rosenberg" title="Ken Rosenberg" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Ken Rosenberg</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img7.png" alt="Ken Rosenberg" title="Ken Rosenberg" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Ken Rosenberg</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img8.png" alt="Kendl Johnson" title="Kendl Johnson" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Kendl Johnson</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img9.png" alt="Kendl Johnson" title="Kendl Johnson" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Kendl Johnson</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img10.png" alt="Kent Paul" title="Kent Paul" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Kent Paul</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img11.png" alt="Kent Paul" title="Kent Paul" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Kent Paul</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img12.png" alt="Maccer" title="Maccer" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Maccer</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img13.png" alt="Maccer" title="Maccer" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Maccer</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img14.png" alt="Madd Dogg" title="Madd Dogg" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Madd Dogg</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img15.png" alt="Madd Dogg" title="Madd Dogg" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Madd Dogg</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img16.png" alt="OG Loc" title="OG Loc" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">OG Loc</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img17.png" alt="OG Loc" title="OG Loc" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">OG Loc</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img18.png" alt="Salvatore Leone" title="Salvatore Leone" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Salvatore Leone</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img19.png" alt="Salvatore Leone" title="Salvatore Leone" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Salvatore Leone</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img20.png" alt="T-Bone Mendez" title="T-Bone Mendez" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">T-Bone Mendez</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img21.png" alt="T-Bone Mendez" title="T-Bone Mendez" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">T-Bone Mendez</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img22.png" alt="Zero" title="Zero" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Zero</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img23.png" alt="Zero" title="Zero" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Zero</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img24.png" alt="Alan Crawford" title="Alan Crawford" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Alan Crawford</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img25.png" alt="Alan Crawford" title="Alan Crawford" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Alan Crawford</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img26.png" alt="B Dup" title="B Dup" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">B Dup</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img27.png" alt="B Dup" title="B Dup" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">B Dup</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img28.png" alt="Barbara Schternvart" title="Barbara Schternvart" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Barbara Schternvart</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img29.png" alt="Barbara Schternvart" title="Barbara Schternvart" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Barbara Schternvart</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img30.png" alt="Benny" title="Benny" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Benny</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img31.png" alt="Benny" title="Benny" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Benny</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img32.png" alt="Big Bear" title="Big Bear" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Big Bear</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img33.png" alt="Big Bear" title="Big Bear" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Big Bear</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img34.png" alt="Big Poppa" title="Big Poppa" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Big Poppa</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img35.png" alt="Big Poppa" title="Big Poppa" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Big Poppa</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img36.png" alt="Claude" title="Claude" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Claude</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img37.png" alt="Claude" title="Claude" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Claude</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img38.png" alt="Colonel Fuhrberger" title="Colonel Fuhrberger" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Colonel Fuhrberger</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img39.png" alt="Colonel Fuhrberger" title="Colonel Fuhrberger" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Colonel Fuhrberger</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img40.png" alt="Denise Robinson" title="Denise Robinson" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Denise Robinson</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img41.png" alt="Denise Robinson" title="Denise Robinson" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Denise Robinson</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img42.png" alt="Derek" title="Derek" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Derek</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img43.png" alt="Derek" title="Derek" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Derek</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img44.png" alt="Dwaine" title="Dwaine" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Dwaine</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img45.png" alt="Dwaine" title="Dwaine" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Dwaine</div>
+        </div>  
+        <div class="roster">
+            <img src="assets/img46.png" alt="Emmet" title="Emmet" class="item-image-fulltext jch-lazyloaded" width=100px; height=100px;>
+            <div class="roster_name">Emmet</div>
+        </div>  

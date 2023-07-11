@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var divLaranjaA = document.querySelector('.laranja');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranjaA.classList.toggle('highlight');
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mainstyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
+            <h1 style="text-align: center;">Esportivos Clássicos - GTA V</h1>
+            <p></p>
+            
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                    <h2>Índice</h2>
+                    <button id="indice_button" onclick="highlightDiv()">mostrar</button>
+                </div>
+                <div class="indice-conteudo">
+                    <ol>
+                        <li><a href="#v1"><span>1.</span> Albany Manana</a></li>
+                        <li><a href="#v2"><span>2.</span> Declasse Tornado</a></li>
+                        <li><a href="#v3"><span>3.</span> Dewbauchee JB 700</a></li>
+                        <li><a href="#v4"><span>4.</span> Grotti Stinger</a></li>
+                        <li><a href="#v5"><span>5.</span> Grotti Stinger GT</a></li>
+                        <li><a href="#v6"><span>6.</span> Pegassi Monroe</a></li>
+                        <li><a href="#v7"><span>7.</span> Truffade Z-Type</a></li>
+                        <li><a href="#v8"><span>8.</span> Vapid Peyote</a></li>
+                        <li><a href="#v9"><span>9.</span> Invetero Coquette Classic</a></li>
+                        <li><a href="#v10"><span>10.</span> Lampadati Casco</a></li>
+                        <li><a href="#v11"><span>11.</span> Albany Roosevelt</a></li>
+                        <li><a href="#v12"><span>12.</span> Lampadati Pigalle</a></li>
+                        <li><a href="#v13"><span>13.</span> Benefactor Stirling GT</a></li>
+                        <li><a href="#v14"><span>14.</span> Declasse Mamba</a></li>
+                        <li><a href="#v15"><span>15.</span> Albany Fránken Stange</a></li>
+                        <li><a href="#v16"><span>16.</span> Albany Roosevelt Valor</a></li>
+                        <li><a href="#v17"><span>17.</span> Declasse Tornado Custom</a></li>
+                        <li><a href="#v18"><span>18.</span> Declasse Tornado Rat Rod</a></li>
+                        <li><a href="#v19"><span>19.</span> Pegassi Infernus Classic</a></li>
+                        <li><a href="#v20"><span>20.</span> Grotti Turismo Classic</a></li>
+                        <li><a href="#v21"><span>21.</span> Ocelot Ardent</a></li>
+                        <li><a href="#v22"><span>22.</span> Pegassi Torero</a></li>
+                        <li><a href="#v23"><span>23.</span> Grotti Cheetah Classic</a></li>
+                        <li><a href="#v24"><span>24.</span> Smugglerás Run</a></li>
+                        <li><a href="#v25"><span>25.</span> Vapid Retinue</a></li>
+                        <li><a href="#v26"><span>26.</span> Dewbauchee Rapid GT Classic</a></li>
+                        <li><a href="#v27"><span>27.</span> Karin 190z</a></li>
+                        <li><a href="#v28"><span>28.</span> Lampadati Viseris</a></li>
+                        <li><a href="#v29"><span>29.</span> Ocelot Stromberg</a></li>
+                        <li><a href="#v30"><span>30.</span> Grotti GT500</a></li>
+                        <li><a href="#v31"><span>31.</span> Annis Savestra</a></li>
+                        <li><a href="#v32"><span>32.</span> Vulcar Fagaloa</a></li>
+                        <li><a href="#v33"><span>33.</span> Lampadati Michelli GT</a></li>
+                        <li><a href="#v34"><span>34.</span> Rune Cheburek</a></li>
+                        <li><a href="#v35"><span>35.</span> Ocelot Swinger</a></li>
+                        <li><a href="#v36"><span>36.</span> Vulcar Nebula Turbo</a></li>
+                        <li><a href="#v37"><span>37.</span> Ubermacht Zion Classic</a></li>
+                        <li><a href="#v38"><span>38.</span> Weeny Dynasty</a></li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="veiculos-container">
+                   
+                <div class="vehicle" id="v1">
+                    <img src="./assets/images/classic_sports/img0.png" alt="Vehicle Name">
+                    <h2>Albany Manana</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v2">
+                    <img src="./assets/images/classic_sports/img1.png" alt="Vehicle Name">
+                    <h2>Declasse Tornado</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v3">
+                    <img src="./assets/images/classic_sports/img2.png" alt="Vehicle Name">
+                    <h2>Dewbauchee JB 700</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v4">
+                    <img src="./assets/images/classic_sports/img3.png" alt="Vehicle Name">
+                    <h2>Grotti Stinger</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v5">
+                    <img src="./assets/images/classic_sports/img4.png" alt="Vehicle Name">
+                    <h2>Grotti Stinger GT</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v6">
+                    <img src="./assets/images/classic_sports/img5.png" alt="Vehicle Name">
+                    <h2>Pegassi Monroe</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v7">
+                    <img src="./assets/images/classic_sports/img6.png" alt="Vehicle Name">
+                    <h2>Truffade Z-Type</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v8">
+                    <img src="./assets/images/classic_sports/img7.png" alt="Vehicle Name">
+                    <h2>Vapid Peyote</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v9">
+                    <img src="./assets/images/classic_sports/img8.png" alt="Vehicle Name">
+                    <h2>Invetero Coquette Classic</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v10">
+                    <img src="./assets/images/classic_sports/img9.png" alt="Vehicle Name">
+                    <h2>Lampadati Casco</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v11">
+                    <img src="./assets/images/classic_sports/img10.png" alt="Vehicle Name">
+                    <h2>Albany Roosevelt</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v12">
+                    <img src="./assets/images/classic_sports/img11.png" alt="Vehicle Name">
+                    <h2>Lampadati Pigalle</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v13">
+                    <img src="./assets/images/classic_sports/img12.png" alt="Vehicle Name">
+                    <h2>Benefactor Stirling GT</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 25%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v14">
+                    <img src="./assets/images/classic_sports/img13.png" alt="Vehicle Name">
+                    <h2>Declasse Mamba</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v15">
+                    <img src="./assets/images/classic_sports/img14.png" alt="Vehicle Name">
+                    <h2>Albany Fránken Stange</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v16">
+                    <img src="./assets/images/classic_sports/img15.png" alt="Vehicle Name">
+                    <h2>Albany Roosevelt Valor</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v17">
+                    <img src="./assets/images/classic_sports/img16.png" alt="Vehicle Name">
+                    <h2>Declasse Tornado Custom</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v18">
+                    <img src="./assets/images/classic_sports/img17.png" alt="Vehicle Name">
+                    <h2>Declasse Tornado Rat Rod</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v19">
+                    <img src="./assets/images/classic_sports/img18.png" alt="Vehicle Name">
+                    <h2>Pegassi Infernus Classic</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v20">
+                    <img src="./assets/images/classic_sports/img19.png" alt="Vehicle Name">
+                    <h2>Grotti Turismo Classic</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v21">
+                    <img src="./assets/images/classic_sports/img20.png" alt="Vehicle Name">
+                    <h2>Ocelot Ardent</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v22">
+                    <img src="./assets/images/classic_sports/img21.png" alt="Vehicle Name">
+                    <h2>Pegassi Torero</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v23">
+                    <img src="./assets/images/classic_sports/img22.png" alt="Vehicle Name">
+                    <h2>Grotti Cheetah Classic</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v24">
+                    <img src="./assets/images/classic_sports/img23.png" alt="Vehicle Name">
+                    <h2>Smugglerás Run</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v25">
+                    <img src="./assets/images/classic_sports/img24.png" alt="Vehicle Name">
+                    <h2>Vapid Retinue</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 35%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v26">
+                    <img src="./assets/images/classic_sports/img25.png" alt="Vehicle Name">
+                    <h2>Dewbauchee Rapid GT Classic</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v27">
+                    <img src="./assets/images/classic_sports/img26.png" alt="Vehicle Name">
+                    <h2>Karin 190z</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v28">
+                    <img src="./assets/images/classic_sports/img27.png" alt="Vehicle Name">
+                    <h2>Lampadati Viseris</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v29">
+                    <img src="./assets/images/classic_sports/img28.png" alt="Vehicle Name">
+                    <h2>Ocelot Stromberg</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v30">
+                    <img src="./assets/images/classic_sports/img29.png" alt="Vehicle Name">
+                    <h2>Grotti GT500</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v31">
+                    <img src="./assets/images/classic_sports/img30.png" alt="Vehicle Name">
+                    <h2>Annis Savestra</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 15%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v32">
+                    <img src="./assets/images/classic_sports/img31.png" alt="Vehicle Name">
+                    <h2>Vulcar Fagaloa</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v33">
+                    <img src="./assets/images/classic_sports/img32.png" alt="Vehicle Name">
+                    <h2>Lampadati Michelli GT</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v34">
+                    <img src="./assets/images/classic_sports/img33.png" alt="Vehicle Name">
+                    <h2>Rune Cheburek</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v35">
+                    <img src="./assets/images/classic_sports/img34.png" alt="Vehicle Name">
+                    <h2>Ocelot Swinger</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v36">
+                    <img src="./assets/images/classic_sports/img35.png" alt="Vehicle Name">
+                    <h2>Vulcar Nebula Turbo</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v37">
+                    <img src="./assets/images/classic_sports/img36.png" alt="Vehicle Name">
+                    <h2>Ubermacht Zion Classic</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 45%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="vehicle" id="v38">
+                    <img src="./assets/images/classic_sports/img37.png" alt="Vehicle Name">
+                    <h2>Weeny Dynasty</h2>
+                    <h3>Esportivos clássicos</h3>
+                    <div class="vehicle-stats">
+                        <p>Speed:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                        <p>Acceleration:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                        <p>Handling:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 55%;"></div>
+                        </div>
+                        <p>Braking:</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

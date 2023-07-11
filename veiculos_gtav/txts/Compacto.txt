@@ -1,0 +1,296 @@
+
+    <div class="super">
+        <div class="introducao">
+            <h3>Compactos</h3>
+            <p>porfazer</p>
+        </div>
+    
+        <div class="vehicle">
+            <img src="./images/compactos/img0.png" alt="Vehicle Name">
+            <h2>Bollokan Prairie</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 20%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 55%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img1.png" alt="Vehicle Name">
+            <h2>Dinka Blista</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 20%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img2.png" alt="Vehicle Name">
+            <h2>Karin Dilettante</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 20%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 25%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 55%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img3.png" alt="Vehicle Name">
+            <h2>Weeny Issi</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 20%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img4.png" alt="Vehicle Name">
+            <h2>Benefactor Panto</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 20%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img5.png" alt="Vehicle Name">
+            <h2>Declasse Rhapsody</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 20%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img6.png" alt="Vehicle Name">
+            <h2>Grotti Brioso R/A</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 75%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 200%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 75%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img7.png" alt="Vehicle Name">
+            <h2>Weeny Issi Classic</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 40%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 30%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 40%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img8.png" alt="Vehicle Name">
+            <h2>Weeny Apocalypse Issi</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 65%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img9.png" alt="Vehicle Name">
+            <h2>Weeny Future Shock Issi</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 65%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img10.png" alt="Vehicle Name">
+            <h2>Weeny Nightmare Issi</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 65%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vehicle">
+            <img src="./images/compactos/img11.png" alt="Vehicle Name">
+            <h2>Maxwell Asbo</h2>
+            <h3>Compacto</h3>
+            <div class="vehicle-stats">
+                <p>Speed:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+                <p>Acceleration:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 40%;"></div>
+                </div>
+                <p>Handling:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 40%;"></div>
+                </div>
+                <p>Braking:</p>
+                <div class="bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>

@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+        
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+        }
+        
+        window.onload = function() {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function() {
+            toggleVisibility(this);
+            });
+
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./teste2.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="wrapper" id="trofeu1">
+            <header>
+                <nav>
+                    <ul class="lista">
+                        <li class="button"><img src="./assets//logos/gta5.png" alt="">
+                            <ul class="submenu">
+                                <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                                <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                                <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                                <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                                <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                                <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                                <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                                <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                              </ul>
+                        </li>
+                        <li class="button"><img src="./assets//logos/gta4.png" alt="">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets//logos/gtasa.png" alt="">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets//logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                        <li class="button"><img src="./assets//logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                            <ul class="submenu">
+                                <li><a>Sobre</a></li>
+                                <li><a>Veiculos</a></li>
+                                <li><a>Personagens</a></li>
+                                <li><a>Rádios</a></li>
+                                <li><a>Mapas</a></li>
+                                <li><a>Codigos</a></li>
+                                <li><a>Conquistas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <div id="myelement" class="sticky-element">
+                    <button onclick="scrollToTop()">Começo</button>
+                  </div>
+                
+                <div class="logo">
+                    <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+                </div>
+
+                <h1 style="text-align: center;">Troféus e Conquistas GTA V</h1>
+                <p style="text-align: center;">Aqui você confere a lista completa de Conquistas e Troféus de Grand Theft Auto 5</p>
+                <div class="laranja">
+                    <div class="indice-header" id="trofeu1">
+                      <h2>Índice</h2>
+                      <button id="indice_button" onclick="highlightDiv()">ocultar</button>
+                    </div>
+                    <div class="indice-conteudo">
+                      <ol>
+                        <li><a href="#Introducao"><span>1.</span> Introducão</a></li>
+                        <li><a href="#RoadMap"><span>2.</span> RoadMap</a></li>
+                        <li><a href="#Trofeus"><span>3.</span> Troféus</a>
+                            <ol>
+                                <li><a href="#trofeu1"><span>3.1</span> O Astro de Los Santos</a></li>
+                                <li><a href="#trofeu2"><span>3.2</span> Bem-vindo a Los Santos</a></li>
+                                <li><a href="#trofeu3"><span>3.3</span> Uma Amizade Ressuscitada</a></li>
+                                <li><a href="#trofeu4"><span>3.4</span> O Salário Nosso de Cada Dia</a></li>
+                                <li><a href="#trofeu5"><span>3.5</span> A Hora da Verdade</a></li>
+                                <li><a href="#trofeu6"><span>3.6</span> Viver ou Morrer em Los Santos</a></li>
+                                <li><a href="#trofeu7"><span>3.7</span> Duro como Diamante</a></li>
+                                <li><a href="#trofeu8"><span>3.8</span> Subversivo</a></li>
+                                <li><a href="#trofeu9"><span>3.9</span> Levou um sacode</a></li>
+                                <li><a href="#trofeu10"><span>3.10</span> Pequena Cidade, Grande Golpe</a></li>
+                                <li><a href="#trofeu11"><span>3.11</span> Os Escravos do Governo</a></li>
+                                <li><a href="#trofeu12"><span>3.12</span> O Grande Golpe!</a></li>
+                                <li><a href="#trofeu13"><span>3.13</span> Ouro Maciço</a></li>
+                                <li><a href="#trofeu14"><span>3.14</span> Vida Bandida</a></li>
+                                <li><a href="#trofeu15"><span>3.15</span> Turista em San Andreas</a></li>
+                                <li><a href="#trofeu16"><span>3.16</span> Na Vida, Somos Todos Passageiros</a></li>
+                                <li><a href="#trofeu17"><span>3.17</span> TP Industries Logística Bélica</a></li>
+                                <li><a href="#trofeu18"><span>3.18</span> Multidisciplinado</a></li>
+                                <li><a href="#trofeu19"><span>3.19</span> Muito Além das Estrelas</a></li>
+                                <li><a href="#trofeu20"><span>3.20</span> Um Mistério Solucionado</a></li>
+                                <li><a href="#trofeu21"><span>3.21</span> Gestão de Resíduos</a></li>
+                                <li><a href="#trofeu22"><span>3.22</span> Sangue no Zòio</a></li>
+                                <li><a href="#trofeu23"><span>3.23</span> Exibicionista</a></li>
+                                <li><a href="#trofeu24"><span>3.24</span> Kifflom!</a></li>
+                                <li><a href="#trofeu25"><span>3.25</span> Exército de Três Homens</a></li>
+                                <li><a href="#trofeu26"><span>3.26</span> O Mar Não Está Para Peixes</a></li>
+                                <li><a href="#trofeu27"><span>3.27</span> Acólito Altruísta</a></li>
+                                <li><a href="#trofeu28"><span>3.28</span> Uma Dinherama</a></li>
+                                <li><a href="#trofeu29"><span>3.29</span> Aplicando em Alfa Puro</a></li>
+                                <li><a href="#trofeu30"><span>3.30</span> Tunando o Meu Ferro</a></li>
+                                <li><a href="#trofeu31"><span>3.31</span> Procurado: Vivo ou Bem Vivo</a></li>
+                                <li><a href="#trofeu32"><span>3.32</span> Los Santos Customs</a></li>
+                                <li><a href="#trofeu33"><span>3.33</span> Por Um Triz</a></li>
+                                <li><a href="#trofeu34"><span>3.34</span> Carne Fresca</a></li>
+                                <li><a href="#trofeu35"><span>3.35</span> Criminoso Meia-boca</a></li>
+                                <li><a href="#trofeu36"><span>3.36</span> Na Correria</a></li>
+                                <li><a href="#trofeu37"><span>3.37</span> Acima da Lei</a></li>
+                                <li><a href="#trofeu38"><span>3.38</span> Número Uno</a></li>
+                                <li><a href="#trofeu39"><span>3.39</span> The Midnight Club</a></li>
+                                <li><a href="#trofeu40"><span>3.40</span> Seleção Não Natural</a></li>
+                                <li><a href="#trofeu41"><span>3.41</span> Passageiro/Motorista</a></li>
+                                <li><a href="#trofeu42"><span>3.42</span> Corra como o Vento</a></li>
+                                <li><a href="#trofeu43"><span>3.43</span> De Lavada</a></li>
+                                <li><a href="#trofeu44"><span>3.44</span> Condecorado</a></li>
+                                <li><a href="#trofeu45"><span>3.45</span> 157</a></li>
+                                <li><a href="#trofeu46"><span>3.46</span> Aproveite a Sua Estadia</a></li>
+                                <li><a href="#trofeu47"><span>3.47</span> Parte do Comando</a></li>
+                                <li><a href="#trofeu48"><span>3.48</span> Reembolso Total</a></li>
+                                <li><a href="#trofeu49"><span>3.49</span> Batendo um Fio</a></li>
+                                <li><a href="#trofeu50"><span>3.50</span> O Sonho Americano</a></li>
+                                <li><a href="#trofeu51"><span>3.51</span> Esteja Preparado</a></li>
+                                <li><a href="#trofeu52"><span>3.52</span> Em nome da ciência</a></li>
+                                <li><a href="#trofeu53"><span>3.53</span> Saque Fácil</a></li>
+                                <li><a href="#trofeu54"><span>3.54</span> Liberdade Condicional</a></li>
+                                <li><a href="#trofeu55"><span>3.55</span> Manda-chuva</a></li>
+                                <li><a href="#trofeu56"><span>3.56</span> De Quatro</a></li>
+                                <li><a href="#trofeu57"><span>3.57</span> Viva um Pouco</a></li>
+                                <li><a href="#trofeu58"><span>3.58</span> Intocável</a></li>
+                                <li><a href="#trofeu59"><span>3.59</span> Cérebro da Operação</a></li>
+                            </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+
+                <div id="Introducao" class="introducao" style="padding-bottom: 11px;">
+                    <h2>Introdução</h2>
+                    <ul>
+                        <li>Tempo Aproximado de obtenção dos troféus: 140 horas</li>
+                        <li>Offline: 32 troféus, sendo eles:
+                            <ul style="margin-top: -15px;
+                            display: flex;
+                            padding: 0px;
+                            list-style: none;">
+                                <li><img src="./assets/trophys/bronze.png" title="Bronze" alt="Bronze" style="position: relative; top:10px;">26</li>
+                                <li><img src="./assets/trophys/silver.png" title="silver" alt="Prata" style="position: relative; top:10px;"> 4</li>
+                                <li><img src="./assets/trophys/gold.png" title="Bronze" alt="Bronze" style="position: relative; top:10px;"> 2</li>
+                            </ul>
+                        </li>
+                        <li>Online: 17 troféus, sendo eles: 
+                             <ul style="margin-top: -15px;
+                             display: flex;
+                             padding: 0px;
+                             list-style: none;">
+                                <li><img src="./assets/trophys/bronze.png" title="Bronze" alt="Bronze" style="position: relative; top:10px;">14</li>
+                                <li><img src="./assets/trophys/silver.png" title="silver" alt="Prata" style="position: relative; top:10px;"> 2</li>
+                                <li><img src="./assets/trophys/gold.png" title="Bronze" alt="Bronze" style="position: relative; top:10px;"> 1</li>
+                            </ul>
+                        </li>
+                        <li>Troféus que você pode perder: Dependendo de sua escolha, todos os troféus que têm de ser feitos
+                            exclusivamente com Michael ou Trevor podem ser perdidos. Porém, sendo um guia de troféus, o
+                            RoadMap indicará o caminho onde nenhum troféu é missable e você é feliz. Além disso, existem
+                            mais alguns que não têm a ver com sua escolha que também são missable: <a href="#trofeu27" rel=""> <span style="color:#A0522D;"> Acólito Altruísta </span></a> e <a href="#trofeu31" rel=""> <span style="color:#A0522D;"> Procurado: Vivo ou Bem Vivo
+ </span></a>
+                        </li>
+                        <li>Mínimo de Jogadas: 1 e rejogadas para a coleta do ouro nas missões para <a href="#trofeu13" rel=""> <span style="color:#FFC125;"> Ouro Maciço </span></a></li>
+                        <li>A dificuldade afeta os troféus: Não há seleção de dificuldade em Grand Theft Auto V</li>
+                        <li>Troféus Bugados: <a href="#trofeu32" rel=""> <span style="color:#A0522D;"> Los Santos Customs </span></a> e <a href="#trofeu50" rel=""> <span style="color:#A0522D;"> O Sonho Americano </span></a></li>
+                        <li>Cheats impedem troféus?: Sim. A utilização dos famosos macetes da série GTA impedirão a
+                            conquista de TODOS os troféus.</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div id="RoadMap"class="roadmap" style="padding-top: 20px; padding-bottom: 30px;">
+                    <h2>RoadMap</h2>
+                    <br>
+                    <h3><strong>MODO HISTORIA e TROFÉUS DO SINGLE PLAYER</strong></h3>
+                    <br>
+                    <p>
+                        Dentro de GTA V, não há nenhum troféu que haja respectiva fase para ser feito. Não há nenhum
+                        troféu extra
+                        relacionado a história, consequentemente, a dica é: Zere a campanha, sem se preocupar com outro
+                        troféus. Se quiser o
+                        velocista, nada de ficar brincando durante o jogo. Outra dica e não realizar nenhum evento de
+                        carona, para não fazer
+                        que um troféu se torne missable. Não realize também nenhuma missão Estranhos e Doidos.
+                        Repetindo, só faça as missões
+                        principais.</p>
+                    <br>
+                    <p>
+                        OBS: É essencial que ao final do jogo, você escolha a opção C, apostar tudo. Este é o único
+                        momento do jogo onde
+                        aparecerá opções de escolha (A, B e C) em seu celular, então você saberá quando fazer.</p>
+                    <br>
+                    <p>
+                        Segue a lista de todos os troféus ganhos ao completar a história de GTA V.</p>
+                    <br>
+                    <p> - <a href="#trofeu2" rel=""> <span style="color:#A0522D;"> Bem-vindo a Los Santos </span></a>:
+                        Troféu relacionado a
+                        história.</p>
+                    <br>
+                    <p> - <a href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>: Troféu
+                        relacionado a história.
+                    </p>
+                    <br>
+                    <p> - <a href="#trofeu3" rel=""> <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>:
+                        Troféu relacionado a
+                        história.</p>
+                    <br>
+                    <p> - <a href="#trofeu4" rel=""> <span style="color:#A0522D;"> O Salário Nosso de Cada Dia </span></a>: Troféu
+                        relacionado a
+                        história.</p>
+                    <br>
+                    <p> - <a href="#trofeu5" rel=""> <span style="color:#A0522D;"> A Hora da Verdade </span></a>:Troféu
+                        relacionado a
+                        história.</p>
+                    <br>
+                    <p> - <a href="#trofeu8" rel=""> <span style="color:#A0522D;"> Subversivo </span></a>: Troféu
+                        relacionado a história.</p>
+                    <br>
+                    <p> - <a href="#trofeu9" rel=""> <span style="color:#A0522D;"> Levou um Sacode </span></a>: Troféu
+                        relacionado a história.</p>
+                    <br>
+                    <p> - <a href="#trofeu10" rel=""> <span style="color:#A0522D;"> Pequena Cidade, Grande Golpe </span></a>:
+                        Troféu relacionado a
+                        história.</p>
+                    <br>
+                    <p> - <a href="#trofeu11" rel=""> <span style="color:#A0522D;"> Os Escravos do Governo </span></a>:
+                        Troféu relacionado a
+                        história.</p>
+                    <br>
+                    <p> - <a href="#trofeu12" rel=""> <span style="color:#A0522D;"> O Grande Golpe! </span></a>: Troféu
+                        relacionado a história.
+                    </p>
+                    <br>
+                    <p> - <a href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
+                            </span></a>: Troféu
+                        relacionado a história.</p>
+                    <br>
+                    <p>
+                        <strong>Passo 1 - Michael:</strong>
+                    </p>
+                    <p>
+                        Com a campanha finalizada, todos os personagens estarão disponÃ­veis para coletar todos esses
+                        troféus. Antes de
+                        tudo, compre o Heliporto, um Buzzard e um avião, com o Michael. Siga para a parte mais escura do
+                        oceano, com o
+                        avião, e salte de paraquedas. Em seguida, espere um tubarão vir. Morra para ele e conquista esse
+                        troféu.</p>
+                    <p> - <a href="#trofeu26" rel=""> <span style="color:#A0522D;">  O Mar Não Está Para Peixes</span></a>: Morra
+                        para um Tubarão. Pode
+                        ser feito a qualquer momento da campanha, independente de dinheiro ou situação.</p>
+                    <br>
+                    <p>
+                        Ao renascer, faça o que se pede, e conquiste mais um troféu.</p>
+                    <p> - <a href="#trofeu29" rel=""> <span style="color:#A0522D;"> Aplicando em Alfa Puro </span></a>: Ganhe
+                        lucro em
+                        investimentos. Pode ser feito a qualquer momento da campanha, não será necessário muito
+                        dinheiro, então pode fazer
+                        logo nas primeiras missões.</p>
+                    <br>
+                    <p>
+                        Aproveite que esteja na internet, e realize esse troféu.</p>
+                    <p> - <a href="#trofeu28" rel=""> <span style="color:#A0522D;"> Uma Dinherama </span></a>: Gaste
+                        200 milhões. Pode ser
+                        feito a qualquer momento, porém o recomendável é fazer depois da conquista do troféu <a
+                            href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
+                            </span></a>.</p>
+                    <br>
+                    <p>
+                        Procure realizar o demorado troféu do Programa Epsilon.</p>
+                    <p> - <a href="#trofeu24" rel=""> <span style="color:#787878;"> Kifflom! </span></a> - Participe do
+                        Program Epsilon e
+                        encontre o caminho para o entendimento. Pode ser feito após o troféu <a href="#trofeu3" rel="">
+                            <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>, onde você terá dinheiro
+                        suficiente para o
+                        troféu.</p>
+                    <br>
+                    <p>
+                        Em seguida, busque o seu avião e complete o mapa de San Andreas, ganhando o seguinte troféu.</p>
+                    <p> - <a href="#trofeu15" rel=""> <span style="color:#787878;"> Turista em San Andreas </span></a>:
+                        Complete todo o mapa.
+                        Durante toda a campanha, varios pedaços do mapa serão preenchidos, porém sobrará algumas
+                        transparencias. Aconselho a
+                        fazer isso no final, depois do troféu <a href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
+                                Santos </span></a>.</p>
+                    <br>
+                    <br>
+                    <p>
+                        <strong>Passo 2 - Trevor:</strong>
+                    </p>
+                    <p>
+                        Agora troque para o Trevour e faça todos esses troféu.</p>
+                    <p>
+                        Siga para um Los Santos Customs, com um carro, e realize esse troféu.</p>
+                    <p> - <a href="#trofeu32" rel=""> <span style="color:#A0522D;"> Los Santos Customs </span></a>:
+                        Personalize totalmente um
+                        carro. Pode ser feito a qualquer momento da campanha, porém necessitará de dinheiro.</p>
+                    <br>
+                    <p>
+                        Agora parta para uma Ammunation e personalize totalmente uma arma, disponibilizando esse
+                        seguinte troféu.</p>
+                    <p> - <a href="#trofeu30" rel=""> <span style="color:#A0522D;"> Tunando o Meu Ferro </span></a>:
+                        Personalize totalmente uma
+                        arma. Pode ser feito a qualquer momento da campanha, porém necessitará de dinheiro.</p>
+                    <br>
+                    <p>
+                        Realize todas as missões de Matança, termine-as, ganhando o seguinte troféu.</p>
+                    <p> - <a href="#trofeu22" rel=""> <span style="color:#A0522D;"> Sangue no Zòio </span></a>: Realize as 5
+                        Matanças. Após o troféu
+                        <a href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>, é possÃ­vel
+                        realizar esse troféu.
+                    </p>
+                    <br>
+                    <p>
+                        Em Sandy Shores, recebe a missão de Procurado, e siga as instruções para a realização desse
+                        troféu.</p>
+                    <p> - <a href="#trofeu31" rel=""> <span style="color:#A0522D;"> Procurado: Vivo ou Bem Vivo
+ </span></a>:
+                        Entregue o procurado a
+                        Maude, vivo. Após o troféu <a href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante
+                            </span></a>, é
+                        possÃ­vel realizar esse troféu.</p>
+                    <br>
+                    <p>
+                        Lembra dos Eventos Aleatórios? Então, encontre uma missão de caroneiro e leve as pessoas da
+                        carona até o Culto
+                        AltruÃ­sta.</p>
+                    <p> - <a href="#trofeu27" rel=""> <span style="color:#A0522D;"> Acólito Altruísta </span></a>: Entregue
+                        uma caroneiro ao
+                        Culto Altruista. Após o troféu <a href="#125721" rel=""> <span style="color:#A0522D;"> Diamond
+                                Hard </span></a>, é
+                        possÃ­vel realizar esse troféu.</p>
+                    <br>
+                    <p>
+                        Finalizando a sessão de troféu com o Trevour, vá até o McKenzie Field Hangar, compre-o e
+                        complete 5 missões
+                        terrestres e 5 missões aéreas de entrega de equipamento.</p>
+                    <p> - <a href="#trofeu17" rel=""> <span style="color:#A0522D;"> TP Industries Logística Bélica</span></a>:
+                        Compre o McKenzie
+                        Field Hangar e vença a corrida armamentista. É possÃ­vel ser feito depois do troféu <a
+                            href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>,
+                        especificamente algumas missões depois onde aparecerá na
+                        tela a opção de comprar esta propriedade.</p>
+                    <br>
+                    <br>
+                    <p>
+                        <strong>Passo 3 - Franklin:</strong>
+                    </p>
+                    <p>
+                        Esteja em Los Santos com o Franklin e compre a seguinte propriedade: Downtown Cab Co, então
+                        realize o seguinte
+                        troféu relacionado a propriedade.</p>
+                    <p> - <a href="#trofeu16" rel=""> <span style="color:#A0522D;"> Na Vida, Somos Todos Passageiros </span></a>
+                        - Compre a Downtown
+                        Cab Co e faça uma corrida privada. Pode ser feito após o troféu <a href="#trofeu3" rel=""> <span
+                                style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>, onde você terá dinheiro
+                        necessário para o
+                        troféu.</p>
+                    <br>
+                    <p>
+                        Chame Trevour e Michael para dar um "rolé". Pegue um carro, busque cada um no local, e vá com os
+                        três para o
+                        aeroporto. Lá, comece a atirar, chamando a polí­cia. Realize então o seguinte troféu:</p>
+                    <p> - <a href="#trofeu25" rel=""> <span style="color:#A0522D;"> Exército de Três Homens </span></a>: Fique com
+                        os três personagens
+                        por 3 minutos com 3 estrelas de procurado. É possí­vel ser feito após o troféu <a href="#trofeu3"
+                            rel=""> <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>.</p>
+                    <br>
+                    <br>
+                    <h3><strong>COLECIONÁVEIS e 100%</strong></h3>
+                    <br>
+                    <p>
+                        Agora realize a parte mais chata da platina, os colecionáveis. Complete todas as missões dos
+                        Estranhos e Doidos,
+                        disponí­veis para o Franklin e uma hora você falará com Omega, e ele lhe relatará uma história
+                        sobre OVNIS. Então
+                        comece sua busca pelas 50 parte de espaçonave. Realize o seguinte troféu.</p>
+                    <p> - <a href="#trofeu19" rel=""> <span style="color:#A0522D;"> Muito Além das Estrelas </span></a>:
+                        Encontre todos os
+                        fragmentos da nave espacial e os devolva. Conta para o 100%.</p>
+                    <br>
+                    <p>
+                        Agora, com o Michael, compre a Sonar Collection Dock e realize o seguinte troféu.</p>
+                    <p> - <a href="#trofeu21" rel=""> <span style="color:#A0522D;"> Gestão de Resíduos</span></a>: Colete
+                        todos os lixos
+                        tóxicos. Não conta para o 100%.</p>
+                    <br>
+                    <p>
+                        Colete todos os fragmentos da carta, e realize esse seguinte troféu.</p>
+                    <p> - <a href="#trofeu20" rel=""> <span style="color:#A0522D;"> Um Mistério Solucionado </span></a>:
+                        Encontre todos os
+                        fragmentos da carta e encontre o assassino de L.J. Conta para o 100%.</p>
+                    <br>
+                    <p>
+                        Agora, você irá buscar completar o 100% do jogo. Faça tudo que o leve ao 100% (veja o troféu),
+                        porém em algum
+                        momento, esses troféu a seguir poderão ser feitos, já que parte do necessário para os completar,
+                        é requisito do
+                        100%.</p>
+                    <p> - <a href="#trofeu33" rel=""> <span style="color:#A0522D;"> Por Um Triz </span></a>: Realize todos
+                        os 50 Under the
+                        Bridge e os 15 Knife Flight. Apenas 25 e 8 deles são necessários, respectivamente para o 100%,
+                        porém todos eles são
+                        necessários para a platina.</p>
+                    <br>
+                    <p> - <a href="#trofeu23" rel=""> <span style="color:#A0522D;"> Exibicionista </span></a>: Realize todos os
+                        50 Stunt Jumps.
+                        Apenas 25 são necessários para o 100%, porém todos eles são necessários para a platina.</p>
+                    <br>
+                    <p> - <a href="#trofeu18" rel=""> <span style="color:#787878;"> Multidisciplinado </span></a>: Ganhe
+                        uma medalha de ouro
+                        em cada hobbie e passatempo. É necessário ganhar uma medalha quaisquer (bronze, prata e ouro) em
+                        cada hobbie, e em
+                        cada divisão dele para ganhar o 100%. Porém em uma dessas divisão do hobbie, você terá de ganhar
+                        uma medalha de
+                        ouro. Mais informações no troféu.</p>
+                    <br>
+                    <p> - <a href="#trofeu14" rel=""> <span style="color:#FFC125;"> Vida Bandida </span></a>: Complete
+                        o jogo 100%.</p>
+                    <br>
+                    <p>
+                        Este é o momento de finalização do Modo Campanha. Entre no menu do GTA V, vá em JOGO e refaça
+                        Missões Principais ou
+                        Estranhos e Doidos, adquirindo uma medalha de ouro nelas. Ganhando 70 medalhas de ouro (cada
+                        missão lhe rende uma),
+                        você irá adquirir o seguinte troféu.</p>
+                    <p> - <a href="#trofeu13" rel=""> <span style="color:#FFC125;"> Ouro Maciço </span></a>:
+                        Complete 70 missões do jogo
+                        (Principais e Estranhos e Doidos) tendo como classificação, o ouro. Esse é um troféu bastante
+                        demorado pois sempre
+                        tem as missões chatas que você não vai conseguir de primeira. Então busque aquelas em que você
+                        se saia bem.</p>
+                    <br>
+                    <br>
+
+                    <h3><strong>GRAND THEFT AUTO ONLINE</strong></h3>
+                    <br>
+
+                    <p>
+                        Em Grand Theft Auto Online, não ha troféu perdí­veis ou uma ordem para ser seguida. Uma dica é
+                        enquanto busca o
+                        ranking 100 faça todos os troféus a seguir, para que depois do ranking alcançado, você não tenha
+                        de buscar mais
+                        qualquer coisa. Transformar o ranking 100 em seu ultimo troféu online. Antes de tudo também
+                        entre no Comando do
+                        Mypst, se quiser algo rápido, já que ele já possui bastante membros e na maioria de suas vezes
+                        alguém online.</p>
+                    <br>
+                    <p> - <a href="#trofeu34" rel=""> <span style="color:#A0522D;"> Carne Fresca </span></a>: Complete a
+                        Introdução do GTA
+                        Online. Esse vai ser seu primeiro troféu do GTA Online.</p>
+                    <br>
+                    <p>
+                        Agora sua busca no jogo é para o nÃ­vel 100 do GTA Online. Muito dos outros requisitarão certo
+                        nÃ­vel para serem
+                        feitos então essa deverá ser a ordem dos troféus para se conseguir uma rápida platina. Não se
+                        esqueçam de tentar
+                        boost.</p>
+                    <br>
+                    <p> - <a href="#trofeu47" rel=""> <span style="color:#A0522D;"> Parte do Comando </span></a>: Complete uma
+                        missão com um membro de
+                        um Comando. Chame algum amigo do comando para um serviço e complete-o.</p>
+                    <br>
+                    <p> - <a href="#trofeu45" rel=""> <span style="color:#A0522D;"> 157 </span></a>: Assalte as
+                        20 lojas do GTA
+                        Online.</p>
+                    <br>
+                    <p> - <a href="#trofeu39" rel=""> <span style="color:#A0522D;"> The Midnight Club </span></a> : Vença
+                        5 corridas de rua
+                        com carros customizados. Chame um amigo do comando para o boost, escolha a categoria de seu
+                        carro e vença 5 corridas
+                        com o seu carro personalizado.</p>
+                    <br>
+                    <p> - <a href="#trofeu46" rel=""> <span style="color:#A0522D;"> Aproveite a Sua Estadia </span></a>: Participe
+                        em tudo que Los
+                        Santos tem a te oferecer. Siga a lista que o troféu possui e faça tudo o que é pedido.</p>
+                    <br>
+                    <p> - <a href="#trofeu41" rel=""> <span style="color:#A0522D;"> Passageiro/Motorista </span></a>: Ganhe uma
+                        corrida Rally omo
+                        co-piloto. Com boost de 4 pessoa fica muito mais fácil, pois assim a outra equipe deixara você
+                        ganhar.</p>
+                    <br>
+                    <p> - <a href="#trofeu40" rel=""> <span style="color:#A0522D;"> Seleção Não Natural </span></a>:
+                        Complete 10 waves de
+                        Sobrevivência. Depois do ní­vel 15, você liberará as Sobrevivências. Chame 3 amigos e complete
+                        10 waves. A
+                        Sobrevivência dá muito XP. Então com facilidade e repetição você chegará ao ní­vel 25.</p>
+                    <br>
+                    <p> - <a href="#trofeu35" rel=""> <span style="color:#A0522D;"> Criminoso Meia-Boca </span></a>:
+                        Alcance o ranking 25.</p>
+                    <br>
+                    <p> - <a href="#trofeu43" rel=""> <span style="color:#A0522D;"> De Lavada </span></a> : Complete um
+                        Ataque de Gangue sem
+                        morrer e matando no minimo 10 pessoas. Depois do ní­vel 25, é uma boa o Ataque de Gangue que
+                        aparecerá
+                        aleatoriamente no mapa.</p>
+                    <br>
+                    <p> - <a href="#trofeu50" rel=""> <span style="color:#A0522D;"> O Sonho Americano </span></a>:Compre uma
+                        casa, garagem e um
+                        carro segurado no GTA Online. Nesse nÃ­vel, você facilmente já terá dinheiro para comprar a casa
+                        e a garagem, já que
+                        o carro segurado não envolve muitos custos.</p>
+                    <br>
+                    <p> - <a href="#trofeu42" rel=""> <span style="color:#A0522D;"> Corra como o Vento </span></a>:
+                        Sobreviva com uma
+                        recompensa pela sua cabeça. Peça para um amigo colocar recompensa enquanto você fica em alguma
+                        coisa que não envolva
+                        risco de morte.</p>
+                    <br>
+                    <p> - <a href="#trofeu36" rel=""> <span style="color:#787878;"> Na Correria </span></a>: Alcance o
+                        ranking 50.</p>
+                    <br>
+                    <p> - <a href="#trofeu38" rel=""> <span style="color:#A0522D;"> Número Uno </span></a> : Obtenha
+                        primeiro lugar em todos
+                        os modos competitivos do GTA Online.</p>
+                    <br>
+                    <p> - <a href="#trofeu48" rel=""> <span style="color:#A0522D;"> Reembolso Total </span></a>: Mate o ladrão
+                        que matou você.
+                        Você poderá precisar de boost para esse troféu já que exige uma pessoa com ní­vel 50 ao seu
+                        lado.</p>
+                    <br>
+                    <p> - <a href="#trofeu44" rel=""> <span style="color:#787878;"> Condecorado</span></a>: Complete 30
+                        Platinum Awards.</p>
+                    <br>
+                    <p> - <a href="#trofeu37" rel=""> <span style="color:#FFC125;"> Acima da Lei </span></a>: Alcance o
+                        ranking 100.</p>
+                    <br>
+                    <p> - <a href="#trofeu49" rel=""> <span style="color:#A0522D;"> Batendo um Fio </span></a>: Chame por
+                        um serviço de
+                        suporte pela primeira vez.</p>
+                    <br>
+                    <p>
+                        Com todos esses troféus feitos, você irá adquirir o troféu mais desejado de todos do GTA V, o
+                        troféu da platina.</p>
+                    <p>-<a href="#trofeu1" rel=""> <span style="color:#48D1CC;"> O Astro de Los Santos </span></a>: Seja
+                        Feliz!</p>
+                </div>
+
+                <hr>
+
+                <div id="Trofeus"class="trofeus" style="padding-top: 5px;">
+                    <h2>Troféus</h2>
+
+                    <div class="grid-container" id="trofeu1">
+                        <img src="./assets/images/img1.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">01</span>. O Astro de Los Santos</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/platinum.png" alt="">
+                            Platina</p>
+                        <p class="gri-item d-text">Para conquistar esse troféu, basta coletar todos os 49 troféus do jogo.
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu2">
+                        <img src="./assets/images/img2.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">02</span>. Bem-vindo a Los Santos</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu3">
+                        <img src="./assets/images/img3.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">03</span>. Uma Amizade Ressusitada</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu4">
+                        <img src="./assets/images/img4.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">04</span>. O salário Nosso de Cada Dia</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu5">
+                        <img src="./assets/images/img5.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">05</span>. A hora da Verdade</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu6">
+                        <img src="./assets/images/img6.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">06</span>. Viver ou Morrer em Los Santos</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu7">
+                        <img src="./assets/images/img7.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">7</span>. Duro como Diamante</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu8">
+                        <img src="./assets/images/img8.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">8</span>. Subversivo</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu9">
+                        <img src="./assets/images/img9.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">9</span>. Levou um sacode</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu10">
+                        <img src="./assets/images/img10.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">10</span>. Pequena Cidade, Grande Golpe</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu11">
+                        <img src="./assets/images/img11.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">11</span>. Os Escravos do Governo</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu12">
+                        <img src="./assets/images/img12.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">12</span>. O Grande Golpe!</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Troféu diretamente relacionado a história.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu13">
+                        <img src="./assets/images/img13.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">13</span>. Ouro Maciço</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/gold.png" alt=""> Ouro</p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta coletar 70 medalhas de ouro no modo
+                            single player. Podem ser feitas nas missões “Principais” ou nas missões “Estanhos e Doidos”.
+                            <br><br>
+                            As missões “Estranhos e Doidos” são mais recomendáveis de serem feitas, pois em algumas missões existem apenas um requisito para que a medalha de ouro seja feita.
+                            <br><br>
+                            Segue o link da página GTA Séries, onde se encontram todas as missões principais e secundárias com classificação ouro.</p>
+                            <br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/uiBBx24eiOw?list=PLQ3KzJPBsAHnNmaulPFn2hWw0Lw6p7_h1">Clique para assistir o tutorial</a>
+                    </div>
+
+                    <div class="grid-container" id="trofeu14">
+                        <img src="./assets/images/img14.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">14</span>. Vida Bandida</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/gold.png" alt=""> Ouro</p>
+                        <p class="gri-item d-text"> O 100 % do modo single player do GTA 5 está dividido em cinco partes,
+                            sendo elas: <br><br>
+
+                            * 'Missões Principais' <br>
+
+                            São todas as missões relacionadas a história do jogo, geralmente denominadas no jogo pelos
+        trofeu13cones de letra maiúscula, M, F, T. Veja Ouro Maciço. <br><br>
+
+                            * Estranhos e Loucos <br>
+
+                            São pessoas que irão gerar sub-missões durante a campanha do jogo, geralmente denominadas no
+                            jogo pelo ícone “?” otrofeu13panhadas de uma letra, M?, F?, T?. Veja Ouro Maciço. <br><br>
+
+                            * Hobbies e Passatempos <br>
+                            São todas as atividades relacionadas a diversão e desenvolvimento dos personagens no jogo.
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/tJfGpWgcF1A">Clique para assistir o tutorial</a>
+                            <br>
+                            • Stande de tiros – Vença os 6 desafios. (Qualquer personagem) <br>
+                            • Corridas – Vença as 6 corridas. (Franklin) <br>
+                            • Tênis – Vença uma partida. (Qualquer personagem) <br>
+                            • Golf – Vença com pontuação positiva. (Qualquer personagem) <br>
+                            • Dardos – Vença nos dardos. (Qualquer personagem) <br>
+                            • Club de Striptease – Contrate uma dançarina para uma dança íntima. (Qualquer personagem) <br>
+                            • Triatlo – Vença os 3 triatlos. (Qualquer personagem) <br>
+                            • Rally – Vença os 6 rally's. (Trevor) <br>
+                            • Recompensa por fugitivos – Capture os 4 fugitivos. (Trevor) <br>
+                            • Tráfico aéreo de armas – Complete os 5 primeiros. (Trevor) <br>
+                            • Tráfico terrestre de armas – Complete os 5 primeiros. (Trevor) <br>
+                            • Caça – Consiga medalha de ouro. (Trevor) <br>
+                            • Escola de aviação – Consiga qualquer medalha nas 12 lições. (Qualquer personagem) <br>
+                            • Corrida marítima – Vença as 4 corridas. (Qualquer personagem) <br>
+                            • Ioga – Faça Ioga (Michael) <br>
+                            • Paraquedismo – Complete todos os saltos de bases. (Franklin) <br>
+                            • Paraquedismo – Complete todos os saltos de helicópteros. (Franklin) <br><br>
+
+                            OBS: Apesar de não ser necessário as medalhas de ouro nas atividades, procure realizar as mesma
+                            para facilitar o progresso com o troféu Multi-Disciplined. <br><br>
+                            * Eventos Aleatórios
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/CztJunCGGyQ">Clique para assistir o tutorial</a>
+                            <br>
+                            Eventos aleatórios podem acontecer a qualquer momento durando o free roam do jogo. São
+                            denominados por um ponto no minimapa que fica alternando entre as cores vermelho e azul. Procure
+                            fazer assim que aparecer para evitar a perda de alguns eventos, pois alguns exigem horários
+                            específicos para serem realizados. <br><br>
+
+                            * Diversos (Misc) <br>
+                            São atividades que englobam todos os outros requisitos, incluindo a parte de coletáveis, somando
+                            atividades com amigos e ações pela cidade. Não existem ícones denominando esses pontos no mapa,
+                            pois são atividades que virão automáticamente com o feito de outros requisitos do 100 %.
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/5QczQZo8ZQU">Clique para assistir o tutorial</a>
+                            <br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/4r7MgC1rN8s">Clique para assistir o tutorial</a>
+                            <br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/ytP0g6ffXO8">Clique para assistir o tutorial</a>
+                            <br>
+
+                            • Compre roupas. <br>
+                            • Modifique um carro. <br>
+                            • Corte o cabelo. <br>
+                            • Faça uma tatuagem. <br>
+                            • Compre uma arma. <br>
+                            • Compre 5 propriedades. <br>
+                            • Compre um veículo pela internet. <br>
+                            • Passeie e brinque com Chop. <br>
+                            • Saia com uma dançarina da Boate. <br>
+                            • Contrate uma prostituta. <br>
+                            • Assista TV. <br>
+                            • Compre ações. <br>
+                            • Assalte uma loja. <br>
+                            • Ande no bondinho. <br>
+                            • Use o lava rápido. <br>
+                            • Ande nos brinquedos do parque. <br>
+                            • Visite o cinema. <br>
+                            • Visite um bar com os amigos. <br>
+                            • Visite um cinema com os amigos. <br>
+                            • Visite o club de striptease com os amigos. <br>
+                            • Jogue dardos com os amigos. <br>
+                            • Jogue golf com os amigos. <br>
+                            • Jogue tênis com os amigos. <br>
+                            • Colete as 30 peças do submarino. <br>
+                            • Colete as 50 peças da nave espacial. Troféu: From Beyond the Stars <br>
+                            • Colete os 50 fragmentos de carta. Troféu: A Mystery, Solved <br>
+                            • Colete os 30 lixos nucleares. Troféu: Waste Management <br>
+                            • Complete 25/50 dos saltos únicos. Troféu: Show Off <br>
+                            • Complete 25/50 dos voos em baixo de pontes, 08/15 dos voos em faca. Troféu: Close Shave
+                            <br><br>
+                            OBS: Atenção, existem relatos sobre um possível bug nessa missão. Após completar os 13 saltos de
+                            paraquedas, a missão para conclusão não aparece. Então a recomendação é criar um save point em
+                            outro slot no 12º salto para que se um possível bug acontecer haver a opção de retornar ao salto
+                            anterior anterior.
+                            Caso tenha feito o 13º salto, delete a atualização e entre no jogo no modo offline e tente
+                            completar a missão.' <br>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu15">
+                        <img src="./assets/images/img15.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">15</span>. Turista em San Andreas</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata</p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta liberar todo o mapa de Los Santos até
+                            Blaine County, é simples, pegue um avião ou compre-o na internet e marque os pontos no mapa em
+                            que estiver oculto. Assim que liberar todas as áreas, o troféu é liberado.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu16">
+                        <img src="./assets/images/img16.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">16</span>. Na Vida, Somos Todos Passageiros</b>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze</p>
+                        <p class="gri-item d-text">
+                            Atenção, jogando com Franklin, você deve comprar o Downtown Cab Co. e
+                            realizar uma corrida privada. Inicialmente, entre em um táxi e faça algumas corridas para alguns
+                            pedestres comuns, assim que o gerente ligar para você aceite a missão, o ícone “P” será indicado
+                            como pedestre privado. Leve-o ao destino e pronto. <br><br>Segue o Tutorial a seguir:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/09aWtMKnKSE">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu17">
+                        <img src="./assets/images/img17.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">17</span>. TP Industries Logística Bélica</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, jogando com Trevor, você deve comprar o McKenzie Field Hangar,
+                            após compra-lo serão liberadas missões de tráfico de drogas e armas. Complete cinco missões de
+                            carro e cinco missões de avião para desbloquear o troféu.
+                            <br><br>
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/sChumZIEgVQ">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu18">
+                        <img src="./assets/images/img18.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">18</span>. Multidisciplinado</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta conseguir medalha de ouro nos hobbies
+                            e passatempos citados abaixo: <br><br>
+
+                            Corrida off-road <br>
+                            Corrida marítima <br>
+                            Corrida de rua <br>
+                            Estande de tiro <br>
+                            Triatlo <br>
+                            Escola de aviação <br><br>
+
+                            Detalhe pro estande de tiro, você tem que ganhar ouro nos 3 desafios de uma arma. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/tTbpqN78a2U">Clique para assistir o tutorial</a>
+
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu19">
+                        <img src="./assets/images/img19.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">19</span>. Muito Além das Estrelas</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta coletar as 50 peças da nave espacial,
+                            e realizar a missão secundária, para a coleta do troféu. Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/fcOKeHrZyo8">Clique para assistir o tutorial</a></p>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu20">
+                        <img src="./assets/images/img20.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">20</span>. Um Mistério Solucionado</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta coletar os 50 fragmentos da carta de
+                            Leonora Johnson, e realizar a missão secundária, para a coleta do troféu. Segue o vídeo caso
+                            haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/WUV0ZDQjyrU">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu21">
+                        <img src="./assets/images/img21.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">21</span>. Gestão de Resíduos</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta coletar os 30 lixos tóxicos. Segue o
+                            vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/s_acxxr7ZdM">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu22">
+                        <img src="./assets/images/img22.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">22</span>. Sangue no Zòio</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, existem cinco missões com o Trevor onde ele tem um ataque de
+                            fúria, você deve matar alguns inimigos dentro de um tempo determinado. Se você não realizar esse
+                            troféu durante a campanha, e escolher a opção A na ultima missão ele se tornará perdível. Segue o
+                            vídeo caso haja dúvidas:   
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/N7c-4dzeZ8M">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu23">
+                        <img src="./assets/images/img23.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">23</span>. Exibicionista</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta completar os 50 saltos únicos. Segue
+                            o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/YWzBHdXeIq0">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu24">
+                        <img src="./assets/images/img24.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">24</span>. Kifflom!</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">
+                            Atenção, se você não realizar esse troféu durante a campanha, e escolher a opção B na ultima
+                            missão esse troféu se tornará perdível. <br><br>
+
+                            Prepare-se pois esse troféu é demorado. Jogue com o Michael e tenha pelo menos R$ 90,500 com
+                            ele. <br><br>
+
+                            Passo 1: Entre no site www.epsilonprogram.com e clique em “Avalie sua Identidade”. Clique em sim
+                            em todas as perguntas. <br><br>
+
+                            Passo 2: Vá até o ponto de interrogação que irá aparecer ao lado esquerdo do mar Álamo. (Pode
+                            demorar um pouco até aparecer, por isso, salve o jogo até ele ser mostrado no mapa). Chegando
+                            lá, você vai ver uma caminhonete vermelha. Depois que o Michael ficar quase desnudo, ele vai
+                            receber uma mensagem. <br><br>
+
+                            Passo 3: Doe R$ 500,00 ao site do Epsilon. <br><br>
+
+                            Passo 4: Vá até o ícone do Epsilon que aparecer no mapa (Pode demorar um pouco até aparecer, por
+                            isso, salve o jogo até ele ser mostrado no mapa). Entrando no recinto, desta vez, doe R$
+                            5.000,00 ao site do Epsilon. <br><br>
+
+                            Passo 5: Vá até o próximo ícone do Epsilon que vai aparecer em cima do mar Álamo. (Pode demorar
+                            um pouco até aparecer, por isso, salve o jogo até ele ser mostrado no mapa) o Michael vai
+                            conversar com uma mulherzinha que lá se encontrava. <br><br>
+
+                            Passo 6: Colete todos os 5 veículos do Epsilon. (Para saber quais são esses veículos, coloque em
+                            2:31 do vídeo que se encontra no final dessa dica). Leve cada um deles ao ícone do Epsilon no
+                            mapa. <br><br>
+
+                            Passo 7: Vá ao próximo ícone do Epsilon que fica acima do mar Álamo. (Pode demorar um pouco até
+                            aparecer, por isso, salve o jogo até ele ser mostrado no mapa). Faça a missão como pede no jogo.
+                            <br><br>
+
+                            Passo 8: Doe R$ 10.000,00 ao site do Epsilon (Clique em doar R$ 5.000,00 duas vezes). <br><br>
+
+                            Passo 9: Vá até o próximo ícone do Epsilon e entre no site e compre a roupa deles (R$25.000,00).
+                            Elas demoram um dia para chegar. <br><br>
+
+                            Passo 10: Vá até o closet de Michael na mansão dele e use a túnica do Epsilon durante 10 dias
+                            seguidos. (Salve o jogo várias vezes até passar os 10 dias, já que cada vez que você salva, o
+                            jogo avança em 6 horas). Obs: fique com a roupa até terminar todos os passos do troféu. <br><br>
+
+                            Passo 11: Vá até o próximo ícone do Epsilon e faça a missão. (Pode demorar um pouco até
+                            aparecer, por isso, salve o jogo até ele ser mostrado no mapa). <br><br>
+
+                            Passo 12: Vá até o próximo ícone do Epsilon e percorra 5 milhas (8 quilômetros) pelo deserto, é
+                            bastante coisa. Vá correndo até tocar aquele som característico de final de missão. Michael irá
+                            receber um telefonema. Atenda normalmente. Obs: Cuidado para não sair da zona de peregrinação do
+                            Epsilon, senão, vai ter que começar a correr tudo de novo. (Dica!) <br><br>
+
+                            Passo 13: Vá até o último ícone do Epsilon e complete a missão. Agora vem a parte mais
+                            importante. Vai ter uma hora que você terá que estacionar o carro em cima da marca amarela que
+                            fica a frente do helicóptero; se você não estacionar na marca, sair do carro e matar todo mundo,
+                            você ganha o troféu e mais R$ 2.100.000,00 e se você parar na marca e seguir o carinha, vai
+                            ganhar o troféu também, mas sem os 2 milhões. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                                <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/PMevYDxD5l0">Clique para assistir o tutorial</a>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu25">
+                        <img src="./assets/images/img25.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">25</span>. Exército de Três Homens</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, se você não realizar esse troféu durante a campanha, e escolher
+                            a opção A ou B na ultima missão, esse troféu se tornará perdível. <br><br>
+
+                            Para se realizar esse troféu, basta convidar os dois amigos para sair, independente da escolha
+                            do personagem, e elevar seu nível de procurado para três estrelas, estando com as três estrelas,
+                            permaneça por três minutos sendo perseguido, o melhor local para se realizar é no aeroporto,
+                            pois a pista é longa e o nível não cai. Outra dica é blindar os pneus do carro, pois assim você
+                            garante que não será parado fácilmente. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                                <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/t4ugDAhlZmM">Clique para assistir o tutorial</a>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu26">
+                        <img src="./assets/images/img26.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">26</span>. O Mar Não Está Para Peixes</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta morrer para um tubarão. Siga para a
+                            parte azul escura do oceano, chegando lá espere um ícone vermelho aparecer no seu minimapa e
+                            mergulhe. <br><br> Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/fWl3hG6Eq0g">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu27">
+                        <img src="./assets/images/img27.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">27</span>. Acólito Altruísta</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, esse troféu pode ser perdido, existem quatro caroneiros na
+                            região de Blaine County, com Trevor, você terá a opção de levar esses caroneiros até um culto no
+                            topo da montanha, se realizar as quatro caronas com outro personagem você perderá a oportunidade
+                            de levá-los até o culto. Se você não realizar esse troféu durante a campanha, e escolher a opção
+                            A na ultima missão ele também se torna perdível. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                                <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/StWEPHhFo9s">Clique para assistir o tutorial</a>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu28">
+                        <img src="./assets/images/img28.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">28</span>. Uma Dinherama</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta “gastar” o acumulativo de 200 milhões
+                            de dólares com os três personagens. O melhor método para se realizar esse troféu é comprando e
+                            vendendo ações. Após a ultima missão, você terá o acumulado, de aproximadamente 75 milhões de
+                            dólares com os três personagens. Basta investir todo o dinheiro na bolsa de valores e retirar
+                            posteriormente para investir novamente, gerando assim o gasto do dinheiro. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                                <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/Gu_hR-TKxAs">Clique para assistir o tutorial</a>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu29">
+                        <img src="./assets/images/img29.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">29</span>. Aplicando em Alfa Puro</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta investir na bolsa de valores em uma
+                            empresa que estiver com os lucros em baixa e aguardar os lucros passarem para alta e vender as
+                            ações. <br><br>
+
+                            1º- Abra seu celular. <br>
+                            2º- clique em internet. <br>
+                            3º- Na parte central da tela clique em “Dinheiro e serviços”. <br>
+                            4º- Clique no link da imagem com o nome “LCN” em azul. <br>
+                            5º- Clique em mercado. <br>
+                            6º- Escolha uma ação que estiver em baixa e clique em cima dela. <br>
+                            7º- Adicione a quantidade de ações que deseja comprar clicando no “+”. <br>
+                            8º- Clique em comprar e confirme. <br>
+                            9º- Acompanhe em meu Portfólio e quando tiver lucro igual ou maior a $1 venda tudo. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/mFA0eejbAfM">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu30">
+                        <img src="./assets/images/img30.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">30</span>. Tunando o Meu Ferro</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta comprar todas as partes possíveis de
+                            uma arma. São elas: <br><br>
+
+                            Munição <br>
+                            Cartucho extendido <br>
+                            Lanterna <br>
+                            Silenciador <br>
+                            Pintura Preta <br>
+                            Pintura Militar <br>
+                            Pintura Polícial <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/mFA0eejbAfM">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu31">
+                        <img src="./assets/images/img31.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">31</span>. Procurado: Vivo ou Bem Vivo</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, esse troféu pode ser perdido, existem quatro missões de captura
+                            de fugitivos, se os quatro forem mortos, você perde o troféu. Se você não realizar esse troféu
+                            durante a campanha, e escolher a opção A na ultima missão ele também se torna perdível. <br><br>
+
+                            Para se realizar esse troféu, basta receber o email com a foto da ultima localização do seu
+                            alvo. Para facilitar o trabalho atire na perna ou se seu inimigo estiver de veículo, atire nas
+                            rodas para paralo. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/QD_NoO0EscI">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu32">
+                        <img src="./assets/images/img32.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">32</span>. Los Santos Customs</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta você ter um carro, e customizá-lo com
+                            todas as opções disponíveis em uma das lojas de tunnig de San Andreas. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/_plYBAcdg8I">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu33">
+                        <img src="./assets/images/img33.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">33</span>. Por Um Triz</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, existem alguns relatos de bug’s nesse troféu, são 50 pontes e 15
+                            voos de faca, nas 50 pontes, as vezes são necessários a passagem em baixo da ponte pelo menos 3
+                            vezes, então ao passar sob a ponte, marque em um check list as pontes passadas para evitar
+                            passar em baixo das 50 pontes novamente. <br><br>
+
+                            Para se realizar esse troféu, basta você passar em baixo das 50 pontes e realizar 15 voos de
+                            faca entre os prédios em Los Santos. Para facilitar a passagem de helicópteros em algumas pontes
+                            específicas do jogo, o helicóptero Buzzard é o mais recomendável. <br><br>
+
+                            Seguem os vídeos caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/7EitUby6EC4">Clique para assistir o tutorial</a>
+                            <br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/0dQi0NtxYiU">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu34">
+                        <img src="./assets/images/img34.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">34</span>. Carne Fresca</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Após a criação do seu personagem online, assista a introdução do modo
+                            online, no final quando acabar o vídeo o troféu é desbloqueado.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu35">
+                        <img src="./assets/images/img35.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">35</span>. Criminoso Meia-boca</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atinja o nível 25 no ranking online, para mais informações veja o troféu
+                            Acima da Lei.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu36">
+                        <img src="./assets/images/img36.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">36</span>. Na Correria</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">Atinja o nível 50 no ranking online, para mais informações veja o troféu
+                            Acima da Lei.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu37">
+                        <img src="./assets/images/img37.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">37</span>. Acima da Lei</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/gold.png" alt=""> Ouro</p>
+                        <p class="gri-item d-text">Atinja o nível 100 no ranking online, para chegar ao nível 100 do ranking
+                            online, você vai precisar ganhar “RP” por completar missões, rachas, despistando os policiais,
+                            roubando lojas, completando objetivos extras. A quantidade de “RP” necessário para alcançar o
+                            próximo nível vai aumentar à medida que a sua classificação no ranking online subir. <br><br>
+
+                            Para chegar ao nível 025 no ranking online, você vai precisar de 127.100 “RP”. <br>
+                            Para chegar ao nível 050 no ranking online, você vai precisar de 448.800 “RP”. <br>
+                            Para chegar ao nível 100 no ranking online, você vai precisar de 1.583.380 “RP”. <br><br>
+
+                            Dicas para melhorar a pontuação em missões: <br><br>
+
+                            Complete missões como uma equipe e lhe será dado mais 20% de “RP”. <br>
+                            Complete missões como uma equipe, mas com os membros do comando e lhe será dado mais 10% de “RP”
+                            dependendo do nível até 20% de “RP” com uma equipe. <br>
+                            Complete as missões no modo “Hard” e lhe será dado mais 1.5x “RP”.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu38">
+                        <img src="./assets/images/img38.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">38</span>. Número Uno</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta vencer e completar os 19 modos de
+                            jogo do multi player. Segue a lista: <br><br>
+
+                            • Vença uma corrida Terrestre. <br><br>
+                            • Vença uma corrida Aérea. <br><br>
+                            • Vença uma corrida Marítima. <br><br>
+                            • Vença uma corrida GTA. <br><br>
+                            • Vença uma corrida de "Rally" como piloto. <br><br>
+                            • Vença uma corrida de "Rally" como co-piloto. <br><br>
+                            • Vença um Deathmatch. <br><br>
+                            • Vença um Team Deathmatch. <br><br>
+                            • Vença um Deathmatch em veículo. <br><br>
+                            • Vença uma Queda de Braço. <br><br>
+                            • Vença no Dardo. <br><br>
+                            • Vença uma partida de Tennis (Vença 1 set). <br><br>
+                            • Vença uma partida de Golf (Vença 1 buraco). <br><br>
+                            • Vença uma competição de Paraquedismo. <br><br>
+                            • Vença um Target Grid no Estande de Tiro. <br><br>
+                            • Vença um Random Target no Estande de Tiro. <br><br>
+                            • Vença um Cover Target no Estande de Tiro. <br><br>
+                            • Complete um game Survival (Todas as 10 Waves). <br><br>
+                            • Complete um "Gang Attack". <br><br>
+                            Observação: Todos os modos devem ser completados com pelo menos duas pessoas, em partidas
+                            abertas !!!</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu39">
+                        <img src="./assets/images/img39.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">39</span>. The Midnight Club</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta concluir cinco corridas terrestres
+                            com um carro personalizado. É muito simples, compre um carro ou roube-o depois equipe ele com um
+                            spoiler ou modifique sua pintura original que já estará valendo, não se esqueça de comprar o
+                            seguro do carro, para que ele seja registrado como seu. Observação: Essas corridas devem ser
+                            ganhas de outro usuários. Se for fazer boost, basta completar cinco corridas em primeiro lugar,
+                            pode ser corridas de uma volta, sendo que você deve estar usando o seu carro modificado, e as
+                            cinco pista devem ser diferentes.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu40">
+                        <img src="./assets/images/img40.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">40</span>. Seleção Não Natural</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta sobreviver a dez waves no modo
+                            sobrevivência. A cada onda de inimigos, a dificuldade será aumentada, para facilitar esse
+                            troféu, procure fazer em boost ou jogando com usuários estrangeiros. A opção sobrevivência será
+                            liberada após o nível 15 do ranking online, mais você pode ser convidado para participar de uma
+                            partida por outros usuários. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/8LNK9wmpc4Q">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu41">
+                        <img src="./assets/images/img41.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">41</span>. Passageiro/Motorista</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, você deve vencer uma corrida de “Rally”
+                            sendo co piloto. Observação: Serão necessários pelo menos quatro pessoas para se realizar esse
+                            troféu. Duas equipes, cada um com um piloto e um co piloto. Basta configurar qualquer corrida
+                            terrestre para o modo “Rally”, e quem for realizar o troféu deve ir como co piloto e terminar a
+                            corrida em primeiro lugar. :left: e :right: são os comandos do co piloto indicando a direção que
+                            o piloto deve tomar, o piloto não irá ver os check points, então recomendo além de utilizar as
+                            setas, usar algum outro meio de comunicação, caso o troféu seja feito sem boost. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/y3CDHy8tXWw">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu42">
+                        <img src="./assets/images/img42.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">42</span>. Corra como o Vento</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, você deve sobreviver a 24 horas no jogo com
+                            uma recompensa na sua cabeça, 24 horas no jogo é equivalente a 48 minutos. O esquema para que
+                            uma recompensa seja colocada em sua cabeça é, roubar lojas sem morrer e sem matar os mercadores,
+                            roubar carros de luxo ou que um amigo em boost coloque uma recompensa na sua cabeça. Depois
+                            disso basta você ficar vivo por 24 horas no jogo. Você pode ficar na sua casa fazendo atividades
+                            nela, andando de helicóptero ou fazendo qualquer outra atividade que não envolva risco de morte.
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu43">
+                        <img src="./assets/images/img43.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">43</span>. De Lavada</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, você deverá finalizar um “Gang Attack” sem
+                            morrer matando mais que dez inimigos. As gang attack serão liberadas após o nível 18 do ranking
+                            online. Não há ícones simbolizando um gang attack, quando estiver andando nas ruas de Los
+                            Santos, uma área no minimapa ficará com um círculo vermelho, onde será iniciada a missão.
+                            <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/ebAXtz0Mxnk">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu44">
+                        <img src="./assets/images/img44.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">44</span>. Condecorado</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">Existem 85 medalhas de platina para serem conquistadas, segue abaixo uma
+                            lista simples, com as ativades que podem ser feitas a maior parte sozinho e algumas em dupla.
+                            <br><br>
+
+                            • Vença 50 corridas contra outro usuário. <br> <br>
+                            • Mate 3 vezes um usuário durante uma corrida GTA e vença a corrida. <br> <br>
+                            • Vença 5 corridas com um veículo personalizado contra outro usuário. <br> <br>
+                            • Vença 50 corridas saindo da última colocação contra outro usuário. <br> <br>
+                            • Bata qualquer recorde mundial. (Basta criar uma fase com 5 ou 6 voltas em qualquer modo e
+                            fazer o mais rápido possível). <br> <br>
+                            • Faça a volta mais rápida 50 vezes em qualquer fase. (Faça em boost, pois assim o colega pode
+                            fazer uma volta mais lenta e você a mais rápida). <br> <br>
+                            • Basta vencer todos os modos de corrida ao menos 1 vez contra outro usuário. <br> <br>
+                            • Elimine as 10 waves de qualquer arena do modo sobrevivência. <br> <br>
+                            • Vença 50 quedas de braço contra outro usuário. <br> <br>
+                            • Vença os 5 sets de uma partida de tênis contra outro usuário. <br> <br>
+                            • Vença uma partida de tênis sem que seu oponente vença nenhum set. <br> <br>
+                            • Em um desafio de grade no stand de tiros, vença mudando todas as cores da grade de alvos. <br>
+                            <br>
+                            • Basta vencer todos os modos competitivos ao menos 1 vez contra outro usuário. <br> <br>
+                            • Participe de 25 mata a matas diferentes. <br> <br>
+                            • Participe de 25 corridas diferentes. <br> <br>
+                            • Ao realizar saltos de paraquedas, use Botão L1 e Botão R1 para aterrissar com segurança na
+                            zona de pouso. <br> <br>
+                            • Elimine 5 hideouts em 24 horas do jogo. <br> <br>
+                            • Complete uma partida de dardos com apenas 6 dardos. Segue a ordem de arremessos. (Triplo 20 –
+                            Triplo 20 – Dobro 20 – Triplo 20 – Triplo 19 – Dobro 12) <br> <br>
+                            • Faça 25 Birdies em partidas de golfe contra outro usuário. <br> <br>
+                            • Acerte um Eagle em qualquer partida de golfe contra outro usuário. <br> <br>
+                            • Faça 25 Aces em partidas de tênis. <br> <br>
+                            • Ganhe $50.000,00 em apostas. <br> <br>
+                            • Compre 25 danças na boate. <br> <br>
+                            • Colete 25 pacotes que são deixados no mapa. <br> <br>
+                            • Compre 25 peças de roupas diferentes. <br> <br>
+                            • Compre 25 cortes de cabelo diferentes. <br> <br>
+                            • Compre todas as armas disponíveis. <br> <br>
+                            • Derrube 25 helicópteros da polícia. <br> <br>
+                            • Roube 500 carros. <br> <br>
+                            • Assalte as 20 lojas do modo online. <br> <br>
+                            • Exploda 500 veículos. <br> <br>
+                            • Dirija por 30 minutos sem bater. Dica (Aeroporto) + (Elástico). <br> <br>
+                            • Ande por 4 horas como passageiro. <br> <br>
+                            • Voe 4 horas de helicóptero. <br> <br>
+                            • Compre todas as modificações possíveis para um veículo. <br> <br>
+                            • Execute 25 saltos com distância acima de 100 metros. <br> <br>
+                            • Execute 5 saltos girando 4 vezes no ar. <br> <br>
+                            • Ande 600 metros empinando com uma moto. <br> <br>
+                            • Em uma partida mata-mata, faça um combo de 10 mortes sem morrer. <br> <br>
+                            • Durante um ataque de gangues, mate todos os inimigos. <br> <br>
+                            • No modo sobrevivência, com 4 pessoas, procure matar mais inimigos. <br> <br>
+
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu45">
+                        <img src="./assets/images/img45.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">45</span>. 157</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta você roubar as 20 lojas diferentes do
+                            modo online, podendo ser nos modos privado ou público. As lojas são indicadas por um ícone em
+                            forma de cake, após completar o roubo um sinal de positivo irá ficar sobre a loja que você já
+                            roubou. <br><br>
+
+                            OBS 1: Não é necessário fazer todos em uma seção. <br>
+                            OBS 2: Basta coletar o pacote, após isso você pode morrer ou ser preso que já estará
+                            contabilizado o roubo na determinada loja. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://www.youtube.com/watch?v=WtpvPG0aq-U">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu46">
+                        <img src="./assets/images/img46.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">46</span>. Aproveite a Sua Estadia</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta completar dez atividades do modo
+                            online específicas.As atividades estarão liberadas a partir do nível 6 do ranking online. Segue
+                            a lista abaixo: <br><br>
+
+                            1ª – Comprar roupas novas. Qualquer peça de roupa. (Sozinho). <br>
+                            2ª – Corte o cabelo. Qualquer corte. (Sozinho). <br>
+                            3ª – Faça uma tattoo. A tattoo mais barata é uma daga na perna esquerda. (Sozinho). <br>
+                            4ª – “Jogue” Golfe. Pelo menos 1 buraco. (Atenção na hora da criação da partida de golfe. Buraco
+                            inicial e buraco final devem ser 1). (Sozinho). <br>
+                            5ª – “Jogue” Tennis. Pelo menos 1 set. (Atenção na hora da criação da partida de tennis. Um set
+                            é composto por 6 games vencidos). (Em dupla). <br>
+                            6ª – “Jogue” Dardos. Apenas complete a partida. (Em dupla). <br>
+                            7ª – “Jogue” Queda de Braços. Apenas complete um round. (Em dupla). <br>
+                            8ª – O único que necessita vitória é o stand de tiros. Você deve vencer um desafio. (Em dupla).
+                            <br>
+                            9ª – Compre uma dança privada de $ 40,00 na boate. Basta comprar e entrar na sala, depois se
+                            quiser, aperte Botão Triângulo para sair. (Sozinho). <br>
+                            10ª – Roube uma loja. (Sozinho). <br><br>
+
+                            Para verificar as atividades que você já fez, basta acessar o menu do jogo seguindo esses
+                            passos:<br><br>
+
+                            Botão Start estatísticas, desça a aba até unlocked’s, depois vá até progresso. Nessa página os
+                            itens que estiverem com o “sim” ativo são os que você completou. E no mapa do jogo pelo menu
+                            Botão Start, todos as atividades que estiverem com um ícone verde são os objetivos
+                            concluídos.<br><br>
+
+                            Observação 1: Se você sair da partida de tênis ou golfe antes do final, ela será registrada como
+                            atividade feita, porém não contará para o troféu.<br><br>
+
+                            Observação 2: Algumas atividades devem ser completadas em equipe então atenção nas que estão
+                            marcadas.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu47">
+                        <img src="./assets/images/img47.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">47</span>. Parte do Comando</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta completar qualquer serviço online com
+                            um membro do comando. Comando são grupos formados para jogar em grupo os modos online de alguns
+                            jogos.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu48">
+                        <img src="./assets/images/img48.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">48</span>. Reembolso Total</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, você deve estar em uma seção onde um
+                            usuário ou amigo esteja acima do nível 50 do ranking online. Vou descrever como deve ser feito
+                            em boost esse troféu: <br><br>
+
+                            1º – O usuário que estiver com nível 50, estará com a habilidade de assalto. Precisará de $
+                            1.000 para poder usar a habilidade. <br>
+                            2º – O usuário que irá realizar o troféu, deverá ter $ 5.000 no bolso. <br>
+                            3º – Em uma partida fechada, vá para uma área deserta ou nas praias, que seja longe de tráfico,
+                            para poder correr atrás do ladrão sem se preocupar. <br>
+                            4º – Quando estiver pronto, o jogador aciona o serviço de roubo, onde o usuário que fará o
+                            troféu deve ser selecionado. <br>
+                            5º – Você será derrubado pelo assaltante, agora procure virar a câmera para o lado que ele
+                            correu e segui-lo. <br>
+                            6º – Mate-o e recupere seu dinheiro. Pronto. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:                            
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/N-kb9jf1_B4">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu49">
+                        <img src="./assets/images/img49.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">49</span>. Batendo um Fio</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Para se realizar esse troféu, basta você acionar o serviço de backup de
+                            Helicóptero da Merryweather. Os serviços são para suporte ao jogador, estarão disponíveis após
+                            você alcançar o ranking 20, serão necessários $ 5.000 para acionar o serviço de backup. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:                            
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/3TJthYAQjMY">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu50">
+                        <img src="./assets/images/img50.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">50</span>. O Sonho Americano</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Atenção, ao realizar a compra do imóvel, não utilize a placa na frente do
+                            imóvel, compre pelo celular ou computador. Há relatos de bug por comprar pela placa. <br><br>
+
+                            Para se realizar esse troféu, basta você comprar, um apartamento, uma garagem e ter um carro
+                            segurado. Parace complicado no inicio pelos custos, mais conforme o nível em que você está, mais
+                            dinheiro e recompensas pelas missões serão ganhos. Recomendo fazer repetitivamente “Gang Attack”
+                            e “Waves to Survival”, nas waves você pode ganhar $ 20.000 ao final das dez waves vencidas,
+                            somando mais dinheiro se fizer em equipe. Existe infinitas formas de afarmar, o importante é
+                            comprar o que se pede, sendo que o apartamento com garagem mais barato custa $ 87.000 e o carro
+                            que você inicia o jogo já é segurado. Com 4 waves vencidas você já poderá comprar o apartamento.
+                            Vejam as dicas dos troféus, Clean Sweep e Unnatural Selection. <br><br>
+
+                            Segue o vídeo caso haja dúvidas:                            
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/zWym3F0bDJs">Clique para assistir o tutorial</a></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu51">
+                        <img src="./assets/images/img51.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">51</span>. Esteja Preparado</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">O troféu mais simples da DLC, basta completar a preparação de qualquer
+                            golpe. Virá automaticamente ao completar a primeira Heist.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu52">
+                        <img src="./assets/images/img52.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">52</span>. Em nome da ciência</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Basta completar os Golpes “The Humane Labs Raid” e “Series A Funding”.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu53">
+                        <img src="./assets/images/img53.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">53</span>. Saque Fácil</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Basta completar os Golpes “Golpe da Fleeca” e “Pacific Standard”.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu54">
+                        <img src="./assets/images/img54.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">54</span>. Liberdade Condicional</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Basta completar o Golpe “The Prison Break”.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu55">
+                        <img src="./assets/images/img55.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">55</span>. Manda-chuva</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Após completar o primeiro Golpe, para ser o líder da Heist, você deve
+                            investir do seu bolso uma determinada quantia para preparar o golpe. Após investir, o troféu já
+                            cai na tela.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu56">
+                        <img src="./assets/images/img56.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">56</span>. De Quatro</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Bom esse troféu pode ser feito nos 4 Golpes Finais após o Serviço da
+                            Flecca. Basta você ser o líder da Heist e dividir o lucro com igualmente em 25% para todos os
+                            membros do grupo. Antes de iniciar o Golpe Final, no quadro de preparação da Heist, divida o
+                            lucro igualmente.</p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu57">
+                        <img src="./assets/images/img57.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">57</span>. Viva um Pouco</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">Gaste 8 milhões com veículos da atualização Heists. Bom, foi descoberto
+                            um método que não é necessário ter os 8 milhões para fazer o troféu: basta ter 3,500,000.00 para
+                            conseguir conquistar esse troféu.
+                            <br><br>
+                            Como funciona:
+                            <br><br>
+                            Assim que terminar o 1º golpe completo, será liberado a compra e venda do veículo “Kuruma Blindado”. O seu valor de compra é 525,000,00. Para alcançar o objetivo de 8 milhões gastos, basta comprar 16 veículos iguais a esse e vender, assim você terá um retorno de dinheiro e não perderá muito com a venda dele, facilitando a obtenção do troféu. cada veículo vendido renderá 315,000,00. Então basta focar em conseguir essa grana no próprio modo online.
+                            <br><br>
+                            O grupo GTA Series já completou o desafio: vejam a Play List de todos os golpes:
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/e-Zp229V4F8?list=PLQ3KzJPBsAHnBrM8DquTsteuGlrUdLJaP">Clique para assistir o tutorial</a></p></p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu58">
+                        <img src="./assets/images/img58.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">58</span>. Intocável</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/bronze.png" alt=""> Bronze
+                        </p>
+                        <p class="gri-item d-text">Outro troféu que parece ser difícil, porém basta seguir os passos do
+                            vídeo para não sofrer nenhum dano durante o Golpe Final. OBS: Pode ser feito em qualquer “Golpe
+                            Final”, basta não sofrer nenhum dano durante o mesmo. Segue o vídeo caso haja dúvidas:    
+                            <br><br>
+                            <a target=_blank id="video_tutorial" href="https://youtu.be/Ppjh9iQ-6gI">Clique para assistir o tutorial</a>
+                        </p>
+                    </div>
+
+                    <div class="grid-container" id="trofeu59">
+                        <img src="./assets/images/img59.png" alt="" class="grid-item image">
+                        <b class="grid-item b-text"> <span class="indice">59</span>. Cérebro da Operação</b> <br>
+                        <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/silver.png" alt=""> Prata
+                        </p>
+                        <p class="gri-item d-text">Parece ser o troféu mais difícil da DLC, porém é o mais simples. Basta
+                            coletar 25 medalhas de platina em qualquer “Golpe” ou “Planejamento de Golpe”. Recomendo
+                            terminar todos os golpes ao menos 1 vez para já eliminar algumas medalhas que virão
+                            automaticamente.</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                
+                <ul class="criadores">
+                    <h2>Colaboradoressssssss</h2>
+                    <li>Erick RIBEIRO</li>
+                    <hr>
+                    <li>Erick</li>
+                    <hr>
+                    <li>Erick</li>
+                    <hr>
+                    <li>Erick</li>
+                    <hr>
+                    <li>Erick</li>
+                    <hr>
+                </ul>
+              </footer>
+        </div>
+    </body>
+
+</html>

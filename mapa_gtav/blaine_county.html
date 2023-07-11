@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function toggleVisibility(button) {
+            var divLaranja = document.querySelector('.indice-conteudo');
+            var LaranjaHeader = document.querySelector('.indice-header');
+            var buttonCollor = document.querySelector('#indice_button');
+
+            divLaranja.classList.toggle('highlight');
+            LaranjaHeader.classList.toggle('highlight');
+            buttonCollor.classList.toggle('highlight');
+            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+        }
+
+        window.onload = function () {
+            var button = document.querySelector('.laranja button');
+            button.addEventListener('click', function () {
+                toggleVisibility(this);
+            });
+        };
+
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="./blaine_county.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="lista">
+                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
+                        <ul class="submenu">
+                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
+                          </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+                        <ul class="submenu">
+                            <li><a>Sobre</a></li>
+                            <li><a>Veiculos</a></li>
+                            <li><a>Personagens</a></li>
+                            <li><a>Rádios</a></li>
+                            <li><a>Mapas</a></li>
+                            <li><a>Codigos</a></li>
+                            <li><a>Conquistas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="myelement" class="sticky-element">
+                <button onclick="scrollToTop()">Começo</button>
+            </div>
+
+            <div class="logo">
+                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
+            </div>
+
+            <a href="./mapashp.html" id="video_tutorial">Página anterior</a>
+
+            <h1>Blaine County (GTA V)</h1>
+
+            <figure id="lafigure">
+                <img src="./assets/bc/blaine_county.png" alt="">
+                <figcaption><span>Blaine County</span></figcaption>
+
+            </figure>
+
+            <p>
+                <b>Blaine County </b>(ou&nbsp;<b>Condado de Blaine</b>)&nbsp;é um condado localizado no
+                sul do estado de San Andreas que aparece em <i> Grand Theft Auto V</i> e em <i> Grand Theft Auto Online</i>. De acordo com o
+                seu emblema, o condado foi fundado em 1823.
+            </p>
+            <p><b>Condado</b>&nbsp;é a designação habitualmente usada em países de língua inglesa&nbsp;a
+                uma divisão administrativa de estados modernos como os&nbsp;Estados Unidos, a
+                Irlanda&nbsp;e a Grã-Bretanha&nbsp;(em inglês&nbsp;<i>county,&nbsp;</i> ou ainda, em
+                inglês britânico,&nbsp;<i>shire</i>). Seria o equivalente aos municípios de países de
+                língua portuguesa.
+            </p>
+
+            <div class="laranja">
+                <div class="indice-header" id="trofeu1">
+                  <h2>Índice</h2>
+                  <button id="indice_button" onclick="highlightDiv()">ocultar</button>
+                </div>
+                <div class="indice-conteudo">
+                  <ol>
+                    <li><a href="#Descrição"><span>1.</span> Descrição</a>
+                        <ol>
+                            <li><a href="#Vilas"><span>1.1</span> Vilas</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#Comunidades_habitadas_no_Condado_de_Blaine"><span>2.</span> Comunidades habitadas no Condado de Blaine</a>
+                        <ol>
+                            <li><a href="#Vilas_(Towns)"><span>2.1</span> Vilas (Towns)</a></li>
+                            <li><a href="#Aldeias_(Villages)_e_Comunidades_Não-Incorporadas/Assentamentos"><span>2.2</span> Aldeias_(Villages) e Comunidades Não-Incorporadas/Assentamentos</a></li>
+                            <li><a href="#Montanhas,_cordilheiras_e_vales"><span>2.3</span> Montanhas, cordilheiras e vales</a></li>
+                            <li><a href="#Lugares_de_Interesse"><span>2.4</span> Lugares de Interesse</a></li>
+                            <li><a href="#Campos_de_Pouso"><span>2.5</span> Campos de Pouso</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#Curiosidades"><span>3.</span> Curiosidades</a></li>
+                    <li><a href="#Galeria"><span>4.</span> Galeria</a></li>
+                    <li><a href="#criadores"><span>5.</span> Colaboradores</a></li> 
+                  </ol>
+                </div>
+              </div>
+
+            
+
+            <h2 id="Descrição">Descrição</span></h2>
+            <p>Blaine County é bem diversificado na questão dos ambientes presentes, entre suas
+                características incluem a presença quase dominante de desertos, além de rios, áreas
+                montanhosas como o Mount Josiah e o Mount Chilliad<, áreas florestais e o Mar Alamo.
+            </p>
+            <h3 id="Vilas">Vilas</span></h3>
+            <p>Existem várias vilas (chamadas em inglês de <i>Towns</i>) que se localizam dentro do
+                condado, entre elas estão a vila de Sandy
+                    Shores, a vila de Paleto Bay, e Grapeseed.
+                Outro ponto observável é que existem várias estradas que cruzam todo o condado as
+                principais rodovias são a Route 68.
+            </p>
+            <h2 id="Comunidades_habitadas_no_Condado_de_Blaine">Comunidades
+                    habitadas no Condado de Blaine</h2>
+            <h3 id="Vilas_(Towns)">Vilas
+                    (<i>Towns</i>)</h3>
+            <ul>
+                <li>Grapeseed (Bakersfield/Lamont/Grapevin)</li>
+                <li>Sandy Shores (Desert Shores/Bombay Beach)</li>
+                <li>Paleto Bay (Morro Bay/Cambria)</li>
+                <li>North Chumash (Port Hueneme/Santa Barbara)</li>
+                <li>Harmony (Oasis/Victorville)</li>
+            </ul>
+            <p>Vila = Povoação de categoria inferior à de cidade, mas superior à de aldeia, dotada de
+                uma economia quase auto-suficiente, sendo o que caracteriza a sua passagem de aldeia
+                para vila, é que o setor terciário (comércio e serviços) tem uma importância relevante e
+                lhe proporciona alguma auto-suficiência econômica.
+            </p>
+            <h3 id="Aldeias_(Villages)_e_Comunidades_Não-Incorporadas/Assentamentos">Aldeias
+                    (<i>Villages</i>) e Comunidades Não-Incorporadas/Assentamentos</h3>
+            <ul>
+                <li>Stab City (Slab City)</li>
+                <li>Galilee (Mecca/Niland)</li>
+                <li>Dignity Village</li>
+                <li>Cape Catfish (Pigeon Point/Pescadero)</li>
+            </ul>
+            <p>Aldeia = pequena localidade, geralmente com poucos habitantes e de organização mais
+                simples que a de uma vila ou cidade, sem autonomia administrativa e com economia de
+                subsistência (não exporta o excedente da economia, consumindo tudo); povoação rural.
+            </p>
+            <h3 id="Montanhas,_cordilheiras_e_vales">Montanhas, cordilheiras e vales</h3>
+            <ul>
+                <li>Chiliad Mountain State Wilderness (San Gorgonio Wilderness)</li>
+                <li>Raton Canyon (Bixby Creek)</li>
+                <li>Monte Chiliad (San Gorgonio/Big Bear Mountain)</li>
+                <li>Braddock Pass (Yucca Valley)</li>
+                <li>Mount Gordo (Mount San Jacinto)</li>
+                <li>Cordilheira San Chianski (San Jacinto Mountains)</li>
+                <li>Mount Josiah (San Antonio)</li>
+            </ul>
+            <h3 id="Lugares_de_Interesse">Lugares de Interesse</span></h3>
+            <ul>
+                <li>140 Zancudo Avenue</li>
+                <li>0232 Paleto Boulevard</li>
+                <li>1893 Grapeseed Avenue</li>
+                <li>4401 Procopio Drive</li>
+                <li>4584 Procopio Drive</li>
+                <li>Beam Me Up (Salvation Mountain)</li>
+                <li>Bolingbroke Penitentiary (California Correctional Institution)</li>
+                <li>El Gordo Lighthouse (Pigeon Point)</li>
+                <li>Fort Zancudo (Naval Base Ventura County)</li>
+                <li>Deserto Grand Senora (Palm Desert/Mojave Desert)</li>
+                <li>Heart Attack Beach (San Gregorio State Beach)</li>
+                <li>Lago Zancudo (Mugu Lagoon)</li>
+                <li>Paleto Florest (San Bernardino National Forest)</li>
+                <li>RON Alternates Wind Farm (Tehachapi Pass Wind Farm)</li>
+              </ul>
+              
+            <h3 id="Campos_de_Pouso">Campos de Pouso</h3>
+            <ul>
+                <li>Sandy Shores Airfield (AppleValley Airport)</li>
+                <li>McKenzie Field (Bakersfield Municipal Airport)</li>
+            </ul>
+            <h2 id="Curiosidades">Curiosidades</span></h2>
+            <ul>
+                <li>Existe um condado no estado Estado-unidense de Idaho também chamado Blaine County.</li>
+                <li>Algumas estações de rádio com sede em Los Santos (como West Coast Talk Radio) vai desaparecer em estática e mudar para uma estação de rádio com base em Blaine County quando o jogador cruza a divisa de condado.</li>
+                <li>Apesar de ser um condado independente, Blaine County ainda é patrulhada pela LSSD que logicamente, só deve operar em Los Santos County.</li>
+                <li>A vila de Harmony é dividida ao meio entre Los Santos County e Condado de Blaine, a Rota 68 funciona como a divisão entre os dois municípios.</li>
+                <li>Trevor Phillips vive no Condado de Blaine, porque ele sente que é mais "autêntica" do que Los Santos, e é mais perto da produção de seu estoque no comércio de metanfetamina e armas.</li>
+            </ul>
+
+            <h2 id="Galeria">Galeria</h2>
+            <figure class="mapafig">
+                <img src="./assets/f224110dc6b4d94f9c8ed55f63726aba28c01444_hq.jpg" alt="">
+                <figcaption>Achei a foto legal</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <ul id="criadores" class="criadores">
+                <h2>Colaboradores</h2>
+                <li>Erick Ribeiro</li>
+                <hr>
+                <li>Whendersson</li>
+                <hr>
+                <li>Gerlândio</li>
+                <hr>
+                <li>José Magno</li>
+                <hr>
+                <li>João Italo</li>
+                <hr>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

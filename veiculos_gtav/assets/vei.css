@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto+Condensed&family=Rubik&display=swap');
+
+body,html{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.veiculos-container {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-bottom: 80px; */
+}
+
+.aviao, .bikes, .trucks, .compactos, .coupe-t, .emergency, .sports, .classic-sports, .militar-t, .motinhas, .off-road-t, .potente-t, .sedan-t, .wagon-t, .trailer-t, .van-t, .especializados, .suvs, .servico-t, .super, .barcos{
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-bottom: 80px; */
+}
+
+
+ .introducao{
+    justify-content: center;
+    width: 70%;
+    height: -60px;
+    padding: 20px;
+    margin-left: 3.5%;
+    margin-bottom: -30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+}
+
+.introducao h3{
+  background-color:rgba(0, 0, 0, 0.8);
+  width: 50%;
+  font-size: 34px;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 10px;
+  
+}
+
+.introducao p{
+  width: 90%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+  .vehicle {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    width: 16rem;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .vehicle img {
+    max-width: 100%;
+  }
+
+  .vehicle h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .vehicle h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .vehicle-stats {
+    border-top: 1px solid #ccc;
+    margin: 10px;
+    padding-top: 10px;
+  }
+
+  .vehicle-stats p {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  .vehicle-stats .bar {
+    background: rgba(255,255,255,.3);
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    width: 200px;
+  }
+
+
+  .vehicle-stats .fill {
+    background-color: #ffffff;
+    height: 100%;
+    transition: width 0.5s ease;
+    width: 0%;
+  }
