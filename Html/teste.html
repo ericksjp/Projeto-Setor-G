@@ -1,29 +1,214 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-    <title>Menu Dropdown Horizontal - Linha de Código</title>
-     <!-- Aqui chamamos o nosso arquivo css externo -->
-    <link rel="stylesheet" type="text/css"  href="teste.css" />
-    <!--[if lte IE 8]>
- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
- <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Mobile</title>
+  <link rel="stylesheet" href="./teste.css">
 </head>
+
 <body>
-<nav>
-  <ul class="menu">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Sobre</a></li>
-	  		<li><a href="#">O que fazemos?</a>
-	         	<ul>
-	                  <li><a href="#">Web Design</a></li>
-	                  <li><a href="#">SEO</a></li>
-	                  <li><a href="#">Design</a></li>
-	       		</ul>
-			</li>
-		<li><a href="#">Links</a></li>
-		<li><a href="#">Contato</a></li>
-</ul>
-</nav>
+  <header id="header">
+	<a id="logo" href=""><img src="./assets/logo.png" alt=""></a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+		<li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+		<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+		<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+		<li><a href="../radio_gtav/radios.html">Rádios</a></li>
+		<li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+		<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+		<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+		<li><a href="../armas_gtav/armas.html">Armas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+	<div class="principal">
+		<div class="imgbox">
+			<img src="./Html/assets/html/banner.png" alt="">
+
+		</div>
+		<div class="contend">
+			<h1>SETOR G</h1>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi dicta odio commodi placeat
+				corporis, unde neque, sit, quaerat nostrum iusto vitae natus. Odio commodi perferendis excepturi
+				incidunt natus tenetur.</p>
+
+				<div class="images">
+					<figure class="imagens-jp">
+						<img alt="2011" src="./mapa_gtav/assets/Ls-dn.webp">
+						<figcaption class="thumbcaption">
+						<p class="caption"><i>Los Santos durante o pôr do sol.</i></p>
+						</figcaption>
+					</figure>
+					<figure class="imagens-jp">
+						<img alt="2011" src="./Html/assets/html/eurogamer-zjp1vx.webp">
+						<figcaption class="thumbcaption">
+						<p class="caption"><i>Los Santos durante o pôr do sol.</i></p>
+						</figcaption>
+					</figure>
+				</div>
+
+			<!-- <nav id="mainnav">
+				<ul class="lista">
+					<li id="n5987"><h2>JOGOS</h2></li>
+					<li class="button"><img src="./assets/logos/gta5.png" alt="">
+						<ul class="submenu">
+							<li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+							<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+							<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+							<li><a href="../radio_gtav/radios.html">Rádios</a></li>
+							<li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+							<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+							<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+							<li><a href="../armas_gtav/armas.html">Armas</a></li>
+						  </ul>
+					</li>
+					<li class="button"><img src="./assets/logos/gta4.png" alt="">
+						<ul class="submenu">
+						<li><a>Sobre</a></li>
+						<li><a>Veiculos</a></li>
+						<li><a>Personagens</a></li>
+						<li><a>Rádios</a></li>
+						<li><a>Mapas</a></li>
+						<li><a>Codigos</a></li>
+						<li><a>Conquistas</a></li>
+						</ul>
+					</li>
+					<li class="button"><img src="./assets/logos/gtasa.png" alt="">
+						<ul class="submenu">
+						<li><a>Sobre</a></li>
+						<li><a>Veiculos</a></li>
+						<li><a>Personagens</a></li>
+						<li><a>Rádios</a></li>
+						<li><a>Mapas</a></li>
+						<li><a>Codigos</a></li>
+						<li><a>Conquistas</a></li>
+						</ul>
+					</li>
+					<li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+						<ul class="submenu">
+							<li><a>Sobre</a></li>
+							<li><a>Veiculos</a></li>
+							<li><a>Personagens</a></li>
+							<li><a>Rádios</a></li>
+							<li><a>Mapas</a></li>
+							<li><a>Codigos</a></li>
+							<li><a>Conquistas</a></li>
+						</ul>
+						</li>
+					<li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+						<ul class="submenu">
+							<li><a>Sobre</a></li>
+							<li><a>Veiculos</a></li>
+							<li><a>Personagens</a></li>
+							<li><a>Rádios</a></li>
+							<li><a>Mapas</a></li>
+							<li><a>Codigos</a></li>
+							<li><a>Conquistas</a></li>
+						</ul>
+						</li>
+				</ul>
+			</nav> -->
+
+			<!-- <nav id="mainnav">
+				<ul class="lista">
+					<li id="n5987"><h2>JOGOS</h2></li>
+					<li class="button"><span> Universo 2D</span><img src="./assets/html/GTA_1_Button.png" alt="">
+
+					</li>
+					<li class="button"><img src="./assets/logos/gta4.png" alt="">
+					</li>
+					<li class="button"><img src="./assets/logos/gtasa.png" alt="">
+					</li>
+					<li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
+	
+						</li>
+					<li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
+						</li>
+				</ul>
+			</nav> -->
+
+
+			<!-- <div class="universos">
+				<h2>Saiba mais sobre os universos da Franquia GTA</h2>
+				<ul class="universos_ul">
+					<li><span> Universo 2D</span><img class="test" src="./assets/html/GTA_1_Button.png" alt=""></li>
+					<li><span> Universo 3D</span><img class="test" src="./assets/html/GTA_III_Button.jpeg" alt=""></li>
+					<li><span> Universo HD</span><img class="test" src="./assets/html/GTA_IV_Button.png" alt=""></li>
+				</ul>
+			</div> -->
+		</div>
+		<div class="lado_dois">
+			<ul class="destaques">
+				<h2>Artigos em Destaque</h2>
+				<li>GTA San Andreas 100%</li>
+				<hr>
+				<li>aaaaaaaaaaaaaaaaaaaaaaaaa</li>
+				<hr>
+				<li>Armas GTA IV</li>
+				<hr>
+				<li>Mapa GTA Vice City</li>
+				<hr>
+			</ul>
+			<hr class="separador">
+			<ul class="criadores">
+				<h2>Colaboradoressssssss</h2>
+				<li>Erick RIBEIRO</li>
+				<hr>
+				<li>Erick</li>
+				<hr>
+				<li>Erick</li>
+				<hr>
+				<li>Erick</li>
+				<hr>
+				<li>Erick</li>
+				<hr>
+			</ul>
+		</div>
+	</div>
+	<div class="lado">
+		<ul class="destaques">
+			<h2>Artigos em destaque</h2>
+			<li>GTA San Andreas 100%</li>
+			<hr>
+			<li>RÁDIOS GTA V</li>
+			<hr>
+			<li>Armas do GTA V</li>
+			<hr>
+			<li>Armas do GTA V</li>
+			<hr>
+		</ul>
+		<hr class="separador">
+		<ul class="criadores">
+			<h2>Colaboradores</h2>
+			<li>Erick Ribeiro</li>
+			<hr>
+			<li>Wendersson</li>
+			<hr>
+			<li>Gerlândio</li>
+			<hr>
+			<li>José Magno</li>
+			<hr>
+			<li>João Italo</li>
+			<hr>
+		</ul>
+	</div>
+</main>
+<div class="imagem">
+	<img src="./Html/assets/html/homeimage.png" alt="">
+</div>
+</div>
 </body>
+
+</html>
+  <script src="./teste.js"></script>
+</body>
+
 </html>

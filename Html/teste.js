@@ -1,16 +1,17 @@
-const botoes = document.querySelectorAll('.button');
-const divLaranja = document.querySelector('#laranja');
+const btnMobile = document.getElementById('btn-mobile');
 
-function clicouEmQualquerLugar(event) {
-  if (!divLaranja.contains(event.target) && !event.target.classList.contains('button')) {
-    divLaranja.classList.remove('aaa');
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
 }
 
-botoes.forEach(function(botao) {
-  botao.addEventListener('click', function() {
-    divLaranja.classList.toggle('aaa');
-  });
-});
-
-//document.addEventListener('click', clicouEmQualquerLugar);
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);

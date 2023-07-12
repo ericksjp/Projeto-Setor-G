@@ -20,6 +20,10 @@ body {
 }
 
 .wrapper {
+  z-index: 1000;
+  display: grid;
+  grid-column: auto;
+  justify-items: center;
   width: 100%;
   background-image: url("./assets/background.png");
   background-repeat: no-repeat;
@@ -32,9 +36,10 @@ header {
   margin: 0px;
   padding: 0px;
   display: flex;
+  position: fixed;
   height: 9%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  width: 80%;
+  background: rgb(255 255 255 / 20%);
   border-bottom: 1px solid #f0e3be;
   align-items: center;
   justify-content: center;
@@ -123,8 +128,9 @@ li:hover .submenu {
 
 main {
   padding: 20px;
+  padding-top: 8%;
   background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
+  width: 80%;
 }
 
 

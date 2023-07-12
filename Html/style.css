@@ -4,6 +4,7 @@
   font-family: "Pricedown";
   src: url("pricedow.ttf") format("truetype");
 }
+@import url('https://fonts.cdnfonts.com/css/pricedown');
 
 /* body{
     width: 100vw;
@@ -23,25 +24,16 @@
   font-family: "Rubik", sans-serif;
 }
 
-.wrapper {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("./assets/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow-x: hidden;
-}
-
 header {
   position: absolute;
   display: flex;
+  gap: 10%;
   height: 9%;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid #f0e3be;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 header > nav {
@@ -62,11 +54,40 @@ header > nav {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  gap: 20px;
 }
 
 .lista li {
+  height: 40px;
   display: grid;
   align-items: center;
+  border-radius: 10px;
+}
+
+.lista li a{
+  color: rgb(68, 175, 29);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Pricedown";
+  font-size: 1.7rem;
+  text-shadow: 
+  -1px -1px 0px black, 
+  -1px 1px 0px black,                    
+   1px -1px 0px black,                  
+   1px 0px 0px black;
+}
+
+#logo{
+  height: 65%;
+}
+
+#logo img{
+  height: 100%;
+}
+
+.lista li a:hover{
+  color: aqua;
+  border-bottom: none;
 }
 
 .button {
@@ -74,11 +95,6 @@ header > nav {
   margin: 0 auto;
   padding-left: 5px;
   padding-right: 5px;
-}
-
-.button:hover {
-  color: aqua;
-  background-color: #ffffff;
 }
 
 .button:not(:last-child) {
@@ -129,7 +145,7 @@ main {
   display: grid;
   width: 70%;
   height: 75%;
-  margin-top: 9vh;
+  margin-top: 18vh;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   grid-template-areas: "principal lado";
@@ -150,25 +166,47 @@ main {
 }
 
 h1 {
+  font-family: 'Pricedown';
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.principal > p {
-  margin: 0 auto;
-  width: 60%;
-  margin-bottom: 20px;
 }
 
 .contend{
   width: 100%;
-  height: 68.7%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  height: 69%;
+  display: grid;
+  justify-items: center;
 }
+
+.contend p {
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+}
+
+.imagens-jp {
+  border-radius: 10px;
+  width: 40%;
+  background-color: black;
+  margin: 0 auto;
+  border: 1px solid #f0e3be;
+  display: inline-grid;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.imagens-jp img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  border-bottom: 1px solid #f0e3be;
+}
+
+.imagens-jp p{
+  padding-bottom: 0px;
+}
+
 
 .imgbox {
   width: 100%;
@@ -198,13 +236,17 @@ span {
 
 .universos_ul > li:hover {
   cursor: pointer;
-  background-color: rgba(124, 119, 119, 0.4);
+  background-color: rgba(124, 119, 119, 0.4); 
   border-radius: 10px;
   padding: 10px;
 }
 
 .lado_dois {
   display: none;
+}
+
+.lado li{
+  font-size: 1rem;
 }
 
 .lado {
@@ -273,8 +315,12 @@ hr {
   display: flex;
   height: 69%;
   margin-left: 75.8%;
-  margin-top: 22vh;
+  margin-top: 20vh;
   transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.imagem img{
+  width: 100%;
 }
 
 #mainnav {
@@ -289,11 +335,20 @@ hr {
   display: none;
 }
 
+
 @media screen and (max-width: 1200px) {
   .imagem {
     transform: translateX(-50px); /* Move a imagem 100px para a esquerda */
   }
 }
+
+@media screen and (max-width: 1200px) {
+  header{
+    gap: 0px;
+    justify-content: space-between;
+  }
+}
+
 
 @media screen and (max-width: 1080px) {
   .imagem {
@@ -306,7 +361,7 @@ hr {
 #intro-jogos{
   display: none;
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 5rem;
   margin-bottom: -15px;
 }
 
@@ -343,7 +398,7 @@ hr {
 
   .submenu li {
     left: 0px;
-    font-size: 18px;
+    font-size: 5rem;
   }
 }
 
@@ -367,7 +422,6 @@ header > nav > ul {
 
 @media screen and (max-width: 667px) {
   header {
-    background-color: rgba(0, 0, 0, 0);
     height: 20%;
     width: 100%;
     display: block;
@@ -380,7 +434,7 @@ header > nav > ul {
 
 
   .universos h2{
-    font-size: 30px;
+    font-size: 5rem;
   }
 
   header nav {
@@ -474,7 +528,7 @@ header > nav > ul {
   }
 
   .submenu li a {
-    font-size: 20px;
+    font-size: 5rem;
     color: rgb(255, 255, 255);
     border-bottom: 1px solid white;
     top: 0%;
@@ -532,7 +586,7 @@ header > nav > ul {
 }
 
 .universos > h2 {
-  font-size: 24px;
+  font-size: 5rem;
   margin: 0px auto;
   width: 90%;
   margin-bottom: 2%;
@@ -576,7 +630,7 @@ header > nav > ul {
 
   .principal > p {
     width: 97%;
-    font-size: 14px;
+    font-size: 5rem;
   }
 
   hr {
@@ -590,7 +644,7 @@ header > nav > ul {
   }
 
   .universos > h2 {
-    font-size: 18px;
+    font-size: 2rem;
     margin: 0px auto;
     width: 80%;
     height: 50%;
