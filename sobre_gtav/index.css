@@ -5,13 +5,8 @@
   src: url("pricedow.ttf") format("truetype");
 }
 
-body {
-  overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
-}
-
 * {
+  padding: 0;
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -19,8 +14,9 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.wrapper {
-  width: 100%;
+body{
+  height: 100vh;
+  width: 100vw;
   background-image: url("./assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,105 +24,102 @@ body {
   overflow-x: hidden;
 }
 
-header {
+body,
+ul {
   margin: 0px;
   padding: 0px;
-  display: flex;
-  height: 9%;
+}
+
+.wrapper{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Pricedown";
+  font-size: 2rem;
+  color: white;
+  text-shadow: 
+  -1px -1px 0px black, 
+  -1px 1px 0px black,                    
+   1px -1px 0px black,                  
+   1px 0px 0px black;
+   height: 55px;
+}
+
+#logo img{
+    height: 100%;
+}
+
+#header {
+  position: fixed;
+  z-index: 999;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  flex-wrap: wrap;
   border-bottom: 1px solid #f0e3be;
-  align-items: center;
-  justify-content: center;
 }
 
-header > nav {
-  height: 100%;
+#menu {
   display: flex;
-}
-
-#header-img {
-  display: none;
-}
-
-.lista {
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  height: 100%;
-  display: inline-flex;
-  width: 100%;
   list-style: none;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.lista li {
-  display: grid;
-  align-items: center;
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Pricedown";
+  font-size: 1.7rem;
+  text-shadow: 
+  -1px -1px 0px black, 
+  -1px 1px 0px black,                    
+   1px -1px 0px black,                  
+   1px 0px 0px black;
 }
 
-.button {
-  height: 65px;
-  margin: 0 auto;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+#menu a:hover{
+    color: aqua;
+    border-bottom: none;
+  }
+  
 
-.button:hover {
-  background-color: #ffffff;
-}
-
-.button:not(:last-child) {
-  border-right: 1px solid #f0e3be;
-}
-
-.submenu {
+#btn-mobile {
   display: none;
-}
-
-li:hover .submenu {
-  position: absolute;
-  list-style: none;
-  left: 0%;
-  background-color: #000000;
-  border: 1px solid #f0e3be;
-  display: flex;
-  gap: 20px;
-  top: 100%;
-  width: 100%;
-  height: 90%;
-  justify-content: center;
-}
-
-.submenu li {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
-  font-family: "Rubik", sans-serif;
-  position: relative;
-  top: 0%;
-}
-
-
-.submenu li a:hover {
-  color: aqua;
-  cursor: pointer;
-}
-
-.lista img {
-  height: 50%;
-  position: relative;
-  top: 0%;
 }
 
 main {
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
+  position: relative;
+  width: 80%;
   margin: 0 auto;
+}
+
+main ul{
+  padding-left: 40px;
+}
+
+main a{
+  color: white;
 }
 
 .mw-headline{
@@ -162,7 +155,7 @@ main {
 }
 
 h1 {
-  text-align: center;
+  margin-top: 90px;
 }
 
 main h2 {
@@ -337,6 +330,7 @@ button {
 }
 
 .sticky-element {
+  top: 113px;
   background-color: rgba(0, 0, 0, 0.9);
   border: 3px solid #9aeb9a;
   border-top-left-radius: 5px;
@@ -375,19 +369,108 @@ footer ul {
 }
 
 main p, i, li{
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 main li{
   padding: 3px;
 }
 
-
-
-@media screen and (max-width: 1270px) {
-  .logo {
-    margin-top: 50px;
+@media (max-width: 1292px) {
+  #header{
+    justify-content: center;
   }
+  h1{
+    margin-top: 160px;
+  }
+
+  .sticky-element{
+    top: 160px;
+  }
+}
+
+@media (max-width: 1292px) {
+  #header a{
+   font-size: 1.6rem;
+  }
+
+}
+
+@media (max-width: 950px) {
+  #header{
+    justify-content: space-between;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    margin-top: 18px;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    border-bottom: 2px solid #f0e3be;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 30px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  h1{
+    margin-top: 80px;
+  }
+
+  .sticky-element{
+    top: 100px;
+  }
+
 }
 
 
@@ -407,76 +490,6 @@ main li{
   }
 }
 
-@media screen and (max-width: 750px) {
-
-  .logo{
-    margin-top: 0px;
-  }
-
-  .button:hover {
-    background-color: black;
-  }
-
-  header > nav {
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  .lista {
-    display: block;
-    margin-bottom: 0%;
-    border: none;
-  }
-
-  .lista li {
-    display: grid;
-    border: none;
-    margin-top: 0%;
-    height: fit-content;
-    align-items: flex-start;
-    align-items: center;
-  }
-
-  .button {
-    border-bottom: 1px solid #f0e3be;
-  }
-
-  .button:first-child {
-    border-top: none;
-  }
-
-  .button:not(:last-child) {
-    border-right: none;
-  }
-
-  .lista img {
-    padding-right: 1%;
-    margin: 0 auto;
-    height: 50%;
-    position: relative;
-    top: 0%;
-  }
-
-  .button:hover .submenu {
-    padding: 10px;
-    padding-right: 2%;
-    border: none;
-    top: 0px;
-    position: relative;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0);
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: -20px;
-    display: table-cell;
-    text-align: center;
-  }
-
-  .submenu li {
-    padding-bottom: 10%;
-    left: 5px;
-  }
-}
 
 @media screen and (max-width: 540px) {
   .themesong {
@@ -490,6 +503,12 @@ main li{
 @media screen and (max-width: 420px) {
   .logo {
     justify-content: center;
+  }
+  h1{
+    text-align: center;
+  }
+  .sticky-element{
+    top: 180px;
   }
 }
 
