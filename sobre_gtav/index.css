@@ -16,12 +16,19 @@
 
 body{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url("./assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  display: grid;
+    height: fit-content;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: repeat(1, 1fr);
 }
 
 body,
@@ -31,8 +38,9 @@ ul {
 }
 
 .wrapper{
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 a {
   color: black;
@@ -64,6 +72,7 @@ a:hover {
 
 #header {
   position: fixed;
+  top: 0%;
   z-index: 999;
   width: 100%;
   box-sizing: border-box;
@@ -75,6 +84,7 @@ a:hover {
   background: rgba(0, 0, 0, 0.8);
   flex-wrap: wrap;
   border-bottom: 1px solid #f0e3be;
+  grid-area: header;
 }
 
 #menu {
@@ -110,8 +120,16 @@ a:hover {
 
 main {
   position: relative;
+  /* height: 90%; */
+  /* top: 88px; */
   width: 80%;
+  margin-top: 88px;
+  height: max-content;
+  grid-area: main;
   margin: 0 auto;
+  margin-top: 110px;
+  /* padding-top: 10px; */
+  /* height: 100%; */
 }
 
 main ul{
@@ -120,6 +138,10 @@ main ul{
 
 main a{
   color: white;
+}
+
+main p,li,a *{
+  font-size: 1rem;
 }
 
 .mw-headline{
@@ -154,9 +176,17 @@ main a{
   display: none;
 }
 
-h1 {
-  margin-top: 90px;
+#indice_button{
+  outline: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid red;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
 
 main h2 {
   border-bottom: 1px solid #f0e3be;
@@ -231,9 +261,21 @@ button {
   color: #abeeab;
 }
 
+#indice_button{
+  outline: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid red;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 #indice_button.highlight {
-  border-left: 1px solid #abeeab;
-  border-right: 1px solid #abeeab;
+  border-top: 1px solid #abeeab;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 5px;
 }
 
 .laranja ol {
@@ -354,10 +396,12 @@ button {
 }
 
 footer {
+  height: fit-content;
+  grid-area: footer;
   width: 100%;
   margin: 0 auto;
-  border-top: 5px solid #f0e3be;
-  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 3px solid #f0e3be;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 footer ul {
@@ -377,24 +421,23 @@ main li{
 }
 
 @media (max-width: 1292px) {
-  #header{
-    justify-content: center;
-  }
-  h1{
-    margin-top: 160px;
-  }
-
   .sticky-element{
     top: 160px;
   }
-}
-
-@media (max-width: 1292px) {
   #header a{
-   font-size: 1.6rem;
-  }
-
+    font-size: 1.6rem;
+   }
 }
+
+@media (max-width: 1132px) {
+  #header{
+    justify-content: center;
+  }
+  main{
+    margin-top: 160px;
+  }
+}
+
 
 @media (max-width: 950px) {
   #header{
@@ -463,12 +506,11 @@ main li{
     top: -7px;
   }
 
-  h1{
-    margin-top: 80px;
-  }
-
   .sticky-element{
     top: 100px;
+  }
+  main{
+    margin-top: 110px;
   }
 
 }
@@ -488,6 +530,9 @@ main li{
     background-color: #0d1119;
     top: 125px;
   }
+  main{
+    width: 90%;
+  }
 }
 
 
@@ -498,12 +543,12 @@ main li{
   .themesong p {
     width: 104%;
   }
+  main{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .logo {
-    justify-content: center;
-  }
   h1{
     text-align: center;
   }

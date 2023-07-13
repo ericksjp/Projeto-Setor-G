@@ -12,6 +12,20 @@ function toggleMenu(event) {
     event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
 }
-
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+$(document).ready(function() {
+  $('.link-ancla').click(function(e) {
+    e.preventDefault();
+    
+    var target = $(this).attr('href');
+    var windowHeight = $(window).height();
+    var elementOffset = $(target).offset().top;
+    var scrollToPosition = elementOffset - (windowHeight / 2);
+    
+    $('html, body').animate({
+      scrollTop: scrollToPosition
+    }, 1000);
+  });
+});

@@ -1,115 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<script>
-		function toggleVisibility(button) {
-		  var divLaranja = document.querySelector('.indice-conteudo');
-		  var LaranjaHeader = document.querySelector('.indice-header');
-		  var buttonCollor = document.querySelector('#indice_button');
+<script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.link-ancla').click(function(e) {
+      e.preventDefault();
+      
+      var target = $(this).attr('href');
+      var windowHeight = $(window).height();
+      var elementOffset = $(target).offset().top;
+      var scrollToPosition = elementOffset - (windowHeight / 2);
+      
+      $('html, body').animate({
+        scrollTop: scrollToPosition
+      }, 1000);
+    });
+  });
+</script>
 
-		  divLaranja.classList.toggle('highlight');
-		  LaranjaHeader.classList.toggle('highlight');
-		  buttonCollor.classList.toggle('highlight');
-		  button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-		}
-	  
-		window.onload = function() {
-		  var button = document.querySelector('.laranja button');
-		  button.addEventListener('click', function() {
-			toggleVisibility(this);
-		  });
-		};
-	</script>
-	<script>
-        function scrollToTop() {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        }
-      </script>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css">
-	<title>Document</title>
-	</head>
+<script>
+  function toggleVisibility(button) {
+    var divLaranja = document.querySelector('.indice-conteudo');
+    var LaranjaHeader = document.querySelector('.indice-header');
+    var buttonCollor = document.querySelector('#indice_button');
+
+    divLaranja.classList.toggle('highlight');
+    LaranjaHeader.classList.toggle('highlight');
+    buttonCollor.classList.toggle('highlight');
+    button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+}
+
+window.onload = function () {
+    var button = document.querySelector('.laranja button');
+    button.addEventListener('click', function () {
+        toggleVisibility(this);
+    });
+};
+</script>
+
+<script>
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+  <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Theft Auto V</title>
+</head>
 <body>
-	<div class="wrapper">
-		<header>
-			<nav>
-				<ul class="lista">
-					<li class="button"><img src="./assets/gta5.png" alt="">
-						<ul class="submenu">
-							<li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-							<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-							<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-							<li><a href="../radio_gtav/radios.html">Rádios</a></li>
-							<li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-							<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-							<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-							<li><a href="../armas_gtav/armas.html">Armas</a></li>
-						  </ul>
-					</li>
-					<li class="button"><img src="./assets/gta4.png" alt="">
-						<ul class="submenu">
-						<li><a>Sobre</a></li>
-						<li><a>Veiculos</a></li>
-						<li><a>Personagens</a></li>
-						<li><a>Rádios</a></li>
-						<li><a>Mapas</a></li>
-						<li><a>Codigos</a></li>
-						<li><a>Conquistas</a></li>
-						</ul>
-					</li>
-					<li class="button"><img src="./assets/gtasa.png" alt="">
-						<ul class="submenu">
-						<li><a>Sobre</a></li>
-						<li><a>Veiculos</a></li>
-						<li><a>Personagens</a></li>
-						<li><a>Rádios</a></li>
-						<li><a>Mapas</a></li>
-						<li><a>Codigos</a></li>
-						<li><a>Conquistas</a></li>
-						</ul>
-					</li>
-					<li class="button"><img src="./assets/gta-vice-city.png" alt="" style="margin-top: 5px;">
-						<ul class="submenu">
-							<li><a>Sobre</a></li>
-							<li><a>Veiculos</a></li>
-							<li><a>Personagens</a></li>
-							<li><a>Rádios</a></li>
-							<li><a>Mapas</a></li>
-							<li><a>Codigos</a></li>
-							<li><a>Conquistas</a></li>
-						</ul>
-					</li>
-					<li class="button"><img src="./assets/gta123.png" alt="" style="margin-bottom: 5px;">
-						<ul class="submenu">
-							<li><a>Sobre</a></li>
-							<li><a>Veiculos</a></li>
-							<li><a>Personagens</a></li>
-							<li><a>Rádios</a></li>
-							<li><a>Mapas</a></li>
-							<li><a>Codigos</a></li>
-							<li><a>Conquistas</a></li>
-						</ul>
-					</li>
-				</ul>
+  <div class="wrapper">
+		<header id="header">
+			<a id="logo" href=""><img src="./assets/logo.png" alt=""></a>
+			<nav id="nav">
+			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+				<span id="hamburger"></span>
+			</button>
+			<ul id="menu" role="menu">
+				<li ><a  id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+				<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+				<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+				<li><a href="../radio_gtav/radios.html">Rádios</a></li>
+				<li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+				<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+				<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+				<li><a href="../armas_gtav/armas.html">Armas</a></li>
+			</ul>
 			</nav>
-
-			<div class="imgboxheader">
-				<img src="./assets/bannerjpg.png" alt="">
-			</div>
 		</header>
 		<main>
 			<div id="myelement" class="sticky-element">
                 <button onclick="scrollToTop()">Começo</button>
               </div>
-			<div class="logo">
-				<a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
-			</div>
 
 			<h1 class="page-header__title" id="firstHeading">
 				Estações de rádio em GTA 5 e GTA 5 Online </h1>
@@ -146,28 +114,28 @@
 				</div>
 				<div class="indice-conteudo">
 				<ol>
-					<li><a href="#Radio_Los_Santos"><span>1.</span> Radio Los Santos</a></li>
-					<li><a href="#Space_103.2"><span>2.</span> Space 103.2</a></li>
-					<li><a href="#West_Coast_Classics"><span>3.</span> West Coast Classics</a></li>
-					<li><a href="#Rebel_Radio"><span>4.</span> Rebel Radio</a></li>
-					<li><a href="#Los_Santos_Rock_Radio"><span>5.</span> Los Santos Rock Radio</a></li>
-					<li><a href="#The_Lowdown_91.1"><span>6.</span> The Lowdown 91.1</a></li>
-					<li><a href="#Blue_Ark"><span>7.</span> Blue Ark</a></li>
-					<li><a href="#Non_Stop_Pop_FM"><span>8.</span> Non Stop Pop Fm</a></li>
-					<li><a href="#East_Los_FM"><span>9.</span> East Los FM</a></li>
-					<li><a href="#WorldWide_FM"><span>10.</span> WorldWide FM</a></li>
-					<li><a href="#Channel_X"><span>11.</span> Channel X</a></li>
-					<li><a href="#Radio_Mirror_Park"><span>8.</span> Radio Mirror Park</a></li>
-					<li><a href="#Vinewood_Boulevard"><span>12.</span> Vinewood Boulevart</a></li>
-					<li><a href="#Soulwax_FM"><span>13.</span> Soulwax FM</a></li>
-					<li><a href="#Blaine_County_Talk_Radio"><span>14.</span>Blaine County Talk Radio</a></li>
-					<li><a href="#WCTR"><span>14.</span> WCTR</a></li>
-					<li><a href="#The_Lab"><span>14.</span> The Lab</a></li>
-					<li><a href="#blonded_Los_Santos_97.8_FM"><span>14.</span> Blonded Los Santos 97.8 FM</a></li>
-					<li><a href="#Los_Santos_Underground_Radio"><span>14.</span> Los Santos Underground Radio</a></li>
-					<li><a href="#iFruit_Radio"><span>15.</span> Ifruit Radio</a></li>
-					<li><a href="#Curiosidades"><span>16.</span> Curiosidades</a></li>	
-					<li><a href="#Criadores"><span>17.</span> Criadores</a></li>	
+					<li><a class="link-ancla" href="#Radio_Los_Santos"><span>1.</span> Radio Los Santos</a></li>
+					<li><a class="link-ancla" href="#Space1032"><span>2.</span> Space 103.2</a></li>
+					<li><a class="link-ancla" href="#West_Coast_Classics"><span>3.</span> West Coast Classics</a></li>
+					<li><a class="link-ancla" href="#Rebel_Radio"><span>4.</span> Rebel Radio</a></li>
+					<li><a class="link-ancla" href="#Los_Santos_Rock_Radio"><span>5.</span> Los Santos Rock Radio</a></li>
+					<li><a class="link-ancla" href="#The_Lowdown_91.1"><span>6.</span> The Lowdown 91.1</a></li>
+					<li><a class="link-ancla" href="#Blue_Ark"><span>7.</span> Blue Ark</a></li>
+					<li><a class="link-ancla" href="#Non_Stop_Pop_FM"><span>8.</span> Non Stop Pop Fm</a></li>
+					<li><a class="link-ancla" href="#East_Los_FM"><span>9.</span> East Los FM</a></li>
+					<li><a class="link-ancla" href="#WorldWide_FM"><span>10.</span> WorldWide FM</a></li>
+					<li><a class="link-ancla" href="#Channel_X"><span>11.</span> Channel X</a></li>
+					<li><a class="link-ancla" href="#Radio_Mirror_Park"><span>8.</span> Radio Mirror Park</a></li>
+					<li><a class="link-ancla" href="#Vinewood_Boulevard"><span>12.</span> Vinewood Boulevart</a></li>
+					<li><a class="link-ancla" href="#Soulwax_FM"><span>13.</span> Soulwax FM</a></li>
+					<li><a class="link-ancla" href="#Blaine_County_Talk_Radio"><span>14.</span>Blaine County Talk Radio</a></li>
+					<li><a class="link-ancla" href="#WCTR"><span>14.</span> WCTR</a></li>
+					<li><a class="link-ancla" href="#The_Lab"><span>14.</span> The Lab</a></li>
+					<li><a class="link-ancla" href="#blonded_Los_Santos_97.8_FM"><span>14.</span> Blonded Los Santos 97.8 FM</a></li>
+					<li><a class="link-ancla" href="#Los_Santos_Underground_Radio"><span>14.</span> Los Santos Underground Radio</a></li>
+					<li><a class="link-ancla" href="#iFruit_Radio"><span>15.</span> Ifruit Radio</a></li>
+					<li><a class="link-ancla" href="#Curiosidades"><span>16.</span> Curiosidades</a></li>	
+					<li><a class="link-ancla" href="#Criadores"><span>17.</span> Criadores</a></li>	
 				</ol>
 				</div>
 			</div>
@@ -231,7 +199,7 @@
 
 			<div class="container">
 				<div class="text">
-					<h2><span class="radio_name" id="Space_103.2">Space 103.2</span></h2>
+					<h2><span class="radio_name" id="Space1032">Space 103.2</span></h2>
 					<a href="https://open.spotify.com/playlist/4lP4j39cZZQneig4wlekbQ?si=aaa857dcaabe40d9" id="playlist_link" target="_blank">
 						<b> <img src="./16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Space 103.2</b>
 					</a>
@@ -1328,19 +1296,20 @@
 		</main>
 		<footer>
 			<ul id="Criadores" class="criadores">
-				<h2>Colaboradoressssssss</h2>
-				<li>Erick RIBEIRO</li>
+				<h2>Desenvolvedores</h2>
+				<li>Erick Ribeiro</li>
 				<hr>
-				<li>Erick</li>
+				<li>Wenderson Dhomini</li>
 				<hr>
-				<li>Erick</li>
+				<li>Gerlândio da Silva</li>
 				<hr>
-				<li>Erick</li>
+				<li>José Magno</li>
 				<hr>
-				<li>Erick</li>
+				<li>João Italo</li>
 				<hr>
 			</ul>
 		  </footer>
 	</div>
 </body>
+<script src="../Html/teste.js"></script>
 </html>

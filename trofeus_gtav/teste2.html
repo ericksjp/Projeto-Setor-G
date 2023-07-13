@@ -1,118 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-        
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-        }
-        
-        window.onload = function() {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function() {
-            toggleVisibility(this);
-            });
+<script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.link-ancla').click(function(e) {
+      e.preventDefault();
+      
+      var target = $(this).attr('href');
+      var windowHeight = $(window).height();
+      var elementOffset = $(target).offset().top;
+      var scrollToPosition = elementOffset - (windowHeight / 2);
+      
+      $('html, body').animate({
+        scrollTop: scrollToPosition
+      }, 1000);
+    });
+  });
+</script>
 
-        };
+<script>
+  function toggleVisibility(button) {
+    var divLaranja = document.querySelector('.indice-conteudo');
+    var LaranjaHeader = document.querySelector('.indice-header');
+    var buttonCollor = document.querySelector('#indice_button');
 
-    </script>
-    <script>
-        function scrollToTop() {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        }
-      </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./teste2.css">
-    <title>Document</title>
+    divLaranja.classList.toggle('highlight');
+    LaranjaHeader.classList.toggle('highlight');
+    buttonCollor.classList.toggle('highlight');
+    button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
+}
+
+window.onload = function () {
+    var button = document.querySelector('.laranja button');
+    button.addEventListener('click', function () {
+        toggleVisibility(this);
+    });
+};
+</script>
+
+<script>
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+  <link rel="stylesheet" href="./teste2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Theft Auto V</title>
 </head>
-
 <body>
-
-    <body>
-        <div class="wrapper" id="trofeu1">
-            <header>
-                <nav>
-                    <ul class="lista">
-                        <li class="button"><img src="./assets//logos/gta5.png" alt="">
-                            <ul class="submenu">
-                                <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-                                <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-                                <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-                                <li><a href="../radio_gtav/radios.html">Rádios</a></li>
-                                <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-                                <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-                                <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-                                <li><a href="../armas_gtav/armas.html">Armas</a></li>
-                              </ul>
-                        </li>
-                        <li class="button"><img src="./assets//logos/gta4.png" alt="">
-                            <ul class="submenu">
-                                <li><a>Sobre</a></li>
-                                <li><a>Veiculos</a></li>
-                                <li><a>Personagens</a></li>
-                                <li><a>Rádios</a></li>
-                                <li><a>Mapas</a></li>
-                                <li><a>Codigos</a></li>
-                                <li><a>Conquistas</a></li>
-                            </ul>
-                        </li>
-                        <li class="button"><img src="./assets//logos/gtasa.png" alt="">
-                            <ul class="submenu">
-                                <li><a>Sobre</a></li>
-                                <li><a>Veiculos</a></li>
-                                <li><a>Personagens</a></li>
-                                <li><a>Rádios</a></li>
-                                <li><a>Mapas</a></li>
-                                <li><a>Codigos</a></li>
-                                <li><a>Conquistas</a></li>
-                            </ul>
-                        </li>
-                        <li class="button"><img src="./assets//logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
-                            <ul class="submenu">
-                                <li><a>Sobre</a></li>
-                                <li><a>Veiculos</a></li>
-                                <li><a>Personagens</a></li>
-                                <li><a>Rádios</a></li>
-                                <li><a>Mapas</a></li>
-                                <li><a>Codigos</a></li>
-                                <li><a>Conquistas</a></li>
-                            </ul>
-                        </li>
-                        <li class="button"><img src="./assets//logos/gta123.png" alt="" style="margin-bottom: 5px;">
-                            <ul class="submenu">
-                                <li><a>Sobre</a></li>
-                                <li><a>Veiculos</a></li>
-                                <li><a>Personagens</a></li>
-                                <li><a>Rádios</a></li>
-                                <li><a>Mapas</a></li>
-                                <li><a>Codigos</a></li>
-                                <li><a>Conquistas</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+  <div class="wrapper">
+		<header id="header">
+			<a id="logo" href=""><img src="./assets/logo.png" alt=""></a>
+			<nav id="nav">
+			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+				<span id="hamburger"></span>
+			</button>
+			<ul id="menu" role="menu">
+				<li ><a  id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+				<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+				<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+				<li><a href="../radio_gtav/radios.html">Rádios</a></li>
+				<li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+				<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+				<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+				<li><a href="../armas_gtav/armas.html">Armas</a></li>
+			</ul>
+			</nav>
+		</header>
             
             <main>
                 <div id="myelement" class="sticky-element">
                     <button onclick="scrollToTop()">Começo</button>
                   </div>
-                
-                <div class="logo">
-                    <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
-                </div>
 
                 <h1 style="text-align: center;">Troféus e Conquistas GTA V</h1>
                 <p style="text-align: center;">Aqui você confere a lista completa de Conquistas e Troféus de Grand Theft Auto 5</p>
@@ -123,69 +89,69 @@
                     </div>
                     <div class="indice-conteudo">
                       <ol>
-                        <li><a href="#Introducao"><span>1.</span> Introducão</a></li>
-                        <li><a href="#RoadMap"><span>2.</span> RoadMap</a></li>
-                        <li><a href="#Trofeus"><span>3.</span> Troféus</a>
+                        <li><a class = "link-ancla" href="#Introducao"><span>1.</span> Introducão</a></li>
+                        <li><a class = "link-ancla" href="#RoadMap"><span>2.</span> RoadMap</a></li>
+                        <li><a class = "link-ancla" href="#Trofeus"><span>3.</span> Troféus</a>
                             <ol>
-                                <li><a href="#trofeu1"><span>3.1</span> O Astro de Los Santos</a></li>
-                                <li><a href="#trofeu2"><span>3.2</span> Bem-vindo a Los Santos</a></li>
-                                <li><a href="#trofeu3"><span>3.3</span> Uma Amizade Ressuscitada</a></li>
-                                <li><a href="#trofeu4"><span>3.4</span> O Salário Nosso de Cada Dia</a></li>
-                                <li><a href="#trofeu5"><span>3.5</span> A Hora da Verdade</a></li>
-                                <li><a href="#trofeu6"><span>3.6</span> Viver ou Morrer em Los Santos</a></li>
-                                <li><a href="#trofeu7"><span>3.7</span> Duro como Diamante</a></li>
-                                <li><a href="#trofeu8"><span>3.8</span> Subversivo</a></li>
-                                <li><a href="#trofeu9"><span>3.9</span> Levou um sacode</a></li>
-                                <li><a href="#trofeu10"><span>3.10</span> Pequena Cidade, Grande Golpe</a></li>
-                                <li><a href="#trofeu11"><span>3.11</span> Os Escravos do Governo</a></li>
-                                <li><a href="#trofeu12"><span>3.12</span> O Grande Golpe!</a></li>
-                                <li><a href="#trofeu13"><span>3.13</span> Ouro Maciço</a></li>
-                                <li><a href="#trofeu14"><span>3.14</span> Vida Bandida</a></li>
-                                <li><a href="#trofeu15"><span>3.15</span> Turista em San Andreas</a></li>
-                                <li><a href="#trofeu16"><span>3.16</span> Na Vida, Somos Todos Passageiros</a></li>
-                                <li><a href="#trofeu17"><span>3.17</span> TP Industries Logística Bélica</a></li>
-                                <li><a href="#trofeu18"><span>3.18</span> Multidisciplinado</a></li>
-                                <li><a href="#trofeu19"><span>3.19</span> Muito Além das Estrelas</a></li>
-                                <li><a href="#trofeu20"><span>3.20</span> Um Mistério Solucionado</a></li>
-                                <li><a href="#trofeu21"><span>3.21</span> Gestão de Resíduos</a></li>
-                                <li><a href="#trofeu22"><span>3.22</span> Sangue no Zòio</a></li>
-                                <li><a href="#trofeu23"><span>3.23</span> Exibicionista</a></li>
-                                <li><a href="#trofeu24"><span>3.24</span> Kifflom!</a></li>
-                                <li><a href="#trofeu25"><span>3.25</span> Exército de Três Homens</a></li>
-                                <li><a href="#trofeu26"><span>3.26</span> O Mar Não Está Para Peixes</a></li>
-                                <li><a href="#trofeu27"><span>3.27</span> Acólito Altruísta</a></li>
-                                <li><a href="#trofeu28"><span>3.28</span> Uma Dinherama</a></li>
-                                <li><a href="#trofeu29"><span>3.29</span> Aplicando em Alfa Puro</a></li>
-                                <li><a href="#trofeu30"><span>3.30</span> Tunando o Meu Ferro</a></li>
-                                <li><a href="#trofeu31"><span>3.31</span> Procurado: Vivo ou Bem Vivo</a></li>
-                                <li><a href="#trofeu32"><span>3.32</span> Los Santos Customs</a></li>
-                                <li><a href="#trofeu33"><span>3.33</span> Por Um Triz</a></li>
-                                <li><a href="#trofeu34"><span>3.34</span> Carne Fresca</a></li>
-                                <li><a href="#trofeu35"><span>3.35</span> Criminoso Meia-boca</a></li>
-                                <li><a href="#trofeu36"><span>3.36</span> Na Correria</a></li>
-                                <li><a href="#trofeu37"><span>3.37</span> Acima da Lei</a></li>
-                                <li><a href="#trofeu38"><span>3.38</span> Número Uno</a></li>
-                                <li><a href="#trofeu39"><span>3.39</span> The Midnight Club</a></li>
-                                <li><a href="#trofeu40"><span>3.40</span> Seleção Não Natural</a></li>
-                                <li><a href="#trofeu41"><span>3.41</span> Passageiro/Motorista</a></li>
-                                <li><a href="#trofeu42"><span>3.42</span> Corra como o Vento</a></li>
-                                <li><a href="#trofeu43"><span>3.43</span> De Lavada</a></li>
-                                <li><a href="#trofeu44"><span>3.44</span> Condecorado</a></li>
-                                <li><a href="#trofeu45"><span>3.45</span> 157</a></li>
-                                <li><a href="#trofeu46"><span>3.46</span> Aproveite a Sua Estadia</a></li>
-                                <li><a href="#trofeu47"><span>3.47</span> Parte do Comando</a></li>
-                                <li><a href="#trofeu48"><span>3.48</span> Reembolso Total</a></li>
-                                <li><a href="#trofeu49"><span>3.49</span> Batendo um Fio</a></li>
-                                <li><a href="#trofeu50"><span>3.50</span> O Sonho Americano</a></li>
-                                <li><a href="#trofeu51"><span>3.51</span> Esteja Preparado</a></li>
-                                <li><a href="#trofeu52"><span>3.52</span> Em nome da ciência</a></li>
-                                <li><a href="#trofeu53"><span>3.53</span> Saque Fácil</a></li>
-                                <li><a href="#trofeu54"><span>3.54</span> Liberdade Condicional</a></li>
-                                <li><a href="#trofeu55"><span>3.55</span> Manda-chuva</a></li>
-                                <li><a href="#trofeu56"><span>3.56</span> De Quatro</a></li>
-                                <li><a href="#trofeu57"><span>3.57</span> Viva um Pouco</a></li>
-                                <li><a href="#trofeu58"><span>3.58</span> Intocável</a></li>
-                                <li><a href="#trofeu59"><span>3.59</span> Cérebro da Operação</a></li>
+                                <li><a class = "link-ancla" href="#trofeu1"><span>3.1</span> O Astro de Los Santos</a></li>
+                                <li><a class = "link-ancla" href="#trofeu2"><span>3.2</span> Bem-vindo a Los Santos</a></li>
+                                <li><a class = "link-ancla" href="#trofeu3"><span>3.3</span> Uma Amizade Ressuscitada</a></li>
+                                <li><a class = "link-ancla" href="#trofeu4"><span>3.4</span> O Salário Nosso de Cada Dia</a></li>
+                                <li><a class = "link-ancla" href="#trofeu5"><span>3.5</span> A Hora da Verdade</a></li>
+                                <li><a class = "link-ancla" href="#trofeu6"><span>3.6</span> Viver ou Morrer em Los Santos</a></li>
+                                <li><a class = "link-ancla" href="#trofeu7"><span>3.7</span> Duro como Diamante</a></li>
+                                <li><a class = "link-ancla" href="#trofeu8"><span>3.8</span> Subversivo</a></li>
+                                <li><a class = "link-ancla" href="#trofeu9"><span>3.9</span> Levou um sacode</a></li>
+                                <li><a class = "link-ancla" href="#trofeu10"><span>3.10</span> Pequena Cidade, Grande Golpe</a></li>
+                                <li><a class = "link-ancla" href="#trofeu11"><span>3.11</span> Os Escravos do Governo</a></li>
+                                <li><a class = "link-ancla" href="#trofeu12"><span>3.12</span> O Grande Golpe!</a></li>
+                                <li><a class = "link-ancla" href="#trofeu13"><span>3.13</span> Ouro Maciço</a></li>
+                                <li><a class = "link-ancla" href="#trofeu14"><span>3.14</span> Vida Bandida</a></li>
+                                <li><a class = "link-ancla" href="#trofeu15"><span>3.15</span> Turista em San Andreas</a></li>
+                                <li><a class = "link-ancla" href="#trofeu16"><span>3.16</span> Na Vida, Somos Todos Passageiros</a></li>
+                                <li><a class = "link-ancla" href="#trofeu17"><span>3.17</span> TP Industries Logística Bélica</a></li>
+                                <li><a class = "link-ancla" href="#trofeu18"><span>3.18</span> Multidisciplinado</a></li>
+                                <li><a class = "link-ancla" href="#trofeu19"><span>3.19</span> Muito Além das Estrelas</a></li>
+                                <li><a class = "link-ancla" href="#trofeu20"><span>3.20</span> Um Mistério Solucionado</a></li>
+                                <li><a class = "link-ancla" href="#trofeu21"><span>3.21</span> Gestão de Resíduos</a></li>
+                                <li><a class = "link-ancla" href="#trofeu22"><span>3.22</span> Sangue no Zòio</a></li>
+                                <li><a class = "link-ancla" href="#trofeu23"><span>3.23</span> Exibicionista</a></li>
+                                <li><a class = "link-ancla" href="#trofeu24"><span>3.24</span> Kifflom!</a></li>
+                                <li><a class = "link-ancla" href="#trofeu25"><span>3.25</span> Exército de Três Homens</a></li>
+                                <li><a class = "link-ancla" href="#trofeu26"><span>3.26</span> O Mar Não Está Para Peixes</a></li>
+                                <li><a class = "link-ancla" href="#trofeu27"><span>3.27</span> Acólito Altruísta</a></li>
+                                <li><a class = "link-ancla" href="#trofeu28"><span>3.28</span> Uma Dinherama</a></li>
+                                <li><a class = "link-ancla" href="#trofeu29"><span>3.29</span> Aplicando em Alfa Puro</a></li>
+                                <li><a class = "link-ancla" href="#trofeu30"><span>3.30</span> Tunando o Meu Ferro</a></li>
+                                <li><a class = "link-ancla" href="#trofeu31"><span>3.31</span> Procurado: Vivo ou Bem Vivo</a></li>
+                                <li><a class = "link-ancla" href="#trofeu32"><span>3.32</span> Los Santos Customs</a></li>
+                                <li><a class = "link-ancla" href="#trofeu33"><span>3.33</span> Por Um Triz</a></li>
+                                <li><a class = "link-ancla" href="#trofeu34"><span>3.34</span> Carne Fresca</a></li>
+                                <li><a class = "link-ancla" href="#trofeu35"><span>3.35</span> Criminoso Meia-boca</a></li>
+                                <li><a class = "link-ancla" href="#trofeu36"><span>3.36</span> Na Correria</a></li>
+                                <li><a class = "link-ancla" href="#trofeu37"><span>3.37</span> Acima da Lei</a></li>
+                                <li><a class = "link-ancla" href="#trofeu38"><span>3.38</span> Número Uno</a></li>
+                                <li><a class = "link-ancla" href="#trofeu39"><span>3.39</span> The Midnight Club</a></li>
+                                <li><a class = "link-ancla" href="#trofeu40"><span>3.40</span> Seleção Não Natural</a></li>
+                                <li><a class = "link-ancla" href="#trofeu41"><span>3.41</span> Passageiro/Motorista</a></li>
+                                <li><a class = "link-ancla" href="#trofeu42"><span>3.42</span> Corra como o Vento</a></li>
+                                <li><a class = "link-ancla" href="#trofeu43"><span>3.43</span> De Lavada</a></li>
+                                <li><a class = "link-ancla" href="#trofeu44"><span>3.44</span> Condecorado</a></li>
+                                <li><a class = "link-ancla" href="#trofeu45"><span>3.45</span> 157</a></li>
+                                <li><a class = "link-ancla" href="#trofeu46"><span>3.46</span> Aproveite a Sua Estadia</a></li>
+                                <li><a class = "link-ancla" href="#trofeu47"><span>3.47</span> Parte do Comando</a></li>
+                                <li><a class = "link-ancla" href="#trofeu48"><span>3.48</span> Reembolso Total</a></li>
+                                <li><a class = "link-ancla" href="#trofeu49"><span>3.49</span> Batendo um Fio</a></li>
+                                <li><a class = "link-ancla" href="#trofeu50"><span>3.50</span> O Sonho Americano</a></li>
+                                <li><a class = "link-ancla" href="#trofeu51"><span>3.51</span> Esteja Preparado</a></li>
+                                <li><a class = "link-ancla" href="#trofeu52"><span>3.52</span> Em nome da ciência</a></li>
+                                <li><a class = "link-ancla" href="#trofeu53"><span>3.53</span> Saque Fácil</a></li>
+                                <li><a class = "link-ancla" href="#trofeu54"><span>3.54</span> Liberdade Condicional</a></li>
+                                <li><a class = "link-ancla" href="#trofeu55"><span>3.55</span> Manda-chuva</a></li>
+                                <li><a class = "link-ancla" href="#trofeu56"><span>3.56</span> De Quatro</a></li>
+                                <li><a class = "link-ancla" href="#trofeu57"><span>3.57</span> Viva um Pouco</a></li>
+                                <li><a class = "link-ancla" href="#trofeu58"><span>3.58</span> Intocável</a></li>
+                                <li><a class = "link-ancla" href="#trofeu59"><span>3.59</span> Cérebro da Operação</a></li>
                             </ol>
                         </li>
                       </ol>
@@ -1607,23 +1573,22 @@
                     </div>
                 </div>
             </main>
-            <footer>
-                
+            <footer>           
                 <ul class="criadores">
-                    <h2>Colaboradoressssssss</h2>
-                    <li>Erick RIBEIRO</li>
+                    <h2>Desenvolvedores</h2>
+                    <li>Erick Ribeiro</li>
                     <hr>
-                    <li>Erick</li>
+                    <li>Wenderson Dhomini</li>
                     <hr>
-                    <li>Erick</li>
+                    <li>Gerlândio da Silva</li>
                     <hr>
-                    <li>Erick</li>
+                    <li>José Magno</li>
                     <hr>
-                    <li>Erick</li>
+                    <li>João Italo</li>
                     <hr>
                 </ul>
               </footer>
         </div>
     </body>
-
+    <script src="../Html/teste.js"></script>
 </html>

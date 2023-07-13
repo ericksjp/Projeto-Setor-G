@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.link-ancla').click(function(e) {
+      e.preventDefault();
+      
+      var target = $(this).attr('href');
+      var windowHeight = $(window).height();
+      var elementOffset = $(target).offset().top;
+      var scrollToPosition = elementOffset - (windowHeight / 2);
+      
+      $('html, body').animate({
+        scrollTop: scrollToPosition
+      }, 1000);
+    });
+  });
+</script>
+
 <script>
   function toggleVisibility(button) {
     var divLaranja = document.querySelector('.indice-conteudo');
@@ -19,8 +37,8 @@ window.onload = function () {
         toggleVisibility(this);
     });
 };
-
 </script>
+
 <script>
 function scrollToTop() {
     window.scrollTo({
@@ -28,7 +46,8 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
-  </script>
+</script>
+
   <link rel="stylesheet" href="./index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,10 +78,6 @@ function scrollToTop() {
     <main>
       <div id="myelement" class="sticky-element">
         <button onclick="scrollToTop()">Começo</button>
-      </div>
-    
-      <div class="logo">
-          <a><img src="/" alt=""></a>
       </div>
 
       <h1>Grand Theft Auto V</h1>
@@ -103,23 +118,23 @@ function scrollToTop() {
           </div>
           <div class="indice-conteudo">
             <ol>
-              <li><a href="#Primeiros_ind"><span>1.</span> Primeiros indícios</a></li>
-              <li><a href="#Ambiente"><span>2.</span> Ambiente</a></li>
-              <li><a href="#Historia"><span>3.</span> História</a></li>
-              <li><a href="#Jogabilidade"><span>4.</span> Jogabilidade</a>
+              <li><a class="link-ancla" href="#Primeiros_ind"><span>1.</span> Primeiros indícios</a></li>
+              <li><a class="link-ancla" href="#Ambiente"><span>2.</span> Ambiente</a></li>
+              <li><a class="link-ancla" href="#Historia"><span>3.</span> História</a></li>
+              <li><a class="link-ancla" href="#Jogabilidade"><span>4.</span> Jogabilidade</a>
                 <ol>
-                  <li><a href="#veiculos"><span>4.1</span> Veículos</a></li>
-                  <li><a href="#empresas"><span>4.2</span> Empresas</a></li>
-                  <li><a href="#armamento"><span>4.3</span> Armamento</a></li>
-                  <li><a href="#pers_perso"><span>4.4</span> Personalização do Personagem</a></li>
-                  <li><a href="#ia"><span>4.5</span> Inteligência Artificial</a></li>
-                  <li><a href="#gtaonline"><span>4.6</span> Grand Theft Auto Online</a></li>
+                  <li><a class="link-ancla" href="#veiculos"><span>4.1</span> Veículos</a></li>
+                  <li><a class="link-ancla" href="#empresas"><span>4.2</span> Empresas</a></li>
+                  <li><a class="link-ancla" href="#armamento"><span>4.3</span> Armamento</a></li>
+                  <li><a class="link-ancla" href="#pers_perso"><span>4.4</span> Personalização do Personagem</a></li>
+                  <li><a class="link-ancla" href="#ia"><span>4.5</span> Inteligência Artificial</a></li>
+                  <li><a class="link-ancla" href="#gtaonline"><span>4.6</span> Grand Theft Auto Online</a></li>
                 </ol>
               </li>
-              <li><a href="#data_acontecimentos"><span>5.</span> Data dos acontecimentos</a>
-              <li><a href="#galeria"><span>6.</span> Galeria</a>
-              <li><a href="#curiosidades"><span>7.</span> Curiosidades</a>
-              <li><a href="#novageracao"><span>8.</span> Nova geração</a>
+              <li><a class="link-ancla" href="#data_acontecimentos"><span>5.</span> Data dos acontecimentos</a>
+              <li><a class="link-ancla" href="#galeria"><span>6.</span> Galeria</a>
+              <li><a class="link-ancla" href="#curiosidades"><span>7.</span> Curiosidades</a>
+              <li><a class="link-ancla" href="#novageracao"><span>8.</span> Nova geração</a>
             </ol>
           </div>
         </div>
