@@ -58,7 +58,6 @@ a:hover {
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Pricedown";
   font-size: 2rem;
   color: white;
   text-shadow: 
@@ -102,7 +101,7 @@ a:hover {
   padding: 0.5rem;
   color: white;
   text-decoration: none;
-  font-family: "Pricedown";
+  font-family: 'Lilita One', cursive;
   font-size: 1.7rem;
   text-shadow: 
   -1px -1px 0px black, 

@@ -1,53 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
-<script>
-  $(document).ready(function() {
-    $('.link-ancla').click(function(e) {
-      e.preventDefault();
-      
-      var target = $(this).attr('href');
-      var windowHeight = $(window).height();
-      var elementOffset = $(target).offset().top;
-      var scrollToPosition = elementOffset - (windowHeight / 2);
-      
-      $('html, body').animate({
-        scrollTop: scrollToPosition
-      }, 1000);
-    });
-  });
-</script>
-
-<script>
-  function toggleVisibility(button) {
-    var divLaranja = document.querySelector('.indice-conteudo');
-    var LaranjaHeader = document.querySelector('.indice-header');
-    var buttonCollor = document.querySelector('#indice_button');
-
-    divLaranja.classList.toggle('highlight');
-    LaranjaHeader.classList.toggle('highlight');
-    buttonCollor.classList.toggle('highlight');
-    button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-}
-
-window.onload = function () {
-    var button = document.querySelector('.laranja button');
-    button.addEventListener('click', function () {
-        toggleVisibility(this);
-    });
-};
-</script>
-
-<script>
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-</script>
-
+  <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
   <link rel="stylesheet" href="./index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +11,7 @@ function scrollToTop() {
 <body>
   <div class="wrapper">
 		<header id="header">
-			<a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+            <a id="logo" href="../index.html"><img src="../Html/assets/logo.webp" alt=""></a>
 			<nav id="nav">
 			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
 				<span id="hamburger"></span>
@@ -144,7 +98,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Radio_Los_Santos">Radio Los Santos</span></h2>
 					<a href="https://open.spotify.com/playlist/3xJbVoB5fvWhCV8hVhsU5b?si=48602caed9c54779" id="playlist_link" target="_blank">
-						<b> <img id="Radio_Los_Santos" src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Radio Los Santos</b>
+						<b> <img id="Radio_Los_Santos" src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Radio Los Santos</b>
 					</a>
 					<hr>
 					<p><i><a title="Rádio Los Santos">Rádio Los Santos</a></i> está hospedado por <b>Big Boy</b> e toca
@@ -193,7 +147,7 @@ function scrollToTop() {
 					</ul>		
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/RadioLosSantos-GTAV-Logo.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/RadioLosSantos-GTAV-Logo.webp">
 				</div>
 			</div>
 
@@ -201,7 +155,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Space1032">Space 103.2</span></h2>
 					<a href="https://open.spotify.com/playlist/4lP4j39cZZQneig4wlekbQ?si=aaa857dcaabe40d9" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Space 103.2</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Space 103.2</b>
 					</a>
 					<hr>
 					<p><i><a title="Space 103.2">Space 103.2</a></i> está hospedado por <b>Bootsy Collins</b> e toca
@@ -242,7 +196,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Space 103.2" src="./assets/Space.png">
+					<img alt="Space 103.2" src="./assets/Space.webp">
 				</div>
 			</div>
 
@@ -250,7 +204,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="West_Coast_Classics">West Coast Classics</span></h2>
 					<a href="https://open.spotify.com/playlist/0aslgxsPY13vd3X1IuxeE6?si=03db2feb429549a1" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist West Coast Classics</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist West Coast Classics</b>
 					</a>
 					<hr>
 					<p><i><a title="West Coast Classics">West Coast Classics</a></i> é apresentado por <b>DJ Pooh</b> e
@@ -300,7 +254,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/West-coast-classics.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/West-coast-classics.webp">
 				</div>
 			</div>
 
@@ -308,7 +262,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Rebel_Radio">Rebel Radio</span></h2>
 					<a href="https://open.spotify.com/playlist/1q89ugwbPGMwjAlgX1k5Jz?si=152cc1d872e54a12" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Rebel Radio</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Rebel Radio</b>
 					</a>
 					<hr>
 					<p><i><a title="Rebel Radio">Rebel Radio</a></i> é hospedado por Jesco White e toca Música Country.
@@ -344,7 +298,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Rebel-radio.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Rebel-radio.webp">
 				</div>
 			</div>
 
@@ -353,7 +307,7 @@ function scrollToTop() {
 					<h2><span class="radio_name" id="Los_Santos_Rock_Radio">Los Santos Rock Radio</span></h2>
 					<a href="https://open.spotify.com/playlist/6DgiDBgyHTWhd997CR8SHK?si=46593318bde64422" id="playlist_link"
 						target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Los Santos Rock Radio</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Los Santos Rock Radio</b>
 					</a>
 					<hr>
 					<p><i><a title="Los Santos Rock Radio">Los Santos Rock Radio</a></i> é hospedado por Kenny Loggins e
@@ -410,7 +364,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Los-santos-rock-radio.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Los-santos-rock-radio.webp">
 				</div>
 			</div>
 
@@ -419,7 +373,7 @@ function scrollToTop() {
 					<h2><span class="radio_name" id="The_Lowdown_91.1">The Lowdown 91.1</span></h2>
 					<a href="https://open.spotify.com/playlist/4BHVFx2AXp2bXpaRe1KwEJ?si=0f2051f7fc2a41dc" id="playlist_link"
 						target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist The Lowdown 91.1</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist The Lowdown 91.1</b>
 					</a>
 					<hr>
 					<p><i><a title="The Lowdown 91.1">The Lowdown 91.1</a></i> é hospedado por Mama G (Pam Grier) e toca
@@ -456,7 +410,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/The-lowdown-official.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/The-lowdown-official.webp">
 				</div>
 			</div>
 
@@ -465,7 +419,7 @@ function scrollToTop() {
 					<h2><span class="radio_name" id="Blue_Ark">Blue Ark</span></h2>
 					<a href="https://open.spotify.com/playlist/3zk5nCnmrdKE2doKlrXVTt?si=e14b0faa6cca448e" id="playlist_link"
 						target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Blue Ark</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Blue Ark</b>
 					</a>
 					<hr>
 					<p><i><a title="Blue Ark">Blue Ark</a></i> é hospedado por Lee "Scratch" Perry e toca Reggae, Dub
@@ -505,7 +459,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/The-blue-ark-official.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/The-blue-ark-official.webp">
 				</div>
 			</div>
 
@@ -514,7 +468,7 @@ function scrollToTop() {
 					<h2><span class="radio_name" id="Non_Stop_Pop_FM">Non Stop Pop FM</span></h2>
 					<a href="https://open.spotify.com/playlist/119RwhTmhNelp6IqJpt0K4?si=f5fe87de4d8c41c0" id="playlist_link"
 						target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Non Stop Pop FM</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Non Stop Pop FM</b>
 					</a>
 					<hr>
 					<p><i><a title="Non Stop Pop FM">Non Stop Pop FM</a></i> é hospedado por Cara Delevingne e toca
@@ -580,7 +534,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Non-stop-pop.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Non-stop-pop.webp">
 				</div>
 			</div>
 
@@ -588,7 +542,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="East_Los_FM">East Los FM</span></h2>
 					<a href="https://open.spotify.com/playlist/5Alfk8JLqHk6r61zQLrMqR?si=01d7f23a49544df9" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist East Los FM</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist East Los FM</b>
 					</a>
 					<hr>
 					<p><i><a title="East Los FM">East Los FM</a></i> é apresentado por Don Cheto e Camilo Lara e toca
@@ -622,7 +576,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/East-los-fm.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/East-los-fm.webp">
 				</div>
 			</div>
 
@@ -630,7 +584,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="WorldWide_FM">WorldWide FM</span></h2>
 					<a href="https://open.spotify.com/playlist/070GmV0d5LCGPhlJRLKPxO?si=fd753d59ea03487a" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist WorldWide FM</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist WorldWide FM</b>
 					</a>
 					<hr>
 					<p><i><a title="WorldWide FM">WorldWide FM</a></i> é hospedado por Gilles Peterson e toca Chillwave
@@ -686,7 +640,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Worldwide-fm.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Worldwide-fm.webp">
 				</div>
 			</div>
 
@@ -694,7 +648,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Channel_X">Channel X</span></h2>
 					<a href="https://open.spotify.com/playlist/6a7d9LEO2H6sr2Upb0rKI5?si=3a8ccc2d57c14eb2" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Channel X</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Channel X</b>
 					</a>
 					<hr>
 					<p><i><a title="Channel X">Channel X</a></i> é hospedado por Keith Morris e toca Hardcore Punk /
@@ -728,7 +682,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Channel-x.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Channel-x.webp">
 				</div>
 			</div>
 
@@ -736,7 +690,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Radio_Mirror_Park">Radio Mirror Park</span></h2>
 					<a href="https://open.spotify.com/playlist/6undnlVhPbAU5o6PL2fhwc?si=17c528baab8c47fc" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Mirror Park</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Mirror Park</b>
 					</a>
 					<hr>
 					<p><i><a title="Radio Mirror Park">Radio Mirror Park</a></i> é hospedado por Twin Shadow e toca
@@ -797,7 +751,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/RadioMirrorPark-GTAV-Logo.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/RadioMirrorPark-GTAV-Logo.webp">
 				</div>
 			</div>
 
@@ -806,7 +760,7 @@ function scrollToTop() {
 					<h2><span class="radio_name" id="Vinewood_Boulevard">Vinewood Boulevard Radio</span></h2>
 					<a href="https://open.spotify.com/playlist/5DPJUBMBHV10jNs3vPmiOR?si=946357159a7f4fed" id="playlist_link"
 						target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Vinewood Boulevard Radio</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Vinewood Boulevard Radio</b>
 					</a>
 					<hr>
 					<p><i><a title="Vinewood Boulevard Radio">Vinewood Boulevard Radio</a></i> é hospedado por <b>Nate Williams</b> e <b>Stephen Pope</b> e toca Rock Moderno. Nate Williams e Stephen Pope são membros da banda Wavves, uma banda local de San Andreas (na vida real uma banda local da Califórnia). Começaram a carreira musical deles no final dos anos 2000</p>
@@ -837,7 +791,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Vinewood Boulevard Radio" src="./assets/Vinewood-boulevard-radio.png">
+					<img alt="Vinewood Boulevard Radio" src="./assets/Vinewood-boulevard-radio.webp">
 				</div>
 			</div>
 	
@@ -845,7 +799,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Soulwax_FM">Soulwax FM</span></h2>
 					<a href="https://open.spotify.com/playlist/5b2v391AwkTQDVE8nSEulG?si=646c8967fd0142a8" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Soulwax FM</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Soulwax FM</b>
 					</a>
 					<hr>
 					<p><i><a title="Soulwax FM">Soulwax FM</a></i> é hospedado por Soulwax e toca Techno e House,
@@ -877,7 +831,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Soulwax-fm-official.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Soulwax-fm-official.webp">
 				</div>
 			</div>
 
@@ -885,7 +839,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="FlyLo_FM">FlyLo FM</span></h2>
 					<a href="https://open.spotify.com/playlist/6UIPSckAdkoRLMxYkQRFPU?si=4e1991ee17e84546" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Flylo FM</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Flylo FM</b>
 					</a>
 					<hr>
 					<p><i><a title="FlyLo FM">FlyLo FM</a></i> é hospedado por Flying Lotus e toca IDM, Experimental
@@ -934,7 +888,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Fly-lo-fm.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Fly-lo-fm.webp">
 				</div>
 			</div>
 
@@ -942,7 +896,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Blaine_County_Talk_Radio">Blaine County Talk Radio</span></h2>
 					<a href="https://www.youtube.com/watch?v=aaXui87cF5Y" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Blaine County Talk Radio</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Blaine County Talk Radio</b>
 					</a>
 					<hr>
 					<p><i><a title="Blaine County Talk Radio">Blaine County Talk Radio</a></i> é uma rádio pública
@@ -963,7 +917,7 @@ function scrollToTop() {
 					<p><i>Os personagens acima são fictícios.</i></p>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Blaine-county-talk-radio-official.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Blaine-county-talk-radio-official.webp">
 				</div>
 			</div>
 
@@ -971,7 +925,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="WCTR">WCTR</span></h2>
 					<a href="https://www.youtube.com/watch?v=IhCFJnaYvnI" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist WCTR</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist WCTR</b>
 					</a>
 					<hr>
 					<p><i>WCTR</i> é uma rádio pública liberal que reproduz os seguintes programas:</p>
@@ -995,7 +949,7 @@ function scrollToTop() {
 					<p><i>Os personagens acima são fictícios.</i></p>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/Wctr.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/Wctr.webp">
 				</div>
 			</div>
 
@@ -1003,7 +957,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="The_Lab">The Lab</span></h2>
 					<a href="https://open.spotify.com/playlist/0vMLZbFRYpaRtrQ87CZjJ0?si=516785c6971043a9" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist The Lab</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist The Lab</b>
 					</a>
 					<hr>
 					<p><i><a title="The Lab">The Lab</a></i> é apresentado por The Alchemist e Oh No, e toca hip-hop,
@@ -1029,7 +983,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/TheLab-Logo-GTAV.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/TheLab-Logo-GTAV.webp">
 				</div>
 			</div>
 
@@ -1037,7 +991,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="blonded_Los_Santos_97.8_FM">blonded Los Santos 97.8 FM</span></h2>
 					<a href="https://open.spotify.com/playlist/2XQpcYV7oU7bwNzTuabw27" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist blonded Los Santos 97.8 FM</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist blonded Los Santos 97.8 FM</b>
 					</a>
 					<hr>
 					<p><i><a title="blonded Los Santos 97.8 FM">blonded Los Santos 97.8 FM</a></i> é hospedado por Frank
@@ -1075,7 +1029,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/BlondedLosSantos-GTAV-OfficialLogoColoured.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/BlondedLosSantos-GTAV-OfficialLogoColoured.webp">
 				</div>
 			</div>
 
@@ -1083,7 +1037,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="Los_Santos_Underground_Radio">Los Santos Underground Radio</span></h2>
 					<a href="https://open.spotify.com/playlist/3MxgNzEvwFOyKh0q1UHqQL" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist Los Santos Underground Radio</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist Los Santos Underground Radio</b>
 					</a>
 					<hr>
 					<p><i>Los Santos Underground Radio</i> é hospedado por um locutor de nome desconhecido e toca house,
@@ -1167,7 +1121,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/LSUR_Radio_Logo.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/LSUR_Radio_Logo.webp">
 				</div>
 			</div>
 
@@ -1175,7 +1129,7 @@ function scrollToTop() {
 				<div class="text">
 					<h2><span class="radio_name" id="iFruit_Radio">iFruit Radio</span></h2>
 					<a href="https://open.spotify.com/playlist/3WBZcZ9qV7vyht2H1RcOEJ?si=fc04f598558e406a" id="playlist_link" target="_blank">
-						<b> <img src="./assets/16x16.png" alt="" style="position: relative; top: 2px;"> Playlist IFruit Radio</b>
+						<b> <img src="./assets/16x16.webp" alt="" style="position: relative; top: 2px;"> Playlist IFruit Radio</b>
 					</a>
 					<hr>
 					<p><i><a title="iFruit Radio">iFruit Radio</a></i> é hospedado por Danny Brown e toca afro-fuse,
@@ -1213,7 +1167,7 @@ function scrollToTop() {
 					</ul>
 				</div>
 				<div class="image">
-					<img alt="Radio-Los-Santos-V" src="./assets/IFruitRadio-GTAO-Logo.png">
+					<img alt="Radio-Los-Santos-V" src="./assets/IFruitRadio-GTAO-Logo.webp">
 				</div>
 			</div>
 			<h2 id="Curiosidades"> <span class="mw-headline" id="curiosidades">Curiosidades</span></h2>

@@ -15,7 +15,7 @@
 body{
   height: 100vh;
   width: 100%;
-  background-image: url("./assets/background.png");
+  background-image: url("../Html/assets/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -60,7 +60,6 @@ a:hover {
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Pricedown";
   font-size: 2rem;
   color: white;
   text-shadow: 
@@ -608,20 +607,16 @@ p {
 
   @media screen and (max-width: 620px) {
     .sticky-element {
-      top: 180px;
+      top: 95px;
+    }
+    main{
+      margin-top: 125px;
     }
 }
-
 
 @media screen and (max-width: 355px) {
   .laranja {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 345px) {
-  .sticky-element {
-    top: 225px;
   }
 }
 }
