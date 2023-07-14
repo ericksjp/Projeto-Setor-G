@@ -1,104 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
-        }
-
-        window.onload = function () {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function () {
-                toggleVisibility(this);
-            });
-
-        };
-
-    </script>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="./mainstyles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mainstyles.css">
-    <title>Document</title>
+    <title>Grand Theft Auto V</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
-                        <ul class="submenu">
-                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
-                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
-                          </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
+        <header id="header">
+            <a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+                    <li><a href="../veiculos_gtav/veiculohp.html">Veículos</a></li>
+                    <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                    <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                    <li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+                    <li><a href="../cheats_gtav/cheats.html">Códigos</a></li>
+                    <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                    <li><a href="../armas_gtav/armas.html">Armas</a></li>
                 </ul>
             </nav>
         </header>
@@ -106,13 +35,7 @@
             <div id="myelement" class="sticky-element">
                 <button onclick="scrollToTop()">Começo</button>
             </div>
-
-            <div class="logo">
-                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
-            </div>
-            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
-
-            <h1 style="text-align: center;">Aviões - GTA V</h1>            
+            <h1 style="text-align: center;">Aviões - GTA V</h1>
             <div class="laranja">
                 <div class="indice-header" id="trofeu1">
                     <h2>Índice</h2>
@@ -120,42 +43,41 @@
                 </div>
                 <div class="indice-conteudo">
                     <ol>
-                        <li><a href="#v1"><span>1.</span> Atomic Blimp</a></li>
-                        <li><a href="#v2"><span>2.</span> Buckingham Luxor</a></li>
-                        <li><a href="#v3"><span>3.</span> Buckingham Shamal</a></li>
-                        <li><a href="#v4"><span>4.</span> Cargo Plane</a></li>
-                        <li><a href="#v5"><span>5.</span> Jet</a></li>
-                        <li><a href="#v6"><span>6.</span> JoBuilt Mammatus</a></li>
-                        <li><a href="#v7"><span>7.</span> JoBuilt P-996 LAZER</a></li>
-                        <li><a href="#v8"><span>8.</span> Titan</a></li>
-                        <li><a href="#v9"><span>9.</span> Western Cuban 800</a></li>
-                        <li><a href="#v10"><span>10.</span> Western Duster</a></li>
-                        <li><a href="#v11"><span>11.</span> Western Mallard</a></li>
-                        <li><a href="#v12"><span>12.</span> Mammoth Dodo</a></li>
-                        <li><a href="#v13"><span>13.</span> Buckingham Vestra</a></li>
-                        <li><a href="#v14"><span>14.</span> Buckingham Miljet</a></li>
-                        <li><a href="#v15"><span>15.</span> Western Besra</a></li>
-                        <li><a href="#v16"><span>16.</span> JoBuilt Velum</a></li>
-                        <li><a href="#v17"><span>17.</span> Mammoth Hydra</a></li>
-                        <li><a href="#v18"><span>18.</span> Buckingham Luxor Deluxe</a></li>
-                        <li><a href="#v19"><span>19.</span> Buckingham Nimbus</a></li>
-                        <li><a href="#v20"><span>20.</span> Buckingham Alpha-Z1</a></li>
-                        <li><a href="#v21"><span>21.</span> Buckingham Pyro</a></li>
-                        <li><a href="#v22"><span>22.</span> Buckingham Howard NX-25</a></li>
-                        <li><a href="#v23"><span>23.</span> LF-22 Starling</a></li>
-                        <li><a href="#v24"><span>24.</span> Mammoth Tula</a></li>
-                        <li><a href="#v25"><span>25.</span> Mammoth Mogul</a></li>
-                        <li><a href="#v26"><span>26.</span> P-45 Nokota</a></li>
-                        <li><a href="#v27"><span>27.</span> RM-10 Bombushka</a></li>
-                        <li><a href="#v28"><span>28.</span> V-65 Molotok</a></li>
-                        <li><a href="#v29"><span>29.</span> Western Company Rogue</a></li>
-                        <li><a href="#v30"><span>30.</span> Western Company Seabreeze</a></li>
-                        <li><a href="#v31"><span>31.</span> Nagasaki Ultralight</a></li>
-                        <li><a href="#v32"><span>32.</span> B-11 Strikeforce</a></li>
+                        <li><a class="link-ancla" href="#v1"><span>1.</span> Atomic Blimp</a></li>
+                        <li><a class="link-ancla" href="#v2"><span>2.</span> Buckingham Luxor</a></li>
+                        <li><a class="link-ancla" href="#v3"><span>3.</span> Buckingham Shamal</a></li>
+                        <li><a class="link-ancla" href="#v4"><span>4.</span> Cargo Plane</a></li>
+                        <li><a class="link-ancla" href="#v5"><span>5.</span> Jet</a></li>
+                        <li><a class="link-ancla" href="#v6"><span>6.</span> JoBuilt Mammatus</a></li>
+                        <li><a class="link-ancla" href="#v7"><span>7.</span> JoBuilt P-996 LAZER</a></li>
+                        <li><a class="link-ancla" href="#v8"><span>8.</span> Titan</a></li>
+                        <li><a class="link-ancla" href="#v9"><span>9.</span> Western Cuban 800</a></li>
+                        <li><a class="link-ancla" href="#v10"><span>10.</span> Western Duster</a></li>
+                        <li><a class="link-ancla" href="#v11"><span>11.</span> Western Mallard</a></li>
+                        <li><a class="link-ancla" href="#v12"><span>12.</span> Mammoth Dodo</a></li>
+                        <li><a class="link-ancla" href="#v13"><span>13.</span> Buckingham Vestra</a></li>
+                        <li><a class="link-ancla" href="#v14"><span>14.</span> Buckingham Miljet</a></li>
+                        <li><a class="link-ancla" href="#v15"><span>15.</span> Western Besra</a></li>
+                        <li><a class="link-ancla" href="#v16"><span>16.</span> JoBuilt Velum</a></li>
+                        <li><a class="link-ancla" href="#v17"><span>17.</span> Mammoth Hydra</a></li>
+                        <li><a class="link-ancla" href="#v18"><span>18.</span> Buckingham Luxor Deluxe</a></li>
+                        <li><a class="link-ancla" href="#v19"><span>19.</span> Buckingham Nimbus</a></li>
+                        <li><a class="link-ancla" href="#v20"><span>20.</span> Buckingham Alpha-Z1</a></li>
+                        <li><a class="link-ancla" href="#v21"><span>21.</span> Buckingham Pyro</a></li>
+                        <li><a class="link-ancla" href="#v22"><span>22.</span> Buckingham Howard NX-25</a></li>
+                        <li><a class="link-ancla" href="#v23"><span>23.</span> LF-22 Starling</a></li>
+                        <li><a class="link-ancla" href="#v24"><span>24.</span> Mammoth Tula</a></li>
+                        <li><a class="link-ancla" href="#v25"><span>25.</span> Mammoth Mogul</a></li>
+                        <li><a class="link-ancla" href="#v26"><span>26.</span> P-45 Nokota</a></li>
+                        <li><a class="link-ancla" href="#v27"><span>27.</span> RM-10 Bombushka</a></li>
+                        <li><a class="link-ancla" href="#v28"><span>28.</span> V-65 Molotok</a></li>
+                        <li><a class="link-ancla" href="#v29"><span>29.</span> Western Company Rogue</a></li>
+                        <li><a class="link-ancla" href="#v30"><span>30.</span> Western Company Seabreeze</a></li>
+                        <li><a class="link-ancla" href="#v31"><span>31.</span> Nagasaki Ultralight</a></li>
+                        <li><a class="link-ancla" href="#v32"><span>32.</span> B-11 Strikeforce</a></li>
                     </ol>
                 </div>
             </div>
-            
             <div class="veiculos-container">
                 <div class="vehicle" id="v1">
                     <img src="./assets/images/avioes/img0.png" alt="Vehicle Name">
@@ -928,12 +850,12 @@
         </main>
         <footer>
             <ul id="criadores" class="criadores">
-                <h2>Colaboradores</h2>
+                <h2>Desenvolvedores</h2>
                 <li>Erick Ribeiro</li>
                 <hr>
-                <li>Whendersson</li>
+                <li>Wenderson Dhomini</li>
                 <hr>
-                <li>Gerlândio</li>
+                <li>Gerlândio da Silva</li>
                 <hr>
                 <li>José Magno</li>
                 <hr>
@@ -943,4 +865,5 @@
         </footer>
     </div>
 </body>
+<script src="../Html/veiculos.js"></script>
 </html>

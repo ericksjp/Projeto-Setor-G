@@ -1,116 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
-        }
-
-        window.onload = function () {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function () {
-                toggleVisibility(this);
-            });
-
-        };
-
-    </script>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="cheats.css">
+<script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+  <link rel="stylesheet" href="./cheats.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Theft Auto V</title>
 </head>
-
 <body>
-
-<div class="wrapper">
-	<header>
-		<nav>
-			<ul class="lista">
-				<li class="button"><img src="./assets/logos/gta5.png" alt="">
-					<ul class="submenu">
-						<li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-						<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-						<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-						<li><a href="../radio_gtav/radios.html">Rádios</a></li>
-						<li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-						<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-						<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-						<li><a href="../armas_gtav/armas.html">Armas</a></li>
-					  </ul>
-				</li>
-				<li class="button"><img src="./assets/logos/gta4.png" alt="">
-					<ul class="submenu">
-						<li><a>Sobre</a></li>
-						<li><a>Veiculos</a></li>
-						<li><a>Personagens</a></li>
-						<li><a>Rádios</a></li>
-						<li><a>Mapas</a></li>
-						<li><a>Codigos</a></li>
-						<li><a>Conquistas</a></li>
-					</ul>
-				</li>
-				<li class="button"><img src="./assets/logos/gtasa.png" alt="">
-					<ul class="submenu">
-						<li><a>Sobre</a></li>
-						<li><a>Veiculos</a></li>
-						<li><a>Personagens</a></li>
-						<li><a>Rádios</a></li>
-						<li><a>Mapas</a></li>
-						<li><a>Codigos</a></li>
-						<li><a>Conquistas</a></li>
-					</ul>
-				</li>
-				<li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
-					<ul class="submenu">
-						<li><a>Sobre</a></li>
-						<li><a>Veiculos</a></li>
-						<li><a>Personagens</a></li>
-						<li><a>Rádios</a></li>
-						<li><a>Mapas</a></li>
-						<li><a>Codigos</a></li>
-						<li><a>Conquistas</a></li>
-					</ul>
-				</li>
-				<li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
-					<ul class="submenu">
-						<li><a>Sobre</a></li>
-						<li><a>Veiculos</a></li>
-						<li><a>Personagens</a></li>
-						<li><a>Rádios</a></li>
-						<li><a>Mapas</a></li>
-						<li><a>Codigos</a></li>
-						<li><a>Conquistas</a></li>
-					</ul>
-				</li>
+  <div class="wrapper">
+		<header id="header">
+			<a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+			<nav id="nav">
+			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+				<span id="hamburger"></span>
+			</button>
+			<ul id="menu" role="menu">
+				<li ><a id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+				<li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+				<li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+				<li><a href="../radio_gtav/radios.html">Rádios</a></li>
+				<li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+				<li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+				<li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+				<li><a href="../armas_gtav/armas.html">Armas</a></li>
 			</ul>
-		</nav>
-	</header>
+			</nav>
+		</header>
+
 	<main>
 		<div id="myelement" class="sticky-element">
 			<button onclick="scrollToTop()">Começo</button>
 		</div>
 
-		<div class="logo">
-			<a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
-		</div>
 		<article class="artigo">
 			<h1 class="article--title" style="text-align: center;">GTA 5: todos os códigos e cheats para PC, PS3, PS4, Xbox 360 e Xbox One</h1>
 			<p>Confira os códigos de invencibilidade, carros, motos, armas, aviões e muito mais para PC, PS4,
@@ -126,11 +49,11 @@
 				</div>
 				<div class="indice-conteudo">
 					<ol>
-						<li><a href="#anchor-invencibilidade"><span>1.</span> Invencibilidade e códigos gerais</a></li>
-						<li><a href="#anchor-armas"><span>2.</span> Armas e munições</a></li>
-						<li><a href="#anchor-motos"><span>3.</span> Motos e BMX</a></li>
-						<li><a href="#anchor-carros"><span>4.</span> Carros</a></li>
-						<li><a href="#anchor-avioes"><span>5.</span> Aviões</a></li>
+						<li><a class="link-ancla" href="#anchor-invencibilidade"><span>1.</span> Invencibilidade e códigos gerais</a></li>
+						<li><a class="link-ancla" href="#anchor-armas"><span>2.</span> Armas e munições</a></li>
+						<li><a class="link-ancla" href="#anchor-motos"><span>3.</span> Motos e BMX</a></li>
+						<li><a class="link-ancla" href="#anchor-carros"><span>4.</span> Carros</a></li>
+						<li><a class="link-ancla" href="#anchor-avioes"><span>5.</span> Aviões</a></li>
 					</ol>
 				</div>
 			</div>
@@ -700,4 +623,5 @@
 	</footer>
 </div>
 </body>
+	<script src="../Html/index.js"></script>
 </html>

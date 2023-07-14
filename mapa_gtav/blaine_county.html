@@ -1,35 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-        }
-
-        window.onload = function () {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function () {
-                toggleVisibility(this);
-            });
-        };
-
-    </script>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
     <link rel="stylesheet" href="./blaine_county.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,65 +12,22 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li class="button">Sobre<img src="./assets/logos/gta5.png" alt="">
-                        <ul class="submenu">
-                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
-                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
-                          </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
+        <header id="header">
+            <a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+                    <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
+                    <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                    <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                    <li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+                    <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
+                    <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                    <li><a href="../armas_gtav/armas.html">Armas</a></li>
                 </ul>
             </nav>
         </header>
@@ -106,12 +36,6 @@
             <div id="myelement" class="sticky-element">
                 <button onclick="scrollToTop()">Começo</button>
             </div>
-
-            <div class="logo">
-                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
-            </div>
-
-            <a href="./mapashp.html" id="video_tutorial">Página anterior</a>
 
             <h1>Blaine County (GTA V)</h1>
 
@@ -140,23 +64,23 @@
                 </div>
                 <div class="indice-conteudo">
                   <ol>
-                    <li><a href="#Descrição"><span>1.</span> Descrição</a>
+                    <li><a class="link-ancla" href="#Descrição"><span>1.</span> Descrição</a>
                         <ol>
-                            <li><a href="#Vilas"><span>1.1</span> Vilas</a></li>
+                            <li><a class="link-ancla" href="#Vilas"><span>1.1</span> Vilas</a></li>
                         </ol>
                     </li>
-                    <li><a href="#Comunidades_habitadas_no_Condado_de_Blaine"><span>2.</span> Comunidades habitadas no Condado de Blaine</a>
+                    <li><a class="link-ancla" href="#Comunidades_habitadas_no_Condado_de_Blaine"><span>2.</span> Comunidades habitadas no Condado de Blaine</a>
                         <ol>
-                            <li><a href="#Vilas_(Towns)"><span>2.1</span> Vilas (Towns)</a></li>
-                            <li><a href="#Aldeias_(Villages)_e_Comunidades_Não-Incorporadas/Assentamentos"><span>2.2</span> Aldeias_(Villages) e Comunidades Não-Incorporadas/Assentamentos</a></li>
-                            <li><a href="#Montanhas,_cordilheiras_e_vales"><span>2.3</span> Montanhas, cordilheiras e vales</a></li>
-                            <li><a href="#Lugares_de_Interesse"><span>2.4</span> Lugares de Interesse</a></li>
-                            <li><a href="#Campos_de_Pouso"><span>2.5</span> Campos de Pouso</a></li>
+                            <li><a class="link-ancla" href="#Vilas_(Towns)"><span>2.1</span> Vilas (Towns)</a></li>
+                            <li><a class="link-ancla" href="#Aldeias_(Villages)_e_Comunidades_Não-Incorporadas/Assentamentos"><span>2.2</span> Aldeias (Villages) e Comunidades Não-Incorporadas/Assentamentos</a></li>
+                            <li><a class="link-ancla" href="#Montanhas,_cordilheiras_e_vales"><span>2.3</span> Montanhas, cordilheiras e vales</a></li>
+                            <li><a class="link-ancla" href="#Lugares_de_Interesse"><span>2.4</span> Lugares de Interesse</a></li>
+                            <li><a class="link-ancla" href="#Campos_de_Pouso"><span>2.5</span> Campos de Pouso</a></li>
                         </ol>
                     </li>
-                    <li><a href="#Curiosidades"><span>3.</span> Curiosidades</a></li>
-                    <li><a href="#Galeria"><span>4.</span> Galeria</a></li>
-                    <li><a href="#criadores"><span>5.</span> Colaboradores</a></li> 
+                    <li><a class="link-ancla" href="#Curiosidades"><span>3.</span> Curiosidades</a></li>
+                    <li><a class="link-ancla" href="#Galeria"><span>4.</span> Galeria</a></li>
+                    <li><a class="link-ancla" href="#criadores"><span>5.</span> Colaboradores</a></li> 
                   </ol>
                 </div>
               </div>
@@ -248,7 +172,7 @@
             <h2 id="Galeria">Galeria</h2>
             <figure class="mapafig">
                 <img src="./assets/f224110dc6b4d94f9c8ed55f63726aba28c01444_hq.jpg" alt="">
-                <figcaption>Achei a foto legal</figcaption>
+                <figcaption>Blaine County</figcaption>
             </figure>
         </main>
         <footer>
@@ -268,5 +192,5 @@
         </footer>
     </div>
 </body>
-
+    <script src="../Html/index.js"></script>
 </html>

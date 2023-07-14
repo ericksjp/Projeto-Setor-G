@@ -1,104 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
-        }
-
-        window.onload = function () {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function () {
-                toggleVisibility(this);
-            });
-
-        };
-
-    </script>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="./mainstyles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mainstyles.css">
-    <title>Document</title>
+    <title>Grand Theft Auto V</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
-                        <ul class="submenu">
-                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
-                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
-                          </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
+        <header id="header">
+            <a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+                    <li><a href="../veiculos_gtav/veiculohp.html">Veículos</a></li>
+                    <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                    <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                    <li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+                    <li><a href="../cheats_gtav/cheats.html">Códigos</a></li>
+                    <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                    <li><a href="../armas_gtav/armas.html">Armas</a></li>
                 </ul>
             </nav>
         </header>
@@ -106,11 +34,6 @@
             <div id="myelement" class="sticky-element">
                 <button onclick="scrollToTop()">Começo</button>
             </div>
-
-            <div class="logo">
-                <a href="../Html/logo.html"><img src="./assets/logo.png" alt=""></a>
-            </div>
-            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
 
             <h1 style="text-align: center;">Motos - GTA V</h1>
             
@@ -121,61 +44,61 @@
                 </div>
                 <div class="indice-conteudo">
                     <ol>
-                        <li><a href="#v1"><span>1.</span> Dinka Akuma</a></li>
-                        <li><a href="#v2"><span>2.</span> Dinka Double T</a></li>
-                        <li><a href="#v3"><span>3.</span> Liberty City Cycles Hexer</a></li>
-                        <li><a href="#v4"><span>4.</span> Maibatsu Sanchez</a></li>
-                        <li><a href="#v5"><span>5.</span> Nagasaki Carbon RS</a></li>       
-                        <li><a href="#v6"><span>6.</span> Pegassi Bati 800</a></li>
-                        <li><a href="#v7"><span>7.</span> Pegassi Ruffian</a></li>
-                        <li><a href="#v8"><span>8.</span> Principe Faggio</a></li>
-                        <li><a href="#v9"><span>9.</span> Principe Nemesis</a></li>
-                        <li><a href="#v10"><span>10.</span> Shitzu PCJ 600</a></li>
-                        <li><a href="#v11"><span>11.</span> Shitzu Vader</a></li>
-                        <li><a href="#v12"><span>12.</span> Western Bagger</a></li>
-                        <li><a href="#v13"><span>13.</span> Western Daemon</a></li>
-                        <li><a href="#v14"><span>14.</span> Police Bike</a></li>
-                        <li><a href="#v15"><span>15.</span> Western Sovereign</a></li>
-                        <li><a href="#v16"><span>16.</span> Dinka Thrust</a></li>
-                        <li><a href="#v17"><span>17.</span> Liberty City Cycles Innovation</a></li>
-                        <li><a href="#v18"><span>18.</span> Shitzu Hakuchou</a></li>
-                        <li><a href="#v19"><span>19.</span> Dinka Enduro</a></li>
-                        <li><a href="#v20"><span>20.</span> Principe Lectro</a></li>
-                        <li><a href="#v21"><span>21.</span> Dinka Vindicator</a></li>
-                        <li><a href="#v22"><span>22.</span> Nagasaki BF400</a></li>
-                        <li><a href="#v23"><span>23.</span> Western Cliffhanger</a></li>
-                        <li><a href="#v24"><span>24.</span> Western Gargoyle</a></li>
-                        <li><a href="#v25"><span>25.</span> Pegassi Faggio Sport</a></li>
-                        <li><a href="#v26"><span>26.</span> Nagasaki Shotaro</a></li>
-                        <li><a href="#v27"><span>27.</span> Nagasaki Chimera</a></li>
-                        <li><a href="#v28"><span>28.</span> Shitzu Hakuchou Drag</a></li>
-                        <li><a href="#v29"><span>29.</span> LCC Sanctus</a></li>
-                        <li><a href="#v30"><span>30.</span> Nagasaki Street Blazer</a></li>
-                        <li><a href="#v31"><span>31.</span> Western Rat Bike</a></li>
-                        <li><a href="#v32"><span>32.</span> Western Daemon</a></li>
-                        <li><a href="#v33"><span>33.</span> Pegassi Faggio Mod</a></li>
-                        <li><a href="#v34"><span>34.</span> Western Zombie Bobber</a></li>
-                        <li><a href="#v35"><span>35.</span> Western Zombie Chopper</a></li>
-                        <li><a href="#v36"><span>36.</span> Western Wolfsbane</a></li>
-                        <li><a href="#v37"><span>37.</span> BF Raptor</a></li>
-                        <li><a href="#v38"><span>38.</span> Maibatsu Manchez</a></li>
-                        <li><a href="#v39"><span>39.</span> Shitzu Defiler</a></li>
-                        <li><a href="#v40"><span>40.</span> Western Nightblade</a></li>
-                        <li><a href="#v41"><span>41.</span> Pegassi Vortex</a></li>
-                        <li><a href="#v42"><span>42.</span> Pegassi Esskey</a></li>
-                        <li><a href="#v43"><span>43.</span> LCC Avarus</a></li>
-                        <li><a href="#v44"><span>44.</span> Pegassi FCR 1000</a></li>
-                        <li><a href="#v45"><span>45.</span> Pegassi FCR 1000 Custom</a></li>
-                        <li><a href="#v46"><span>46.</span> Nagasaki Blazer Aqua</a></li>
-                        <li><a href="#v47"><span>47.</span> Principe Diabolus</a></li>
-                        <li><a href="#v48"><span>48.</span> Principe Diabolus Custom</a></li>
-                        <li><a href="#v49"><span>49.</span> Pegassi Oppressor</a></li>
-                        <li><a href="#v50"><span>50.</span> Pegassi Oppressor Mk II</a></li>
-                        <li><a href="#v51"><span>51.</span> Western Apocalypse Deathbike</a></li>
-                        <li><a href="#v52"><span>52.</span> Western Future Shock Deathbike</a></li>
-                        <li><a href="#v53"><span>53.</span> Western Nightmare Deathbike</a></li>
-                        <li><a href="#v54"><span>54.</span> Western Rampant Rocket</a></li>
-                        <li><a href="#v55"><span>55.</span> Nagasaki Stryder</a></li>
+                        <li><a class="link-ancla" href="#v1"><span>1.</span> Dinka Akuma</a></li>
+                        <li><a class="link-ancla" href="#v2"><span>2.</span> Dinka Double T</a></li>
+                        <li><a class="link-ancla" href="#v3"><span>3.</span> Liberty City Cycles Hexer</a></li>
+                        <li><a class="link-ancla" href="#v4"><span>4.</span> Maibatsu Sanchez</a></li>
+                        <li><a class="link-ancla" href="#v5"><span>5.</span> Nagasaki Carbon RS</a></li>       
+                        <li><a class="link-ancla" href="#v6"><span>6.</span> Pegassi Bati 800</a></li>
+                        <li><a class="link-ancla" href="#v7"><span>7.</span> Pegassi Ruffian</a></li>
+                        <li><a class="link-ancla" href="#v8"><span>8.</span> Principe Faggio</a></li>
+                        <li><a class="link-ancla" href="#v9"><span>9.</span> Principe Nemesis</a></li>
+                        <li><a class="link-ancla" href="#v10"><span>10.</span> Shitzu PCJ 600</a></li>
+                        <li><a class="link-ancla" href="#v11"><span>11.</span> Shitzu Vader</a></li>
+                        <li><a class="link-ancla" href="#v12"><span>12.</span> Western Bagger</a></li>
+                        <li><a class="link-ancla" href="#v13"><span>13.</span> Western Daemon</a></li>
+                        <li><a class="link-ancla" href="#v14"><span>14.</span> Police Bike</a></li>
+                        <li><a class="link-ancla" href="#v15"><span>15.</span> Western Sovereign</a></li>
+                        <li><a class="link-ancla" href="#v16"><span>16.</span> Dinka Thrust</a></li>
+                        <li><a class="link-ancla" href="#v17"><span>17.</span> Liberty City Cycles Innovation</a></li>
+                        <li><a class="link-ancla" href="#v18"><span>18.</span> Shitzu Hakuchou</a></li>
+                        <li><a class="link-ancla" href="#v19"><span>19.</span> Dinka Enduro</a></li>
+                        <li><a class="link-ancla" href="#v20"><span>20.</span> Principe Lectro</a></li>
+                        <li><a class="link-ancla" href="#v21"><span>21.</span> Dinka Vindicator</a></li>
+                        <li><a class="link-ancla" href="#v22"><span>22.</span> Nagasaki BF400</a></li>
+                        <li><a class="link-ancla" href="#v23"><span>23.</span> Western Cliffhanger</a></li>
+                        <li><a class="link-ancla" href="#v24"><span>24.</span> Western Gargoyle</a></li>
+                        <li><a class="link-ancla" href="#v25"><span>25.</span> Pegassi Faggio Sport</a></li>
+                        <li><a class="link-ancla" href="#v26"><span>26.</span> Nagasaki Shotaro</a></li>
+                        <li><a class="link-ancla" href="#v27"><span>27.</span> Nagasaki Chimera</a></li>
+                        <li><a class="link-ancla" href="#v28"><span>28.</span> Shitzu Hakuchou Drag</a></li>
+                        <li><a class="link-ancla" href="#v29"><span>29.</span> LCC Sanctus</a></li>
+                        <li><a class="link-ancla" href="#v30"><span>30.</span> Nagasaki Street Blazer</a></li>
+                        <li><a class="link-ancla" href="#v31"><span>31.</span> Western Rat Bike</a></li>
+                        <li><a class="link-ancla" href="#v32"><span>32.</span> Western Daemon</a></li>
+                        <li><a class="link-ancla" href="#v33"><span>33.</span> Pegassi Faggio Mod</a></li>
+                        <li><a class="link-ancla" href="#v34"><span>34.</span> Western Zombie Bobber</a></li>
+                        <li><a class="link-ancla" href="#v35"><span>35.</span> Western Zombie Chopper</a></li>
+                        <li><a class="link-ancla" href="#v36"><span>36.</span> Western Wolfsbane</a></li>
+                        <li><a class="link-ancla" href="#v37"><span>37.</span> BF Raptor</a></li>
+                        <li><a class="link-ancla" href="#v38"><span>38.</span> Maibatsu Manchez</a></li>
+                        <li><a class="link-ancla" href="#v39"><span>39.</span> Shitzu Defiler</a></li>
+                        <li><a class="link-ancla" href="#v40"><span>40.</span> Western Nightblade</a></li>
+                        <li><a class="link-ancla" href="#v41"><span>41.</span> Pegassi Vortex</a></li>
+                        <li><a class="link-ancla" href="#v42"><span>42.</span> Pegassi Esskey</a></li>
+                        <li><a class="link-ancla" href="#v43"><span>43.</span> LCC Avarus</a></li>
+                        <li><a class="link-ancla" href="#v44"><span>44.</span> Pegassi FCR 1000</a></li>
+                        <li><a class="link-ancla" href="#v45"><span>45.</span> Pegassi FCR 1000 Custom</a></li>
+                        <li><a class="link-ancla" href="#v46"><span>46.</span> Nagasaki Blazer Aqua</a></li>
+                        <li><a class="link-ancla" href="#v47"><span>47.</span> Principe Diabolus</a></li>
+                        <li><a class="link-ancla" href="#v48"><span>48.</span> Principe Diabolus Custom</a></li>
+                        <li><a class="link-ancla" href="#v49"><span>49.</span> Pegassi Oppressor</a></li>
+                        <li><a class="link-ancla" href="#v50"><span>50.</span> Pegassi Oppressor Mk II</a></li>
+                        <li><a class="link-ancla" href="#v51"><span>51.</span> Western Apocalypse Deathbike</a></li>
+                        <li><a class="link-ancla" href="#v52"><span>52.</span> Western Future Shock Deathbike</a></li>
+                        <li><a class="link-ancla" href="#v53"><span>53.</span> Western Nightmare Deathbike</a></li>
+                        <li><a class="link-ancla" href="#v54"><span>54.</span> Western Rampant Rocket</a></li>
+                        <li><a class="link-ancla" href="#v55"><span>55.</span> Nagasaki Stryder</a></li>
                     </ol>
                 </div>
             </div>
@@ -1505,12 +1428,12 @@
         </main>
         <footer>
             <ul id="criadores" class="criadores">
-                <h2>Colaboradores</h2>
+                <h2>Desenvolvedores</h2>
                 <li>Erick Ribeiro</li>
                 <hr>
-                <li>Whendersson</li>
+                <li>Wenderson Dhomini</li>
                 <hr>
-                <li>Gerlândio</li>
+                <li>Gerlândio da Silva</li>
                 <hr>
                 <li>José Magno</li>
                 <hr>
@@ -1520,4 +1443,5 @@
         </footer>
     </div>
 </body>
+<script src="../Html/veiculos.js"></script>
 </html>

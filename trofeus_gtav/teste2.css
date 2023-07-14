@@ -37,8 +37,17 @@ ul {
   padding: 0px;
 }
 
+
+h1{
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+    margin: 0 auto;
+    text-shadow: -5px -1px 0px rgb(0, 88, 19), -1px 1px 0px black, 1px -1px 0px black, 1px 0px 0px black;
+}
+
+
 .wrapper{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -596,72 +605,24 @@ footer ul {
   }
 }
 
-
-@media screen and (max-width: 750px) {
-
-  .button:hover {
-    background-color: black;
-  }
-
-  .lista {
-    display: block;
-    margin-bottom: 0%;
-    border: none;
-  }
-
-  .lista li {
-    display: grid;
-    border: none;
-    margin-top: 0%;
-    height: fit-content;
-    align-items: flex-start;
-    align-items: center;
-  }
-
-  .button {
-    border-bottom: 1px solid #f0e3be;
-  }
-
-  .button:first-child {
-    border-top: none;
-  }
-
-  .button:not(:last-child) {
-    border-right: none;
-  }
-
-  .lista img {
-    padding-right: 1%;
-    margin: 0 auto;
-    height: 50%;
-    position: relative;
-    top: 0%;
-  }
-
-  .button:hover .submenu {
-    padding: 10px;
-    padding-right: 2%;
-    border: none;
-    top: 0px;
-    position: relative;
-    height: fit-content;
-    background-color: rgba(0, 0, 0, 0);
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: -20px;
-    display: table-cell;
-    text-align: center;
-  }
-
-  .submenu li {
-    padding-bottom: 10%;
-    left: 5px;
-  }
-
-  .sticky-element{
-    top: 200px;
+@media screen and (max-width: 670px) {
+  h1{
+    font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .sticky-element{
+    top: 240px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .sticky-element{
+    top: 180px;
+  }
+}
+
 
 @media screen and (max-width: 470px) {
   .sticky-element{
@@ -669,11 +630,8 @@ footer ul {
   }
 }
 
-@media screen and (max-width: 420px) {
-  h1{
-    text-align: center;
-  }
+@media screen and (max-width: 376px) {
   .sticky-element{
-    top: 180px;
+    top: 110px;
   }
 }

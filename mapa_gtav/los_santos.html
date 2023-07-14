@@ -1,35 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-        }
-
-        window.onload = function () {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function () {
-                toggleVisibility(this);
-            });
-        };
-        
-    </script>
-    <script>
-        function scrollToTop() {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        }
-      </script>
+    <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
     <link rel="stylesheet" href="./los_santos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,14 +12,19 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
+        <header id="header">
+            <a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
                     <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
                     <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
                     <li><a href="../radio_gtav/radios.html">Rádios</a></li>
-                    <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
+                    <li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
                     <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
                     <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
                     <li><a href="../armas_gtav/armas.html">Armas</a></li>
@@ -57,16 +35,10 @@
         <main>
             <div id="myelement" class="sticky-element">
                 <button onclick="scrollToTop()">Começo</button>
-              </div>
-            
-            <div class="logo">
-                <a href="../Html/index.html"><img src="./assets/logo.png" alt=""></a>
             </div>
 
-            <a href="./mapashp.html" id="video_tutorial">Página anterior</a>
-
             <h1>Los Santos (GTA V)</h1>
-            
+
             <figure id="lafigure">
                 <img src="./assets/Ls-dn.webp" alt="">
                 <figcaption><span>Ciclo dia/noite da cidade de Los Santos.</span></figcaption>
@@ -89,51 +61,61 @@
                 Asiáticos, Sul-americanos, e outras civilizações europeias diferentes, cerca de 30% da sua
                 população é de origem espanhola.
             </p>
-            
+
 
             <div class="laranja">
-                <div class="indice-header" id="trofeu1">
-                  <h2>Índice</h2>
-                  <button id="indice_button" onclick="highlightDiv()">ocultar</button>
+                <div class="indice-header">
+                    <h2>Índice</h2>
+                    <button id="indice_button" onclick="highlightDiv()">ocultar</button>
                 </div>
                 <div class="indice-conteudo">
-                  <ol>
-                    <li><a href="#Geografia"><span>1.</span> Geografia</a></li>
-                    <li><a href="#Transporte"><span>2.</span> Transporte</a></li>
-                    <li><a href="#clima"><span>3.</span> Clima</a></li>
-                    <li><a href="#Pontos_Turísticos"><span>4.</span> Pontos Turísticos</a>
-                        <ol>
-                            <li><a href="#Arranha-céus_e_edificios_corporativos"><span>4.1</span> Arranha-céus e edifícios corporativos</a></li>
-                            <li><a href="#Edifícios_Residenciais"><span>4.2</span> Edifícios Residenciais</a></li>
-                            <li><a href="#Recreação_e_esportes"><span>4.3</span> Recreação e esportes</a>
-                                <ol>
-                                    <li><a href="#TimesEsportivos"><span>4.3.1</span> Times Esportivos</a></li>
-                                    <li><a href="#Locais_de_Entretenimento"><span>4.3.2</span> Locais de Entretenimento</a></li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </li>
-                    <li><a href="#Infraestrutura"><span>5.</span> Infraestrutura</a>
-                        <ol>
-                            <li><a href="#Porto e Aeroporto"><span>5.1</span> Porto e Aeroporto</a></li>
-                            <li><a href="#Estradas_Importantes"><span>5.2</span> Estradas Importantes</a></li>
-                            <li><a href="#Arte_e_Cultura"><span>5.3</span> Arte e Cultura</a></li>
-                            <li><a href="#Governo"><span>5.4</span> Governo</a></li>
-                            <li><a href="#Marcos_emblemáticos"><span>5.5</span> Marcos emblemáticos</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="#Educação"><span>6.</span> Educação</a></li>
-                    <li><a href="#Saúde"><span>7.</span> Saúde</a></li>    
-                    <li><a href="#Segurança"><span>8.</span> Segurança</a>
-                        <ol>
-                            <li><a href="#NOOSEE"><span>8.1</span> NOOSEE</a></li>
-                            <li><a href="#Justiça_Criminal"><span>8.2</span> Justiça Criminal</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="#Crime"><span>9.</span> Crime</a>   
-                    <li><a href="#Galeria"><span>10.</span> Galeria</a>   
-                    <li><a href="#criadores"><span>11.</span> Colaboradores</a>   
-                  </ol>
+                    <ol>
+                        <li><a class="link-ancla" href="#Geografia"><span>1.</span> Geografia</a></li>
+                        <li><a class="link-ancla" href="#Transporte"><span>2.</span> Transporte</a></li>
+                        <li><a class="link-ancla" href="#clima"><span>3.</span> Clima</a></li>
+                        <li><a class="link-ancla" href="#Pontos_Turísticos"><span>4.</span> Pontos Turísticos</a>
+                            <ol>
+                                <li><a class="link-ancla" href="#Arranha-céus_e_edificios_corporativos"><span>4.1</span>
+                                        Arranha-céus e edifícios corporativos</a></li>
+                                <li><a class="link-ancla" href="#Edifícios_Residenciais"><span>4.2</span> Edifícios
+                                        Residenciais</a></li>
+                                <li><a class="link-ancla" href="#Recreação_e_esportes"><span>4.3</span> Recreação e
+                                        esportes</a>
+                                    <ol>
+                                        <li><a class="link-ancla" href="#TimesEsportivos"><span>4.3.1</span> Times
+                                                Esportivos</a></li>
+                                        <li><a class="link-ancla" href="#Locais_de_Entretenimento"><span>4.3.2</span>
+                                                Locais de Entretenimento</a></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><a class="link-ancla" href="#Infraestrutura"><span>5.</span> Infraestrutura</a>
+                            <ol>
+                                <li><a class="link-ancla" href="#Porto e Aeroporto"><span>5.1</span> Porto e
+                                        Aeroporto</a></li>
+                                <li><a class="link-ancla" href="#Estradas_Importantes"><span>5.2</span> Estradas
+                                        Importantes</a></li>
+                                <li><a class="link-ancla" href="#Arte_e_Cultura"><span>5.3</span> Arte e Cultura</a>
+                                </li>
+                                <li><a class="link-ancla" href="#Governo"><span>5.4</span> Governo</a></li>
+                                <li><a class="link-ancla" href="#Marcos_emblemáticos"><span>5.5</span> Marcos
+                                        emblemáticos</a></li>
+                            </ol>
+                        </li>
+                        <li><a class="link-ancla" href="#Educação"><span>6.</span> Educação</a></li>
+                        <li><a class="link-ancla" href="#Saúde"><span>7.</span> Saúde</a></li>
+                        <li><a class="link-ancla" href="#Segurança"><span>8.</span> Segurança</a>
+                            <ol>
+                                <li><a class="link-ancla" href="#NOOSEE"><span>8.1</span> NOOSEE</a></li>
+                                <li><a class="link-ancla" href="#Justiça_Criminal"><span>8.2</span> Justiça Criminal</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><a class="link-ancla" href="#Crime"><span>9.</span> Crime</a>
+                        <li><a class="link-ancla" href="#Galeria"><span>10.</span> Galeria</a>
+                        <li><a class="link-ancla" href="#criadores"><span>11.</span> Colaboradores</a>
+                    </ol>
                 </div>
             </div>
 
@@ -502,7 +484,7 @@
                 </li>
             </ul>
             <h3 id="Marcos_emblemáticos">Marcos
-                    emblemáticos</span></h3>
+                emblemáticos</span></h3>
             <p>Há também muitas armadilhas para turistas em Los Santos. Esses marcos são o que dão a cidade uma
                 imagem glamurosa.
             </p>
@@ -557,7 +539,7 @@
                 Quando há atividade criminosa perigosa, NOOSE é implantado na cena.
             </p>
             <h3 id="Justiça_Criminal">Justiça
-                    Criminal</span></h3>
+                Criminal</span></h3>
             <p>Embora não seja visto no jogo, Los Santos opera um sistema de justiça criminal. Em um segmento de
                 rádio da Weazel News, um tribunal conhecido como o Tribunal Superior de Los Santos é mencionado.
             </p>
@@ -609,5 +591,5 @@
         </footer>
     </div>
 </body>
-
+<script src="../Html/index.js"></script>
 </html>

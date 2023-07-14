@@ -2,52 +2,6 @@
 <html>
 <head>
 <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
-<script>
-  $(document).ready(function() {
-    $('.link-ancla').click(function(e) {
-      e.preventDefault();
-      
-      var target = $(this).attr('href');
-      var windowHeight = $(window).height();
-      var elementOffset = $(target).offset().top;
-      var scrollToPosition = elementOffset - (windowHeight / 2);
-      
-      $('html, body').animate({
-        scrollTop: scrollToPosition
-      }, 1000);
-    });
-  });
-</script>
-
-<script>
-  function toggleVisibility(button) {
-    var divLaranja = document.querySelector('.indice-conteudo');
-    var LaranjaHeader = document.querySelector('.indice-header');
-    var buttonCollor = document.querySelector('#indice_button');
-
-    divLaranja.classList.toggle('highlight');
-    LaranjaHeader.classList.toggle('highlight');
-    buttonCollor.classList.toggle('highlight');
-    button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-}
-
-window.onload = function () {
-    var button = document.querySelector('.laranja button');
-    button.addEventListener('click', function () {
-        toggleVisibility(this);
-    });
-};
-</script>
-
-<script>
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-</script>
-
   <link rel="stylesheet" href="./index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +11,7 @@ function scrollToTop() {
 <body>
   <div class="wrapper">
 		<header id="header">
-			<a id="logo" href=""><img src="./assets/logo.png" alt=""></a>
+			<a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
 			<nav id="nav">
 			<button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
 				<span id="hamburger"></span>
@@ -516,5 +470,5 @@ function scrollToTop() {
   </footer>
 </div>
 </body>
-  <script src="../Html/teste.js"></script>
+  <script src="../Html/index.js"></script>
 </html>

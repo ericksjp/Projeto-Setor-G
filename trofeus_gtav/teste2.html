@@ -2,51 +2,6 @@
 <html>
 <head>
 <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
-<script>
-  $(document).ready(function() {
-    $('.link-ancla').click(function(e) {
-      e.preventDefault();
-      
-      var target = $(this).attr('href');
-      var windowHeight = $(window).height();
-      var elementOffset = $(target).offset().top;
-      var scrollToPosition = elementOffset - (windowHeight / 2);
-      
-      $('html, body').animate({
-        scrollTop: scrollToPosition
-      }, 1000);
-    });
-  });
-</script>
-
-<script>
-  function toggleVisibility(button) {
-    var divLaranja = document.querySelector('.indice-conteudo');
-    var LaranjaHeader = document.querySelector('.indice-header');
-    var buttonCollor = document.querySelector('#indice_button');
-
-    divLaranja.classList.toggle('highlight');
-    LaranjaHeader.classList.toggle('highlight');
-    buttonCollor.classList.toggle('highlight');
-    button.textContent = divLaranja.classList.contains('highlight') ? 'mostrar' : 'ocultar';
-}
-
-window.onload = function () {
-    var button = document.querySelector('.laranja button');
-    button.addEventListener('click', function () {
-        toggleVisibility(this);
-    });
-};
-</script>
-
-<script>
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-</script>
 
   <link rel="stylesheet" href="./teste2.css">
   <meta charset="UTF-8">
@@ -80,8 +35,8 @@ function scrollToTop() {
                     <button onclick="scrollToTop()">Começo</button>
                   </div>
 
-                <h1 style="text-align: center;">Troféus e Conquistas GTA V</h1>
-                <p style="text-align: center;">Aqui você confere a lista completa de Conquistas e Troféus de Grand Theft Auto 5</p>
+                <h1>Troféus e Conquistas GTA V</h1>
+                <p>Guia completo sobre todos os troféus e conquistas do GTA V. Essa é a pagina perfeita para quem quer platinar o jogo ou é só curioso mesmo.</p>
                 <div class="laranja">
                     <div class="indice-header" id="trofeu1">
                       <h2>Índice</h2>
@@ -93,7 +48,7 @@ function scrollToTop() {
                         <li><a class = "link-ancla" href="#RoadMap"><span>2.</span> RoadMap</a></li>
                         <li><a class = "link-ancla" href="#Trofeus"><span>3.</span> Troféus</a>
                             <ol>
-                                <li><a class = "link-ancla" href="#trofeu1"><span>3.1</span> O Astro de Los Santos</a></li>
+                                <li><a class = "link-ancla" href="#np66"><span>3.1</span> O Astro de Los Santos</a></li>
                                 <li><a class = "link-ancla" href="#trofeu2"><span>3.2</span> Bem-vindo a Los Santos</a></li>
                                 <li><a class = "link-ancla" href="#trofeu3"><span>3.3</span> Uma Amizade Ressuscitada</a></li>
                                 <li><a class = "link-ancla" href="#trofeu4"><span>3.4</span> O Salário Nosso de Cada Dia</a></li>
@@ -222,45 +177,45 @@ function scrollToTop() {
                     <p>
                         Segue a lista de todos os troféus ganhos ao completar a história de GTA V.</p>
                     <br>
-                    <p> - <a href="#trofeu2" rel=""> <span style="color:#A0522D;"> Bem-vindo a Los Santos </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu2" rel=""> <span style="color:#A0522D;"> Bem-vindo a Los Santos </span></a>:
                         Troféu relacionado a
                         história.</p>
                     <br>
-                    <p> - <a href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>: Troféu
+                    <p> - <a class="link-ancla" href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>: Troféu
                         relacionado a história.
                     </p>
                     <br>
-                    <p> - <a href="#trofeu3" rel=""> <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu3" rel=""> <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>:
                         Troféu relacionado a
                         história.</p>
                     <br>
-                    <p> - <a href="#trofeu4" rel=""> <span style="color:#A0522D;"> O Salário Nosso de Cada Dia </span></a>: Troféu
+                    <p> - <a class="link-ancla" href="#trofeu4" rel=""> <span style="color:#A0522D;"> O Salário Nosso de Cada Dia </span></a>: Troféu
                         relacionado a
                         história.</p>
                     <br>
-                    <p> - <a href="#trofeu5" rel=""> <span style="color:#A0522D;"> A Hora da Verdade </span></a>:Troféu
+                    <p> - <a class="link-ancla" href="#trofeu5" rel=""> <span style="color:#A0522D;"> A Hora da Verdade </span></a>:Troféu
                         relacionado a
                         história.</p>
                     <br>
-                    <p> - <a href="#trofeu8" rel=""> <span style="color:#A0522D;"> Subversivo </span></a>: Troféu
+                    <p> - <a class="link-ancla" href="#trofeu8" rel=""> <span style="color:#A0522D;"> Subversivo </span></a>: Troféu
                         relacionado a história.</p>
                     <br>
-                    <p> - <a href="#trofeu9" rel=""> <span style="color:#A0522D;"> Levou um Sacode </span></a>: Troféu
+                    <p> - <a class="link-ancla" href="#trofeu9" rel=""> <span style="color:#A0522D;"> Levou um Sacode </span></a>: Troféu
                         relacionado a história.</p>
                     <br>
-                    <p> - <a href="#trofeu10" rel=""> <span style="color:#A0522D;"> Pequena Cidade, Grande Golpe </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu10" rel=""> <span style="color:#A0522D;"> Pequena Cidade, Grande Golpe </span></a>:
                         Troféu relacionado a
                         história.</p>
                     <br>
-                    <p> - <a href="#trofeu11" rel=""> <span style="color:#A0522D;"> Os Escravos do Governo </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu11" rel=""> <span style="color:#A0522D;"> Os Escravos do Governo </span></a>:
                         Troféu relacionado a
                         história.</p>
                     <br>
-                    <p> - <a href="#trofeu12" rel=""> <span style="color:#A0522D;"> O Grande Golpe! </span></a>: Troféu
+                    <p> - <a class="link-ancla" href="#trofeu12" rel=""> <span style="color:#A0522D;"> O Grande Golpe! </span></a>: Troféu
                         relacionado a história.
                     </p>
                     <br>
-                    <p> - <a href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
+                    <p> - <a class="link-ancla" href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
                             </span></a>: Troféu
                         relacionado a história.</p>
                     <br>
@@ -274,13 +229,13 @@ function scrollToTop() {
                         oceano, com o
                         avião, e salte de paraquedas. Em seguida, espere um tubarão vir. Morra para ele e conquista esse
                         troféu.</p>
-                    <p> - <a href="#trofeu26" rel=""> <span style="color:#A0522D;">  O Mar Não Está Para Peixes</span></a>: Morra
+                    <p> - <a class="link-ancla" href="#trofeu26" rel=""> <span style="color:#A0522D;">  O Mar Não Está Para Peixes</span></a>: Morra
                         para um Tubarão. Pode
                         ser feito a qualquer momento da campanha, independente de dinheiro ou situação.</p>
                     <br>
                     <p>
                         Ao renascer, faça o que se pede, e conquiste mais um troféu.</p>
-                    <p> - <a href="#trofeu29" rel=""> <span style="color:#A0522D;"> Aplicando em Alfa Puro </span></a>: Ganhe
+                    <p> - <a class="link-ancla" href="#trofeu29" rel=""> <span style="color:#A0522D;"> Aplicando em Alfa Puro </span></a>: Ganhe
                         lucro em
                         investimentos. Pode ser feito a qualquer momento da campanha, não será necessário muito
                         dinheiro, então pode fazer
@@ -288,28 +243,28 @@ function scrollToTop() {
                     <br>
                     <p>
                         Aproveite que esteja na internet, e realize esse troféu.</p>
-                    <p> - <a href="#trofeu28" rel=""> <span style="color:#A0522D;"> Uma Dinherama </span></a>: Gaste
+                    <p> - <a class="link-ancla" href="#trofeu28" rel=""> <span style="color:#A0522D;"> Uma Dinherama </span></a>: Gaste
                         200 milhões. Pode ser
                         feito a qualquer momento, porém o recomendável é fazer depois da conquista do troféu <a
-                            href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
+                            class="link-ancla" href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
                             </span></a>.</p>
                     <br>
                     <p>
                         Procure realizar o demorado troféu do Programa Epsilon.</p>
-                    <p> - <a href="#trofeu24" rel=""> <span style="color:#787878;"> Kifflom! </span></a> - Participe do
+                    <p> - <a class="link-ancla" href="#trofeu24" rel=""> <span style="color:#787878;"> Kifflom! </span></a> - Participe do
                         Program Epsilon e
-                        encontre o caminho para o entendimento. Pode ser feito após o troféu <a href="#trofeu3" rel="">
+                        encontre o caminho para o entendimento. Pode ser feito após o troféu <a class="link-ancla" href="#trofeu3" rel="">
                             <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>, onde você terá dinheiro
                         suficiente para o
                         troféu.</p>
                     <br>
                     <p>
                         Em seguida, busque o seu avião e complete o mapa de San Andreas, ganhando o seguinte troféu.</p>
-                    <p> - <a href="#trofeu15" rel=""> <span style="color:#787878;"> Turista em San Andreas </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu15" rel=""> <span style="color:#787878;"> Turista em San Andreas </span></a>:
                         Complete todo o mapa.
                         Durante toda a campanha, varios pedaços do mapa serão preenchidos, porém sobrará algumas
                         transparencias. Aconselho a
-                        fazer isso no final, depois do troféu <a href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
+                        fazer isso no final, depois do troféu <a class="link-ancla" href="#trofeu6" rel=""> <span style="color:#787878;"> Viver ou Morrer em Los Santos
                                 Santos </span></a>.</p>
                     <br>
                     <br>
@@ -320,32 +275,32 @@ function scrollToTop() {
                         Agora troque para o Trevour e faça todos esses troféu.</p>
                     <p>
                         Siga para um Los Santos Customs, com um carro, e realize esse troféu.</p>
-                    <p> - <a href="#trofeu32" rel=""> <span style="color:#A0522D;"> Los Santos Customs </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu32" rel=""> <span style="color:#A0522D;"> Los Santos Customs </span></a>:
                         Personalize totalmente um
                         carro. Pode ser feito a qualquer momento da campanha, porém necessitará de dinheiro.</p>
                     <br>
                     <p>
                         Agora parta para uma Ammunation e personalize totalmente uma arma, disponibilizando esse
                         seguinte troféu.</p>
-                    <p> - <a href="#trofeu30" rel=""> <span style="color:#A0522D;"> Tunando o Meu Ferro </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu30" rel=""> <span style="color:#A0522D;"> Tunando o Meu Ferro </span></a>:
                         Personalize totalmente uma
                         arma. Pode ser feito a qualquer momento da campanha, porém necessitará de dinheiro.</p>
                     <br>
                     <p>
                         Realize todas as missões de Matança, termine-as, ganhando o seguinte troféu.</p>
-                    <p> - <a href="#trofeu22" rel=""> <span style="color:#A0522D;"> Sangue no Zòio </span></a>: Realize as 5
+                    <p> - <a class="link-ancla" href="#trofeu22" rel=""> <span style="color:#A0522D;"> Sangue no Zòio </span></a>: Realize as 5
                         Matanças. Após o troféu
-                        <a href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>, é possÃ­vel
+                        <a class="link-ancla" href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>, é possÃ­vel
                         realizar esse troféu.
                     </p>
                     <br>
                     <p>
                         Em Sandy Shores, recebe a missão de Procurado, e siga as instruções para a realização desse
                         troféu.</p>
-                    <p> - <a href="#trofeu31" rel=""> <span style="color:#A0522D;"> Procurado: Vivo ou Bem Vivo
+                    <p> - <a class="link-ancla" href="#trofeu31" rel=""> <span style="color:#A0522D;"> Procurado: Vivo ou Bem Vivo
  </span></a>:
                         Entregue o procurado a
-                        Maude, vivo. Após o troféu <a href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante
+                        Maude, vivo. Após o troféu <a class="link-ancla" href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante
                             </span></a>, é
                         possÃ­vel realizar esse troféu.</p>
                     <br>
@@ -353,7 +308,7 @@ function scrollToTop() {
                         Lembra dos Eventos Aleatórios? Então, encontre uma missão de caroneiro e leve as pessoas da
                         carona até o Culto
                         AltruÃ­sta.</p>
-                    <p> - <a href="#trofeu27" rel=""> <span style="color:#A0522D;"> Acólito Altruísta </span></a>: Entregue
+                    <p> - <a class="link-ancla" href="#trofeu27" rel=""> <span style="color:#A0522D;"> Acólito Altruísta </span></a>: Entregue
                         uma caroneiro ao
                         Culto Altruista. Após o troféu <a href="#125721" rel=""> <span style="color:#A0522D;"> Diamond
                                 Hard </span></a>, é
@@ -363,10 +318,10 @@ function scrollToTop() {
                         Finalizando a sessão de troféu com o Trevour, vá até o McKenzie Field Hangar, compre-o e
                         complete 5 missões
                         terrestres e 5 missões aéreas de entrega de equipamento.</p>
-                    <p> - <a href="#trofeu17" rel=""> <span style="color:#A0522D;"> TP Industries Logística Bélica</span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu17" rel=""> <span style="color:#A0522D;"> TP Industries Logística Bélica</span></a>:
                         Compre o McKenzie
                         Field Hangar e vença a corrida armamentista. É possÃ­vel ser feito depois do troféu <a
-                            href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>,
+                            class="link-ancla" href="#trofeu7" rel=""> <span style="color:#A0522D;"> Duro como Diamante </span></a>,
                         especificamente algumas missões depois onde aparecerá na
                         tela a opção de comprar esta propriedade.</p>
                     <br>
@@ -378,9 +333,9 @@ function scrollToTop() {
                         Esteja em Los Santos com o Franklin e compre a seguinte propriedade: Downtown Cab Co, então
                         realize o seguinte
                         troféu relacionado a propriedade.</p>
-                    <p> - <a href="#trofeu16" rel=""> <span style="color:#A0522D;"> Na Vida, Somos Todos Passageiros </span></a>
+                    <p> - <a class="link-ancla" href="#trofeu16" rel=""> <span style="color:#A0522D;"> Na Vida, Somos Todos Passageiros </span></a>
                         - Compre a Downtown
-                        Cab Co e faça uma corrida privada. Pode ser feito após o troféu <a href="#trofeu3" rel=""> <span
+                        Cab Co e faça uma corrida privada. Pode ser feito após o troféu <a class="link-ancla" href="#trofeu3" rel=""> <span
                                 style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>, onde você terá dinheiro
                         necessário para o
                         troféu.</p>
@@ -389,9 +344,9 @@ function scrollToTop() {
                         Chame Trevour e Michael para dar um "rolé". Pegue um carro, busque cada um no local, e vá com os
                         três para o
                         aeroporto. Lá, comece a atirar, chamando a polí­cia. Realize então o seguinte troféu:</p>
-                    <p> - <a href="#trofeu25" rel=""> <span style="color:#A0522D;"> Exército de Três Homens </span></a>: Fique com
+                    <p> - <a class="link-ancla" href="#trofeu25" rel=""> <span style="color:#A0522D;"> Exército de Três Homens </span></a>: Fique com
                         os três personagens
-                        por 3 minutos com 3 estrelas de procurado. É possí­vel ser feito após o troféu <a href="#trofeu3"
+                        por 3 minutos com 3 estrelas de procurado. É possí­vel ser feito após o troféu <a class="link-ancla" href="#trofeu3"
                             rel=""> <span style="color:#A0522D;"> Uma Amizade Ressusitada </span></a>.</p>
                     <br>
                     <br>
@@ -403,19 +358,19 @@ function scrollToTop() {
                         disponí­veis para o Franklin e uma hora você falará com Omega, e ele lhe relatará uma história
                         sobre OVNIS. Então
                         comece sua busca pelas 50 parte de espaçonave. Realize o seguinte troféu.</p>
-                    <p> - <a href="#trofeu19" rel=""> <span style="color:#A0522D;"> Muito Além das Estrelas </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu19" rel=""> <span style="color:#A0522D;"> Muito Além das Estrelas </span></a>:
                         Encontre todos os
                         fragmentos da nave espacial e os devolva. Conta para o 100%.</p>
                     <br>
                     <p>
                         Agora, com o Michael, compre a Sonar Collection Dock e realize o seguinte troféu.</p>
-                    <p> - <a href="#trofeu21" rel=""> <span style="color:#A0522D;"> Gestão de Resíduos</span></a>: Colete
+                    <p> - <a class="link-ancla" href="#trofeu21" rel=""> <span style="color:#A0522D;"> Gestão de Resíduos</span></a>: Colete
                         todos os lixos
                         tóxicos. Não conta para o 100%.</p>
                     <br>
                     <p>
                         Colete todos os fragmentos da carta, e realize esse seguinte troféu.</p>
-                    <p> - <a href="#trofeu20" rel=""> <span style="color:#A0522D;"> Um Mistério Solucionado </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu20" rel=""> <span style="color:#A0522D;"> Um Mistério Solucionado </span></a>:
                         Encontre todos os
                         fragmentos da carta e encontre o assassino de L.J. Conta para o 100%.</p>
                     <br>
@@ -425,17 +380,17 @@ function scrollToTop() {
                         momento, esses troféu a seguir poderão ser feitos, já que parte do necessário para os completar,
                         é requisito do
                         100%.</p>
-                    <p> - <a href="#trofeu33" rel=""> <span style="color:#A0522D;"> Por Um Triz </span></a>: Realize todos
+                    <p> - <a class="link-ancla" href="#trofeu33" rel=""> <span style="color:#A0522D;"> Por Um Triz </span></a>: Realize todos
                         os 50 Under the
                         Bridge e os 15 Knife Flight. Apenas 25 e 8 deles são necessários, respectivamente para o 100%,
                         porém todos eles são
                         necessários para a platina.</p>
                     <br>
-                    <p> - <a href="#trofeu23" rel=""> <span style="color:#A0522D;"> Exibicionista </span></a>: Realize todos os
+                    <p> - <a class="link-ancla" href="#trofeu23" rel=""> <span style="color:#A0522D;"> Exibicionista </span></a>: Realize todos os
                         50 Stunt Jumps.
                         Apenas 25 são necessários para o 100%, porém todos eles são necessários para a platina.</p>
                     <br>
-                    <p> - <a href="#trofeu18" rel=""> <span style="color:#787878;"> Multidisciplinado </span></a>: Ganhe
+                    <p> - <a class="link-ancla" href="#trofeu18" rel=""> <span style="color:#787878;"> Multidisciplinado </span></a>: Ganhe
                         uma medalha de ouro
                         em cada hobbie e passatempo. É necessário ganhar uma medalha quaisquer (bronze, prata e ouro) em
                         cada hobbie, e em
@@ -443,7 +398,7 @@ function scrollToTop() {
                         uma medalha de
                         ouro. Mais informações no troféu.</p>
                     <br>
-                    <p> - <a href="#trofeu14" rel=""> <span style="color:#FFC125;"> Vida Bandida </span></a>: Complete
+                    <p> - <a class="link-ancla" href="#trofeu14" rel=""> <span style="color:#FFC125;"> Vida Bandida </span></a>: Complete
                         o jogo 100%.</p>
                     <br>
                     <p>
@@ -452,7 +407,7 @@ function scrollToTop() {
                         Estranhos e Doidos, adquirindo uma medalha de ouro nelas. Ganhando 70 medalhas de ouro (cada
                         missão lhe rende uma),
                         você irá adquirir o seguinte troféu.</p>
-                    <p> - <a href="#trofeu13" rel=""> <span style="color:#FFC125;"> Ouro Maciço </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu13" rel=""> <span style="color:#FFC125;"> Ouro Maciço </span></a>:
                         Complete 70 missões do jogo
                         (Principais e Estranhos e Doidos) tendo como classificação, o ouro. Esse é um troféu bastante
                         demorado pois sempre
@@ -474,7 +429,7 @@ function scrollToTop() {
                         Mypst, se quiser algo rápido, já que ele já possui bastante membros e na maioria de suas vezes
                         alguém online.</p>
                     <br>
-                    <p> - <a href="#trofeu34" rel=""> <span style="color:#A0522D;"> Carne Fresca </span></a>: Complete a
+                    <p> - <a class="link-ancla" href="#trofeu34" rel=""> <span style="color:#A0522D;"> Carne Fresca </span></a>: Complete a
                         Introdução do GTA
                         Online. Esse vai ser seu primeiro troféu do GTA Online.</p>
                     <br>
@@ -485,82 +440,82 @@ function scrollToTop() {
                         esqueçam de tentar
                         boost.</p>
                     <br>
-                    <p> - <a href="#trofeu47" rel=""> <span style="color:#A0522D;"> Parte do Comando </span></a>: Complete uma
+                    <p> - <a class="link-ancla" href="#trofeu47" rel=""> <span style="color:#A0522D;"> Parte do Comando </span></a>: Complete uma
                         missão com um membro de
                         um Comando. Chame algum amigo do comando para um serviço e complete-o.</p>
                     <br>
-                    <p> - <a href="#trofeu45" rel=""> <span style="color:#A0522D;"> 157 </span></a>: Assalte as
+                    <p> - <a class="link-ancla" href="#trofeu45" rel=""> <span style="color:#A0522D;"> 157 </span></a>: Assalte as
                         20 lojas do GTA
                         Online.</p>
                     <br>
-                    <p> - <a href="#trofeu39" rel=""> <span style="color:#A0522D;"> The Midnight Club </span></a> : Vença
+                    <p> - <a class="link-ancla" href="#trofeu39" rel=""> <span style="color:#A0522D;"> The Midnight Club </span></a> : Vença
                         5 corridas de rua
                         com carros customizados. Chame um amigo do comando para o boost, escolha a categoria de seu
                         carro e vença 5 corridas
                         com o seu carro personalizado.</p>
                     <br>
-                    <p> - <a href="#trofeu46" rel=""> <span style="color:#A0522D;"> Aproveite a Sua Estadia </span></a>: Participe
+                    <p> - <a class="link-ancla" href="#trofeu46" rel=""> <span style="color:#A0522D;"> Aproveite a Sua Estadia </span></a>: Participe
                         em tudo que Los
                         Santos tem a te oferecer. Siga a lista que o troféu possui e faça tudo o que é pedido.</p>
                     <br>
-                    <p> - <a href="#trofeu41" rel=""> <span style="color:#A0522D;"> Passageiro/Motorista </span></a>: Ganhe uma
+                    <p> - <a class="link-ancla" href="#trofeu41" rel=""> <span style="color:#A0522D;"> Passageiro/Motorista </span></a>: Ganhe uma
                         corrida Rally omo
                         co-piloto. Com boost de 4 pessoa fica muito mais fácil, pois assim a outra equipe deixara você
                         ganhar.</p>
                     <br>
-                    <p> - <a href="#trofeu40" rel=""> <span style="color:#A0522D;"> Seleção Não Natural </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu40" rel=""> <span style="color:#A0522D;"> Seleção Não Natural </span></a>:
                         Complete 10 waves de
                         Sobrevivência. Depois do ní­vel 15, você liberará as Sobrevivências. Chame 3 amigos e complete
                         10 waves. A
                         Sobrevivência dá muito XP. Então com facilidade e repetição você chegará ao ní­vel 25.</p>
                     <br>
-                    <p> - <a href="#trofeu35" rel=""> <span style="color:#A0522D;"> Criminoso Meia-Boca </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu35" rel=""> <span style="color:#A0522D;"> Criminoso Meia-Boca </span></a>:
                         Alcance o ranking 25.</p>
                     <br>
-                    <p> - <a href="#trofeu43" rel=""> <span style="color:#A0522D;"> De Lavada </span></a> : Complete um
+                    <p> - <a class="link-ancla" href="#trofeu43" rel=""> <span style="color:#A0522D;"> De Lavada </span></a> : Complete um
                         Ataque de Gangue sem
                         morrer e matando no minimo 10 pessoas. Depois do ní­vel 25, é uma boa o Ataque de Gangue que
                         aparecerá
                         aleatoriamente no mapa.</p>
                     <br>
-                    <p> - <a href="#trofeu50" rel=""> <span style="color:#A0522D;"> O Sonho Americano </span></a>:Compre uma
+                    <p> - <a class="link-ancla" href="#trofeu50" rel=""> <span style="color:#A0522D;"> O Sonho Americano </span></a>:Compre uma
                         casa, garagem e um
                         carro segurado no GTA Online. Nesse nÃ­vel, você facilmente já terá dinheiro para comprar a casa
                         e a garagem, já que
                         o carro segurado não envolve muitos custos.</p>
                     <br>
-                    <p> - <a href="#trofeu42" rel=""> <span style="color:#A0522D;"> Corra como o Vento </span></a>:
+                    <p> - <a class="link-ancla" href="#trofeu42" rel=""> <span style="color:#A0522D;"> Corra como o Vento </span></a>:
                         Sobreviva com uma
                         recompensa pela sua cabeça. Peça para um amigo colocar recompensa enquanto você fica em alguma
                         coisa que não envolva
                         risco de morte.</p>
                     <br>
-                    <p> - <a href="#trofeu36" rel=""> <span style="color:#787878;"> Na Correria </span></a>: Alcance o
+                    <p> - <a class="link-ancla" href="#trofeu36" rel=""> <span style="color:#787878;"> Na Correria </span></a>: Alcance o
                         ranking 50.</p>
                     <br>
-                    <p> - <a href="#trofeu38" rel=""> <span style="color:#A0522D;"> Número Uno </span></a> : Obtenha
+                    <p> - <a class="link-ancla" href="#trofeu38" rel=""> <span style="color:#A0522D;"> Número Uno </span></a> : Obtenha
                         primeiro lugar em todos
                         os modos competitivos do GTA Online.</p>
                     <br>
-                    <p> - <a href="#trofeu48" rel=""> <span style="color:#A0522D;"> Reembolso Total </span></a>: Mate o ladrão
+                    <p> - <a class="link-ancla" href="#trofeu48" rel=""> <span style="color:#A0522D;"> Reembolso Total </span></a>: Mate o ladrão
                         que matou você.
                         Você poderá precisar de boost para esse troféu já que exige uma pessoa com ní­vel 50 ao seu
                         lado.</p>
                     <br>
-                    <p> - <a href="#trofeu44" rel=""> <span style="color:#787878;"> Condecorado</span></a>: Complete 30
+                    <p> - <a class="link-ancla" href="#trofeu44" rel=""> <span style="color:#787878;"> Condecorado</span></a>: Complete 30
                         Platinum Awards.</p>
                     <br>
-                    <p> - <a href="#trofeu37" rel=""> <span style="color:#FFC125;"> Acima da Lei </span></a>: Alcance o
+                    <p> - <a class="link-ancla" href="#trofeu37" rel=""> <span style="color:#FFC125;"> Acima da Lei </span></a>: Alcance o
                         ranking 100.</p>
                     <br>
-                    <p> - <a href="#trofeu49" rel=""> <span style="color:#A0522D;"> Batendo um Fio </span></a>: Chame por
+                    <p> - <a class="link-ancla" href="#trofeu49" rel=""> <span style="color:#A0522D;"> Batendo um Fio </span></a>: Chame por
                         um serviço de
                         suporte pela primeira vez.</p>
                     <br>
                     <p>
                         Com todos esses troféus feitos, você irá adquirir o troféu mais desejado de todos do GTA V, o
                         troféu da platina.</p>
-                    <p>-<a href="#trofeu1" rel=""> <span style="color:#48D1CC;"> O Astro de Los Santos </span></a>: Seja
+                    <p>-<a href="#np66" rel=""> <span style="color:#48D1CC;"> O Astro de Los Santos </span></a>: Seja
                         Feliz!</p>
                 </div>
 
@@ -569,7 +524,7 @@ function scrollToTop() {
                 <div id="Trofeus"class="trofeus" style="padding-top: 5px;">
                     <h2>Troféus</h2>
 
-                    <div class="grid-container" id="trofeu1">
+                    <div class="grid-container" id="#np66">
                         <img src="./assets/images/img1.png" alt="" class="grid-item image">
                         <b class="grid-item b-text"> <span class="indice">01</span>. O Astro de Los Santos</b> <br>
                         <p class="grid-item i-text"><img class="trophyimg" src="./assets/trophys/platinum.png" alt="">
@@ -1590,5 +1545,5 @@ function scrollToTop() {
               </footer>
         </div>
     </body>
-    <script src="../Html/teste.js"></script>
+    <script src="../Html/index.js"></script>
 </html>

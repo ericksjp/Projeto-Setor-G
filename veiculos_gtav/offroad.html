@@ -1,104 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <script>
-        function toggleVisibility(button) {
-            var divLaranja = document.querySelector('.indice-conteudo');
-            var LaranjaHeader = document.querySelector('.indice-header');
-            var buttonCollor = document.querySelector('#indice_button');
-
-            divLaranja.classList.toggle('highlight');
-            LaranjaHeader.classList.toggle('highlight');
-            buttonCollor.classList.toggle('highlight');
-            button.textContent = divLaranja.classList.contains('highlight') ? 'ocultar' : 'mostrar';
-        }
-
-        window.onload = function () {
-            var button = document.querySelector('.laranja button');
-            button.addEventListener('click', function () {
-                toggleVisibility(this);
-            });
-
-        };
-
-    </script>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="../Html/code.jquery.com_jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="./mainstyles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mainstyles.css">
-    <title>Document</title>
+    <title>Grand Theft Auto V</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav>
-                <ul class="lista">
-                    <li class="button"><img src="./assets/logos/gta5.png" alt="">
-                        <ul class="submenu">
-                            <li><a href="../sobre_gtav/sobre.html">Sobre</a></li>
-                            <li><a href="../veiculos_gtav/veiculohp.html">Veiculos</a></li>
-                            <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
-                            <li><a href="../radio_gtav/radios.html">Rádios</a></li>
-                            <li><a href="../mapa_gtav/radios.html">Mapa</a></li>
-                            <li><a href="../cheats_gtav/cheats.html">Codigos</a></li>
-                            <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
-                            <li><a href="../armas_gtav/armas.html">Armas</a></li>
-                          </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta4.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gtasa.png" alt="">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta-vice-city.png" alt="" style="margin-top: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
-                    <li class="button"><img src="./assets/logos/gta123.png" alt="" style="margin-bottom: 5px;">
-                        <ul class="submenu">
-                            <li><a>Sobre</a></li>
-                            <li><a>Veiculos</a></li>
-                            <li><a>Personagens</a></li>
-                            <li><a>Rádios</a></li>
-                            <li><a>Mapas</a></li>
-                            <li><a>Codigos</a></li>
-                            <li><a>Conquistas</a></li>
-                        </ul>
-                    </li>
+        <header id="header">
+            <a id="logo" href=""><img src="../Html/assets/logo.webp" alt=""></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a id="n555" href="../sobre_gtav/sobre.html">Sobre</a></li>
+                    <li><a href="../veiculos_gtav/veiculohp.html">Veículos</a></li>
+                    <li><a href="../personagens_gtav/teste.html">Personagens</a></li>
+                    <li><a href="../radio_gtav/radios.html">Rádios</a></li>
+                    <li><a href="../mapa_gtav/mapashp.html">Mapa</a></li>
+                    <li><a href="../cheats_gtav/cheats.html">Códigos</a></li>
+                    <li><a href="../trofeus_gtav/teste2.html">Conquistas</a></li>
+                    <li><a href="../armas_gtav/armas.html">Armas</a></li>
                 </ul>
             </nav>
         </header>
@@ -107,13 +35,8 @@
                 <button onclick="scrollToTop()">Começo</button>
             </div>
 
-            <div class="logo">
-                <a href="../Html/logo.html"><img src="./assets/logo.png" alt=""></a>
-            </div>
             <h1 style="text-align: center;">Offroad - GTA V</h1>
-            <a href="./veiculohp.html" id="video_tutorial">Página anterior</a>
 
-            
             <div class="laranja">
                 <div class="indice-header" id="trofeu1">
                     <h2>Índice</h2>
@@ -121,55 +44,55 @@
                 </div>
                 <div class="indice-conteudo">
                     <ol>
-                        <li><a href="#v1"><span>1.</span> BF Dune Buggy</a></li>
-                        <li><a href="#v2"><span>2.</span> BF Injection</a></li>
-                        <li><a href="#v3"><span>3.</span> BF Space Docker</a></li>
-                        <li><a href="#v4"><span>4.</span> Bravado Duneloader</a></li>
-                        <li><a href="#v5"><span>5.</span> Canis Bodhi</a></li>
-                        <li><a href="#v6"><span>6.</span> Declasse Rancher XL</a></li>
-                        <li><a href="#v7"><span>7.</span> Karin Rebel</a></li>
-                        <li><a href="#v8"><span>8.</span> Nagasaki Blazer</a></li>
-                        <li><a href="#v9"><span>9.</span> Nagasaki Blazer Lifeguard</a></li>
-                        <li><a href="#v10"><span>10.</span> Nagasaki Hot Rod Blazer</a></li>
-                        <li><a href="#v11"><span>11.</span> Vapid Sadler</a></li>
-                        <li><a href="#v12"><span>12.</span> Vapid Sandking</a></li>
-                        <li><a href="#v13"><span>13.</span> BF Bifta</a></li>
-                        <li><a href="#v14"><span>14.</span> Canis Kalahari</a></li>
-                        <li><a href="#v15"><span>15.</span> Benefactor Dubsta 6x6</a></li>
-                        <li><a href="#v16"><span>16.</span> Karin Technical</a></li>
-                        <li><a href="#v17"><span>17.</span> HVY Insurgent</a></li>
-                        <li><a href="#v18"><span>18.</span> Vapid Guardian</a></li>
-                        <li><a href="#v19"><span>19.</span> Vapid The Liberator</a></li>
-                        <li><a href="#v20"><span>20.</span> Cheval Marshall</a></li>
-                        <li><a href="#v21"><span>21.</span> Coil Brawler</a></li>
-                        <li><a href="#v22"><span>22.</span> Vapid Desert Raid</a></li>
-                        <li><a href="#v23"><span>23.</span> Vapid Trophy Truck</a></li>
-                        <li><a href="#v24"><span>24.</span> Vapid Contender</a></li>
-                        <li><a href="#v25"><span>25.</span> BF Ramp Buggy</a></li>
-                        <li><a href="#v26"><span>26.</span> Nagasaki Blazer Aqua</a></li>
-                        <li><a href="#v27"><span>27.</span> HVY Nightshark</a></li>
-                        <li><a href="#v28"><span>28.</span> Karin Technical Custom</a></li>
-                        <li><a href="#v29"><span>29.</span> HVY Insurgent Pick-Up Custom</a></li>
-                        <li><a href="#v30"><span>30.</span> Dune FAV</a></li>
-                        <li><a href="#v31"><span>31.</span> Canis Kamacho</a></li>
-                        <li><a href="#v32"><span>32.</span> Vapid Caracara</a></li>
-                        <li><a href="#v33"><span>33.</span> Canis Freecrawler</a></li>
-                        <li><a href="#v34"><span>34.</span> HVY Menacer</a></li>
-                        <li><a href="#v35"><span>35.</span> Benefactor Apocalypse Bruiser</a></li>
-                        <li><a href="#v36"><span>36.</span> Benefactor Future Shock Bruiser</a></li>
-                        <li><a href="#v37"><span>37.</span> Benefactor Nightmare Bruiser</a></li>
-                        <li><a href="#v38"><span>38.</span> Declasse Apocalypse Brutus</a></li>
-                        <li><a href="#v39"><span>39.</span> Declasse Future Shock Brutus</a></li>
-                        <li><a href="#v40"><span>40.</span> Declasse Nightmare Brutus</a></li>
-                        <li><a href="#v41"><span>41.</span> Bravado Apocalypse Sasquatch</a></li>
-                        <li><a href="#v42"><span>42.</span> Bravado Future Shock Sasquatch</a></li>
-                        <li><a href="#v43"><span>43.</span> Bravado Nightmare Sasquatch</a></li>
-                        <li><a href="#v44"><span>44.</span> Vapid Caracara 4x4</a></li>
-                        <li><a href="#v45"><span>45.</span> Annis Hellion</a></li>
-                        <li><a href="#v46"><span>46.</span> Karin Everon</a></li>
-                        <li><a href="#v47"><span>47.</span> Maxwell Vagrant</a></li>
-                        <li><a href="#v48"><span>48.</span> Rune Zhaba</a></li>
-                        <li><a href="#v49"><span>49.</span> Nagasaki Outlaw</a></li>
+                        <li><a class="link-ancla" href="#v1"><span>1.</span> BF Dune Buggy</a></li>
+                        <li><a class="link-ancla" href="#v2"><span>2.</span> BF Injection</a></li>
+                        <li><a class="link-ancla" href="#v3"><span>3.</span> BF Space Docker</a></li>
+                        <li><a class="link-ancla" href="#v4"><span>4.</span> Bravado Duneloader</a></li>
+                        <li><a class="link-ancla" href="#v5"><span>5.</span> Canis Bodhi</a></li>
+                        <li><a class="link-ancla" href="#v6"><span>6.</span> Declasse Rancher XL</a></li>
+                        <li><a class="link-ancla" href="#v7"><span>7.</span> Karin Rebel</a></li>
+                        <li><a class="link-ancla" href="#v8"><span>8.</span> Nagasaki Blazer</a></li>
+                        <li><a class="link-ancla" href="#v9"><span>9.</span> Nagasaki Blazer Lifeguard</a></li>
+                        <li><a class="link-ancla" href="#v10"><span>10.</span> Nagasaki Hot Rod Blazer</a></li>
+                        <li><a class="link-ancla" href="#v11"><span>11.</span> Vapid Sadler</a></li>
+                        <li><a class="link-ancla" href="#v12"><span>12.</span> Vapid Sandking</a></li>
+                        <li><a class="link-ancla" href="#v13"><span>13.</span> BF Bifta</a></li>
+                        <li><a class="link-ancla" href="#v14"><span>14.</span> Canis Kalahari</a></li>
+                        <li><a class="link-ancla" href="#v15"><span>15.</span> Benefactor Dubsta 6x6</a></li>
+                        <li><a class="link-ancla" href="#v16"><span>16.</span> Karin Technical</a></li>
+                        <li><a class="link-ancla" href="#v17"><span>17.</span> HVY Insurgent</a></li>
+                        <li><a class="link-ancla" href="#v18"><span>18.</span> Vapid Guardian</a></li>
+                        <li><a class="link-ancla" href="#v19"><span>19.</span> Vapid The Liberator</a></li>
+                        <li><a class="link-ancla" href="#v20"><span>20.</span> Cheval Marshall</a></li>
+                        <li><a class="link-ancla" href="#v21"><span>21.</span> Coil Brawler</a></li>
+                        <li><a class="link-ancla" href="#v22"><span>22.</span> Vapid Desert Raid</a></li>
+                        <li><a class="link-ancla" href="#v23"><span>23.</span> Vapid Trophy Truck</a></li>
+                        <li><a class="link-ancla" href="#v24"><span>24.</span> Vapid Contender</a></li>
+                        <li><a class="link-ancla" href="#v25"><span>25.</span> BF Ramp Buggy</a></li>
+                        <li><a class="link-ancla" href="#v26"><span>26.</span> Nagasaki Blazer Aqua</a></li>
+                        <li><a class="link-ancla" href="#v27"><span>27.</span> HVY Nightshark</a></li>
+                        <li><a class="link-ancla" href="#v28"><span>28.</span> Karin Technical Custom</a></li>
+                        <li><a class="link-ancla" href="#v29"><span>29.</span> HVY Insurgent Pick-Up Custom</a></li>
+                        <li><a class="link-ancla" href="#v30"><span>30.</span> Dune FAV</a></li>
+                        <li><a class="link-ancla" href="#v31"><span>31.</span> Canis Kamacho</a></li>
+                        <li><a class="link-ancla" href="#v32"><span>32.</span> Vapid Caracara</a></li>
+                        <li><a class="link-ancla" href="#v33"><span>33.</span> Canis Freecrawler</a></li>
+                        <li><a class="link-ancla" href="#v34"><span>34.</span> HVY Menacer</a></li>
+                        <li><a class="link-ancla" href="#v35"><span>35.</span> Benefactor Apocalypse Bruiser</a></li>
+                        <li><a class="link-ancla" href="#v36"><span>36.</span> Benefactor Future Shock Bruiser</a></li>
+                        <li><a class="link-ancla" href="#v37"><span>37.</span> Benefactor Nightmare Bruiser</a></li>
+                        <li><a class="link-ancla" href="#v38"><span>38.</span> Declasse Apocalypse Brutus</a></li>
+                        <li><a class="link-ancla" href="#v39"><span>39.</span> Declasse Future Shock Brutus</a></li>
+                        <li><a class="link-ancla" href="#v40"><span>40.</span> Declasse Nightmare Brutus</a></li>
+                        <li><a class="link-ancla" href="#v41"><span>41.</span> Bravado Apocalypse Sasquatch</a></li>
+                        <li><a class="link-ancla" href="#v42"><span>42.</span> Bravado Future Shock Sasquatch</a></li>
+                        <li><a class="link-ancla" href="#v43"><span>43.</span> Bravado Nightmare Sasquatch</a></li>
+                        <li><a class="link-ancla" href="#v44"><span>44.</span> Vapid Caracara 4x4</a></li>
+                        <li><a class="link-ancla" href="#v45"><span>45.</span> Annis Hellion</a></li>
+                        <li><a class="link-ancla" href="#v46"><span>46.</span> Karin Everon</a></li>
+                        <li><a class="link-ancla" href="#v47"><span>47.</span> Maxwell Vagrant</a></li>
+                        <li><a class="link-ancla" href="#v48"><span>48.</span> Rune Zhaba</a></li>
+                        <li><a class="link-ancla" href="#v49"><span>49.</span> Nagasaki Outlaw</a></li>
                     </ol>
                 </div>
             </div>
@@ -1355,12 +1278,12 @@
         </main>
         <footer>
             <ul id="criadores" class="criadores">
-                <h2>Colaboradores</h2>
+                <h2>Desenvolvedores</h2>
                 <li>Erick Ribeiro</li>
                 <hr>
-                <li>Whendersson</li>
+                <li>Wenderson Dhomini</li>
                 <hr>
-                <li>Gerlândio</li>
+                <li>Gerlândio da Silva</li>
                 <hr>
                 <li>José Magno</li>
                 <hr>
@@ -1370,4 +1293,5 @@
         </footer>
     </div>
 </body>
+<script src="../Html/veiculos.js"></script>
 </html>

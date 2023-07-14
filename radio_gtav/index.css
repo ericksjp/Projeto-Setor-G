@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto+Condensed&family=Rubik&display=swap");
-@font-face {
-  font-family: "Pricedown";
-  src: url("pricedow.ttf") format("truetype");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap');
 * {
   padding: 0;
   box-sizing: border-box;
@@ -41,6 +38,12 @@ ul {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+h1{
+  font-size: 2.5rem;
+  font-family: 'Lobster', cursive;
+    margin: 0 auto;
+    text-shadow: -6px -1px 0px rgb(0, 88, 19), -1px 1px 0px black, 1px -1px 0px black, 1px 0px 0px black;
+}
 
 a {
   color: black;
@@ -123,7 +126,6 @@ main {
   /* height: 90%; */
   /* top: 88px; */
   width: 80%;
-  margin-top: 88px;
   height: max-content;
   grid-area: main;
   margin: 0 auto;
@@ -338,22 +340,22 @@ button {
   color: black;
 }
 
-
 footer {
-  border-top: 5px solid #f0e3be;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  footer ul {
-    text-align: center;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    padding-bottom: 15px;
-  }
+  height: fit-content;
+  grid-area: footer;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 3px solid #f0e3be;
+  background-color: rgba(0, 0, 0, 1);
+}
 
+footer ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 15px;
+}
   
 @media (max-width: 1292px) {
   .sticky-element{
@@ -471,10 +473,10 @@ footer {
 
   
   @media screen and (max-width: 750px) {
-    .logo{
-      margin-top: 0px;
-    }
- 
+
+    /* h1{
+      text-align: center;
+    } */
     .button:hover {
       background-color: black;
     }
@@ -532,6 +534,12 @@ footer {
 
   }
 
+  @media screen and (max-width: 705px) {
+    .sticky-element {
+      top: 170px;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .container {
         display: flex;
@@ -573,11 +581,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .logo {
-    justify-content: center;
+@media screen and (max-width: 455px) {
+  h1{
+    font-size: 2.3rem;
   }
+}
 
+@media screen and (max-width: 423px) {
+  .sticky-element {
+    top: 415px;
+  }
+}
+
+@media screen and (max-width: 420px) {
   main ul{
     padding-left: 20px;
   }
@@ -585,6 +601,14 @@ footer {
   main li,a *{
     font-size: 0.9rem;
   }
+
+  @media screen and (max-width: 366px) {
+    .sticky-element {
+      top: 220px;
+    }
+  }
+  
+    
 }
  
   
