@@ -410,14 +410,29 @@ button {
     height: fit-content;
     background-color: black;
 }
-
+  
 footer {
+  padding-bottom: 10px;
   height: fit-content;
   grid-area: footer;
   width: 100%;
   margin: 0 auto;
-  border-top: 3px solid #f0e3be;
-  background-color: rgba(0, 0, 0, 1);
+  border-top: 2px solid #f0e3be;
+  background-color: rgba(0, 0, 0);
+}
+
+footer h2{
+  color: white;
+}
+
+footer hr{
+  display: none;
+}
+
+footer a{
+  display: block;
+  color: white;
+  width: 100%;
 }
 
 footer ul {
@@ -425,7 +440,24 @@ footer ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  padding-bottom: 15px;
+  align-items: center;
+}
+
+footer li{
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+footer li:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.copright p{
+  margin: 0px;
+  text-align: center;
 }
 
 
