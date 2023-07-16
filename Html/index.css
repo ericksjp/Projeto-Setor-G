@@ -70,7 +70,7 @@ a:hover {
 
 #header {
   box-sizing: border-box;
-  height: fit-content;
+  height: 12vh;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -115,8 +115,8 @@ main {
   position: relative;
   display: grid;
   width: 70%;
-  height: 81.2%;
-  margin-top: 3.5vh;
+  height: 82vh;
+  margin-top: 3vh;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   grid-template-areas: "principal lado";
@@ -377,8 +377,6 @@ ul.criadores li:nth-child(2) {
 
 @media screen and (max-width: 1175px) {
   main {
-    height: 87.8%;
-    margin-top: 0px;
   }
 
   .principal {
@@ -403,10 +401,9 @@ ul.criadores li:nth-child(2) {
     border-top-right-radius: 0px;
   }
   .separador{
-    margin-top: 30px;
   }
   .copright{
-    margin-top: 25px;
+    margin-top: 15px;
   }
   .contend{
     align-items: center;
@@ -415,8 +412,12 @@ ul.criadores li:nth-child(2) {
 }
 
 @media screen and (max-width: 1153px) {
+  #header{
+    height: 17vh;
+  }
   main{
-    height: 81.4%;
+    height: 83vh;
+    margin-top: 0px;
   }
   .copright{
     margin-top: 10px;
@@ -450,7 +451,7 @@ ul.criadores li:nth-child(2) {
 
   main {
     width: 100%;
-    height: 81.4%;
+    height: 83vh;
   }
 
   .principal{
@@ -498,10 +499,6 @@ ul.criadores li:nth-child(2) {
     font-size: 1.6rem;
   }
 
-  main {
-    height: 81.5%;
-  }
-
   .lado {
     border-top: none;
   }
@@ -511,6 +508,7 @@ ul.criadores li:nth-child(2) {
 @media (max-width: 933px) {
 
   #header{
+    height: 13vh;
     justify-content: space-between;
   }
   #menu {
@@ -584,7 +582,7 @@ ul.criadores li:nth-child(2) {
   }
 
   main {
-    height: 87.8%;
+    height: 87vh;
   }
 
   #n555 {
@@ -629,6 +627,7 @@ ul.criadores li:nth-child(2) {
   }
 
   #header {
+    height: fit-content;
     grid-area: header;
     background-color: black
   }
@@ -689,6 +688,7 @@ ul.criadores li:nth-child(2) {
   }
 
   .lado h2{
+    border-radius: 0px;
     background-color: rgba(124, 119, 119, 0.3);
   }
 
@@ -846,5 +846,91 @@ ul.criadores li:nth-child(2) {
 
   .universos .universos_ul img {
     height: 80px;
+  }
+}
+
+@media only screen and (max-width: 960px) and (orientation: landscape) and (pointer: coarse){
+  body{
+    height: fit-content;
+  }
+  main{
+    height: fit-content;
+  }
+  .lado{
+    padding-bottom: 10px;
+  }
+  #header{
+    height: fit-content;
+  }
+  .separador{
+    display: none;
+  }
+  .contend{
+    height: 457px;
+  }
+  .lado>.destaques{
+    margin-bottom: 10%;
+  }
+  .lado>.criadores{
+    height: fit-content;
+  }
+  .copright{
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)  and (min-height: 600px) and (pointer: coarse){
+  #header{
+    height: 9vh;
+  }
+  main{
+    height: 91vh;
+  }
+  #nav.active #menu{
+    height: fit-content;
+    margin-top: 20px;
+  }
+  .contend{
+    align-content: space-evenly;
+  }
+  .lado > .destaques {
+    height: 40%;
+    margin-bottom: 0px;
+  }
+  .lado > .criadores {
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 960px) and (orientation: landscape) and (pointer: coarse){
+  body{
+    height: fit-content;
+  }
+  main{
+    height: fit-content;
+  }
+  .principal{
+    padding-bottom: 2px;
+  }
+  .lado{
+    padding-bottom: 10px;
+  }
+  #header{
+    height: fit-content;
+  }
+  .separador{
+    display: none;
+  }
+  .contend{
+    height: 457px;
+  }
+  .lado>.destaques{
+    margin-bottom: 10%;
+  }
+  .lado>.criadores{
+    height: fit-content;
+  }
+  .copright{
+    margin-top: 10%;
   }
 }
