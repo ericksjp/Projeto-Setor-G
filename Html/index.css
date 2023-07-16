@@ -879,7 +879,7 @@ ul.criadores li:nth-child(2) {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)  and (min-height: 600px) and (pointer: coarse){
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 600px){
   #header{
     height: 9vh;
   }
